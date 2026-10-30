@@ -1,0 +1,122 @@
+{
+  "kind": "workload",
+  "backend": "powermetrics_zeus",
+  "sampleIntervalMs": 100,
+  "host": {
+    "system": "Darwin",
+    "release": "25.6.0",
+    "architecture": "arm64"
+  },
+  "scope": "host hardware domains; client, API, database and background activity",
+  "status": "valid",
+  "domains": [
+    {
+      "name": "cpu",
+      "energyJ": 3.8601294286649175,
+      "coverageFraction": 1,
+      "sampleCount": 7,
+      "quality": "adequate",
+      "id": "powermetrics:cpu",
+      "source": "powermetrics",
+      "averagePowerW": 4.768056854904826
+    },
+    {
+      "name": "gpu",
+      "energyJ": 0.14827423468411194,
+      "coverageFraction": 1,
+      "sampleCount": 7,
+      "quality": "adequate",
+      "id": "powermetrics:gpu",
+      "source": "powermetrics",
+      "averagePowerW": 0.18314929438411764
+    },
+    {
+      "name": "ane",
+      "energyJ": 0.0,
+      "coverageFraction": 1,
+      "sampleCount": 7,
+      "quality": "adequate",
+      "id": "powermetrics:ane",
+      "source": "powermetrics",
+      "averagePowerW": 0.0
+    },
+    {
+      "id": "ioreport:dram",
+      "name": "dram",
+      "source": "ioreport",
+      "energyJ": 0.246,
+      "sampleCount": 2,
+      "quality": "model_counter_delta",
+      "counterWindowElapsedMs": 813.663042,
+      "counterWindowBoundsMs": {
+        "lower": 809.611792,
+        "upper": 817.714292
+      },
+      "startOffsetMs": -1.994188001845032,
+      "endOffsetMs": 2.0876039925497025,
+      "snapshotBrackets": {
+        "start": {
+          "kind": "start",
+          "beforeMonotonicNs": 183082702993666,
+          "afterMonotonicNs": 183082706978208,
+          "energyMj": 38847210
+        },
+        "end": {
+          "kind": "end",
+          "beforeMonotonicNs": 183083516590000,
+          "afterMonotonicNs": 183083520707958,
+          "energyMj": 38847456
+        }
+      },
+      "boundaryMethod": "snapshot-call midpoints estimated; exact hardware snapshot instants unavailable",
+      "rawField": "dram_mj",
+      "collectorVersion": "1.1.0",
+      "averagePowerW": 0.3023364553898467
+    }
+  ],
+  "collectors": [
+    {
+      "name": "powermetrics",
+      "version": "25.6.0",
+      "versionSource": "macOS kernel release (bundled tool)",
+      "domains": [
+        "cpu",
+        "gpu",
+        "ane"
+      ],
+      "method": "interval integration"
+    },
+    {
+      "name": "zeus-apple-silicon",
+      "version": "1.1.0",
+      "source": "ioreport",
+      "domains": [
+        "dram"
+      ],
+      "field": "dram_mj",
+      "method": "boundary counter delta"
+    }
+  ],
+  "timing": {
+    "boundary": "controller-observed GO to DONE (includes pipe/progress overhead)",
+    "clock": "monotonic_ns",
+    "workloadElapsedMs": 809.5812500000001,
+    "workloadStartedMonotonicNs": 183082706980125,
+    "workloadFinishedMonotonicNs": 183083516561375,
+    "workloadStartedAt": "2026-10-20T20:47:12.411514+00:00",
+    "workloadFinishedAt": "2026-10-20T20:47:13.221094+00:00"
+  },
+  "maxAbsReceiptLagMs": 2.588083007140085,
+  "collectorCommand": [
+    "powermetrics",
+    "-f",
+    "plist",
+    "-i",
+    "100",
+    "-s",
+    "cpu_power,gpu_power,ane_power",
+    "-b",
+    "0"
+  ],
+  "boundaryMethod": "powermetrics: receipt anchored then elapsed_ns, uniform interval allocation; DRAM: bracketed counter reads, midpoint-estimated boundaries"
+}

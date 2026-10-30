@@ -1,0 +1,122 @@
+{
+  "kind": "workload",
+  "backend": "rapl",
+  "sampleIntervalMs": 100,
+  "host": {
+    "system": "Linux",
+    "release": "7.2.9-1-cachyos",
+    "architecture": "x86_64"
+  },
+  "scope": "host hardware domains; client, API, database and background activity",
+  "status": "valid",
+  "domains": [
+    {
+      "id": "intel-rapl:1",
+      "name": "psys",
+      "path": "/sys/class/powercap/intel-rapl/intel-rapl:1/energy_uj",
+      "maxEnergyRangeUj": 262143328850,
+      "energyJ": 0.135559,
+      "sampleCount": 22,
+      "counterWindowElapsedMs": 2090.483109,
+      "startOffsetMs": -0.22410099973058095,
+      "endOffsetMs": 0.6931179996172432,
+      "maxReadGapMs": 101.275665,
+      "quality": "counter_delta",
+      "averagePowerW": 0.06484577627840571
+    },
+    {
+      "id": "intel-rapl:0",
+      "name": "package-0",
+      "path": "/sys/class/powercap/intel-rapl/intel-rapl:0/energy_uj",
+      "maxEnergyRangeUj": 262143328850,
+      "energyJ": 14.86544,
+      "sampleCount": 22,
+      "counterWindowElapsedMs": 2090.483109,
+      "startOffsetMs": -0.22410099973058095,
+      "endOffsetMs": 0.6931179996172432,
+      "maxReadGapMs": 101.275665,
+      "quality": "counter_delta",
+      "averagePowerW": 7.111006989724498
+    },
+    {
+      "id": "intel-rapl:0:2",
+      "name": "dram",
+      "path": "/sys/class/powercap/intel-rapl/intel-rapl:0/intel-rapl:0:2/energy_uj",
+      "maxEnergyRangeUj": 262143328850,
+      "energyJ": 3.284416,
+      "sampleCount": 22,
+      "counterWindowElapsedMs": 2090.483109,
+      "startOffsetMs": -0.22410099973058095,
+      "endOffsetMs": 0.6931179996172432,
+      "maxReadGapMs": 101.275665,
+      "quality": "counter_delta",
+      "averagePowerW": 1.5711277387795435
+    },
+    {
+      "id": "intel-rapl:0:0",
+      "name": "core",
+      "path": "/sys/class/powercap/intel-rapl/intel-rapl:0/intel-rapl:0:0/energy_uj",
+      "maxEnergyRangeUj": 262143328850,
+      "energyJ": 11.680817,
+      "sampleCount": 22,
+      "counterWindowElapsedMs": 2090.483109,
+      "startOffsetMs": -0.22410099973058095,
+      "endOffsetMs": 0.6931179996172432,
+      "maxReadGapMs": 101.275665,
+      "quality": "counter_delta",
+      "averagePowerW": 5.587616063345097
+    },
+    {
+      "id": "intel-rapl:0:1",
+      "name": "uncore",
+      "path": "/sys/class/powercap/intel-rapl/intel-rapl:0/intel-rapl:0:1/energy_uj",
+      "maxEnergyRangeUj": 262143328850,
+      "energyJ": 0.030152,
+      "sampleCount": 22,
+      "counterWindowElapsedMs": 2090.483109,
+      "startOffsetMs": -0.22410099973058095,
+      "endOffsetMs": 0.6931179996172432,
+      "maxReadGapMs": 101.275665,
+      "quality": "counter_delta",
+      "averagePowerW": 0.014423460237582815
+    },
+    {
+      "id": "intel-rapl-mmio:0",
+      "name": "package-0",
+      "path": "/sys/class/powercap/intel-rapl-mmio/intel-rapl-mmio:0/energy_uj",
+      "maxEnergyRangeUj": 262143328850,
+      "energyJ": 14.86544,
+      "sampleCount": 22,
+      "counterWindowElapsedMs": 2090.483109,
+      "startOffsetMs": -0.22410099973058095,
+      "endOffsetMs": 0.6931179996172432,
+      "maxReadGapMs": 101.275665,
+      "quality": "counter_delta",
+      "averagePowerW": 7.111006989724498
+    },
+    {
+      "id": "intel-rapl-mmio:0:0",
+      "name": "dram",
+      "path": "/sys/class/powercap/intel-rapl-mmio/intel-rapl-mmio:0/intel-rapl-mmio:0:0/energy_uj",
+      "maxEnergyRangeUj": 262143328850,
+      "energyJ": 3.284416,
+      "sampleCount": 22,
+      "counterWindowElapsedMs": 2090.483109,
+      "startOffsetMs": -0.22410099973058095,
+      "endOffsetMs": 0.6931179996172432,
+      "maxReadGapMs": 101.275665,
+      "quality": "counter_delta",
+      "averagePowerW": 1.5711277387795435
+    }
+  ],
+  "timing": {
+    "boundary": "controller-observed GO to DONE (includes pipe/progress overhead)",
+    "clock": "monotonic_ns",
+    "workloadElapsedMs": 2089.56589,
+    "workloadStartedMonotonicNs": 2332392804708,
+    "workloadFinishedMonotonicNs": 2334482370598,
+    "workloadStartedAt": "2026-10-18T14:10:52.423696+00:00",
+    "workloadFinishedAt": "2026-10-18T14:10:54.513262+00:00"
+  },
+  "boundaryMethod": "counter reads bracket the controller window; read overhead included"
+}

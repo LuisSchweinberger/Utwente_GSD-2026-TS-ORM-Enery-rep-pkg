@@ -1,0 +1,25 @@
+{
+  "orm": "prisma",
+  "position": 1,
+  "status": "completed",
+  "startedAt": "2026-10-18T14:40:31.818713+00:00",
+  "results": [
+    "results/experiment-42/trials/trial-007/prisma/read-owner-no-visits.json",
+    "results/experiment-42/trials/trial-007/prisma/update-owner-populated.json",
+    "results/experiment-42/trials/trial-007/prisma/delete-owner-visits-no-visits.json",
+    "results/experiment-42/trials/trial-007/prisma/delete-owner-visits-populated.json",
+    "results/experiment-42/trials/trial-007/prisma/update-owner-no-visits.json",
+    "results/experiment-42/trials/trial-007/prisma/delete-owner-visits-no-pets.json",
+    "results/experiment-42/trials/trial-007/prisma/create-owner-populated.json",
+    "results/experiment-42/trials/trial-007/prisma/delete-visit-populated.json",
+    "results/experiment-42/trials/trial-007/prisma/read-owner-no-pets.json",
+    "results/experiment-42/trials/trial-007/prisma/update-pet-populated.json",
+    "results/experiment-42/trials/trial-007/prisma/read-owner-populated.json",
+    "results/experiment-42/trials/trial-007/prisma/create-pet-populated.json",
+    "results/experiment-42/trials/trial-007/prisma/update-owner-no-pets.json",
+    "results/experiment-42/trials/trial-007/prisma/read-pet-populated.json"
+  ],
+  "apiPid": 76057,
+  "finishedAt": "2026-10-18T14:43:45.978428+00:00",
+  "apiStoppedAt": "2026-10-18T14:43:46.042944+00:00"
+}

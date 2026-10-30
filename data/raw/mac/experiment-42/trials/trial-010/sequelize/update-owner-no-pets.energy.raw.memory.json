@@ -1,0 +1,36 @@
+{
+  "source": "ioreport",
+  "field": "dram_mj",
+  "unit": "mJ",
+  "scope": "host-wide unified-memory energy-model estimate",
+  "snapshots": [
+    {
+      "kind": "capability",
+      "beforeMonotonicNs": 182662066902958,
+      "afterMonotonicNs": 182662070326083,
+      "energyMj": 38761679
+    },
+    {
+      "kind": "start",
+      "beforeMonotonicNs": 182662960410791,
+      "afterMonotonicNs": 182662964430291,
+      "energyMj": 38761911
+    },
+    {
+      "kind": "end",
+      "beforeMonotonicNs": 182664240121333,
+      "afterMonotonicNs": 182664244553041,
+      "energyMj": 38762322
+    }
+  ],
+  "collector": {
+    "name": "zeus-apple-silicon",
+    "version": "1.1.0",
+    "source": "ioreport",
+    "domains": [
+      "dram"
+    ],
+    "field": "dram_mj",
+    "method": "boundary counter delta"
+  }
+}

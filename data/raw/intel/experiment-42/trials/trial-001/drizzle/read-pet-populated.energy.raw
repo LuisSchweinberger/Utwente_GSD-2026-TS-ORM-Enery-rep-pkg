@@ -1,0 +1,20 @@
+{"type": "domains", "domains": [{"id": "intel-rapl:1", "name": "psys", "path": "/sys/class/powercap/intel-rapl/intel-rapl:1/energy_uj", "maxEnergyRangeUj": 262143328850}, {"id": "intel-rapl:0", "name": "package-0", "path": "/sys/class/powercap/intel-rapl/intel-rapl:0/energy_uj", "maxEnergyRangeUj": 262143328850}, {"id": "intel-rapl:0:2", "name": "dram", "path": "/sys/class/powercap/intel-rapl/intel-rapl:0/intel-rapl:0:2/energy_uj", "maxEnergyRangeUj": 262143328850}, {"id": "intel-rapl:0:0", "name": "core", "path": "/sys/class/powercap/intel-rapl/intel-rapl:0/intel-rapl:0:0/energy_uj", "maxEnergyRangeUj": 262143328850}, {"id": "intel-rapl:0:1", "name": "uncore", "path": "/sys/class/powercap/intel-rapl/intel-rapl:0/intel-rapl:0:1/energy_uj", "maxEnergyRangeUj": 262143328850}, {"id": "intel-rapl-mmio:0", "name": "package-0", "path": "/sys/class/powercap/intel-rapl-mmio/intel-rapl-mmio:0/energy_uj", "maxEnergyRangeUj": 262143328850}, {"id": "intel-rapl-mmio:0:0", "name": "dram", "path": "/sys/class/powercap/intel-rapl-mmio/intel-rapl-mmio:0/intel-rapl-mmio:0:0/energy_uj", "maxEnergyRangeUj": 262143328850}]}
+{"monotonicNs": 748176166392, "energyUj": [49029171, 2484202197, 702329745, 1485664409, 16806353, 2484202197, 702329745]}
+{"monotonicNs": 748176459916, "energyUj": [49029171, 2484202197, 702329745, 1485666606, 16806353, 2484202197, 702329745]}
+{"monotonicNs": 748277310233, "energyUj": [49035335, 2485186875, 702509065, 1486491677, 16806353, 2485186875, 702509065]}
+{"monotonicNs": 748378083489, "energyUj": [49041744, 2486012678, 702672151, 1487161537, 16806353, 2486012678, 702672151]}
+{"monotonicNs": 748478744849, "energyUj": [49048275, 2486718914, 702823457, 1487713720, 16806353, 2486718914, 702823457]}
+{"monotonicNs": 748579671665, "energyUj": [49054622, 2487341837, 702971344, 1488182469, 16814959, 2487348185, 702972870]}
+{"monotonicNs": 748680408825, "energyUj": [49061275, 2487967629, 703118195, 1488659458, 16814959, 2487967629, 703118195]}
+{"monotonicNs": 748781127916, "energyUj": [49067806, 2488640967, 703263031, 1489180086, 16814959, 2488640967, 703263031]}
+{"monotonicNs": 748881916767, "energyUj": [49074276, 2489480687, 703430328, 1489864533, 16814959, 2489480687, 703430328]}
+{"monotonicNs": 748982693380, "energyUj": [49080929, 2490306979, 703595305, 1490536589, 16814959, 2490314120, 703596953]}
+{"monotonicNs": 749083374036, "energyUj": [49087581, 2490970918, 703747221, 1491039578, 16822649, 2490970918, 703747221]}
+{"monotonicNs": 749184157988, "energyUj": [49093990, 2491804778, 703917265, 1491717616, 16822649, 2491804778, 703917265]}
+{"monotonicNs": 749284941006, "energyUj": [49100826, 2492486539, 704062589, 1492247461, 16822649, 2492486539, 704062589]}
+{"monotonicNs": 749385595167, "energyUj": [49107540, 2493152186, 704204068, 1492768456, 16822649, 2493159022, 704205655]}
+{"monotonicNs": 749486313743, "energyUj": [49114498, 2493819970, 704345120, 1493286216, 16822649, 2493819970, 704345120]}
+{"monotonicNs": 749587103972, "energyUj": [49121151, 2494518821, 704499417, 1493824361, 16830889, 2494518821, 704499417]}
+{"monotonicNs": 749687817156, "energyUj": [49127925, 2495195394, 704642544, 1494349690, 16830889, 2495195394, 704642544]}
+{"monotonicNs": 749788519187, "energyUj": [49134517, 2495870258, 704783962, 1494880999, 16830889, 2495870258, 704785793]}
+{"monotonicNs": 749865558276, "energyUj": [49139400, 2496411577, 704899074, 1495306718, 16830889, 2496419451, 704900722]}

@@ -1,0 +1,2 @@
+# Optional on Linux; mandatory for MEASUREMENT_BACKEND=powermetrics_zeus.
+zeus-apple-silicon==1.1.0

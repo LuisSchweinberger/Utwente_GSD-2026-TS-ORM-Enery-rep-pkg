@@ -1,0 +1,3750 @@
+{
+  "formatVersion": 1,
+  "createdAt": "2026-10-20T20:48:07.800410+00:00",
+  "runStatus": "completed",
+  "complete": true,
+  "trialsPlanned": 12,
+  "trialsCompleted": 12,
+  "invalidTaskResults": 0,
+  "baselineAdjustment": "none; raw workload energy",
+  "groups": [
+    {
+      "orm": "prisma",
+      "scenario": "read-pet",
+      "profile": "populated",
+      "validTaskCount": 12,
+      "expectedTaskCount": 12,
+      "metrics": {
+        "workloadElapsedMs": {
+          "count": 12,
+          "mean": 551.8501910833334,
+          "median": 554.2056875
+        },
+        "throughputOpsPerSecond": {
+          "count": 12,
+          "mean": 1812.766957424333,
+          "median": 1804.4010111054895
+        }
+      },
+      "energyDomains": {
+        "ioreport:dram:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.17258333333333334,
+            "median": 0.172
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.3108475185127075,
+            "median": 0.3108100444058237
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.00017258333333333335,
+            "median": 0.000172
+          }
+        },
+        "powermetrics:ane:ane": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.026015812712752096,
+            "median": 0.0
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.049489772886023305,
+            "median": 0.0
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 2.6015812712752094e-05,
+            "median": 0.0
+          }
+        },
+        "powermetrics:cpu:cpu": {
+          "energyJ": {
+            "count": 12,
+            "mean": 2.691667120055533,
+            "median": 2.674971199778244
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 4.876977208356377,
+            "median": 4.791080296465631
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.0026916671200555332,
+            "median": 0.002674971199778244
+          }
+        },
+        "powermetrics:gpu:gpu": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.07100860419220457,
+            "median": 0.07024090597137639
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.12877534527711154,
+            "median": 0.12682789059386793
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 7.100860419220458e-05,
+            "median": 7.024090597137639e-05
+          }
+        }
+      }
+    },
+    {
+      "orm": "prisma",
+      "scenario": "read-owner",
+      "profile": "populated",
+      "validTaskCount": 12,
+      "expectedTaskCount": 12,
+      "metrics": {
+        "workloadElapsedMs": {
+          "count": 12,
+          "mean": 1714.1892535,
+          "median": 1715.29475
+        },
+        "throughputOpsPerSecond": {
+          "count": 12,
+          "mean": 583.4782838455377,
+          "median": 582.9918485709022
+        }
+      },
+      "energyDomains": {
+        "ioreport:dram:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.4585,
+            "median": 0.46299999999999997
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.26692086051893027,
+            "median": 0.2650114440339414
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.0004585,
+            "median": 0.000463
+          }
+        },
+        "powermetrics:ane:ane": {
+          "energyJ": {
+            "count": 12,
+            "mean": 8.333333333333333e-05,
+            "median": 0.0
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 4.989625071590717e-05,
+            "median": 0.0
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 8.333333333333333e-08,
+            "median": 0.0
+          }
+        },
+        "powermetrics:cpu:cpu": {
+          "energyJ": {
+            "count": 12,
+            "mean": 9.490905547072707,
+            "median": 9.382562816416925
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 5.535589915733751,
+            "median": 5.494434915134208
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.009490905547072707,
+            "median": 0.009382562816416924
+          }
+        },
+        "powermetrics:gpu:gpu": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.16304921395435065,
+            "median": 0.1626339196192982
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.09567254553659775,
+            "median": 0.09622126899394393
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.00016304921395435065,
+            "median": 0.00016263391961929822
+          }
+        }
+      }
+    },
+    {
+      "orm": "prisma",
+      "scenario": "read-owner",
+      "profile": "no-visits",
+      "validTaskCount": 12,
+      "expectedTaskCount": 12,
+      "metrics": {
+        "workloadElapsedMs": {
+          "count": 12,
+          "mean": 1698.3403680833333,
+          "median": 1698.538208
+        },
+        "throughputOpsPerSecond": {
+          "count": 12,
+          "mean": 588.9351228862214,
+          "median": 588.7415416509614
+        }
+      },
+      "energyDomains": {
+        "ioreport:dram:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.46116666666666667,
+            "median": 0.4555
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.2709704898531198,
+            "median": 0.26626800784625976
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.0004611666666666667,
+            "median": 0.0004555
+          }
+        },
+        "powermetrics:ane:ane": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          }
+        },
+        "powermetrics:cpu:cpu": {
+          "energyJ": {
+            "count": 12,
+            "mean": 9.557525358980888,
+            "median": 9.590788334800365
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 5.627607575690096,
+            "median": 5.624775705033252
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.00955752535898089,
+            "median": 0.009590788334800366
+          }
+        },
+        "powermetrics:gpu:gpu": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.16372832860378053,
+            "median": 0.16411053707376036
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.09675341830761067,
+            "median": 0.09630256496149675
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.00016372832860378053,
+            "median": 0.00016411053707376036
+          }
+        }
+      }
+    },
+    {
+      "orm": "prisma",
+      "scenario": "read-owner",
+      "profile": "no-pets",
+      "validTaskCount": 12,
+      "expectedTaskCount": 12,
+      "metrics": {
+        "workloadElapsedMs": {
+          "count": 12,
+          "mean": 975.6397363333333,
+          "median": 979.3340000000001
+        },
+        "throughputOpsPerSecond": {
+          "count": 12,
+          "mean": 1025.2053604494993,
+          "median": 1021.1600350546748
+        }
+      },
+      "energyDomains": {
+        "ioreport:dram:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.2776666666666667,
+            "median": 0.279
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.2835144035488983,
+            "median": 0.2849778958933201
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.0002776666666666667,
+            "median": 0.000279
+          }
+        },
+        "powermetrics:ane:ane": {
+          "energyJ": {
+            "count": 12,
+            "mean": 8.333333333333333e-05,
+            "median": 0.0
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 8.573766022071354e-05,
+            "median": 0.0
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 8.333333333333333e-08,
+            "median": 0.0
+          }
+        },
+        "powermetrics:cpu:cpu": {
+          "energyJ": {
+            "count": 12,
+            "mean": 4.857785102024227,
+            "median": 4.837957655345655
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 4.980303018054933,
+            "median": 4.958290940207116
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.0048577851020242275,
+            "median": 0.004837957655345655
+          }
+        },
+        "powermetrics:gpu:gpu": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.10731953558949774,
+            "median": 0.10626106172368784
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.11029693308733331,
+            "median": 0.10948101450658848
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.00010731953558949774,
+            "median": 0.00010626106172368782
+          }
+        }
+      }
+    },
+    {
+      "orm": "prisma",
+      "scenario": "create-pet",
+      "profile": "populated",
+      "validTaskCount": 12,
+      "expectedTaskCount": 12,
+      "metrics": {
+        "workloadElapsedMs": {
+          "count": 12,
+          "mean": 659.65952425,
+          "median": 668.5097705000001
+        },
+        "throughputOpsPerSecond": {
+          "count": 12,
+          "mean": 1520.22163453443,
+          "median": 1495.8644588638977
+        }
+      },
+      "energyDomains": {
+        "ioreport:dram:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.20741666666666667,
+            "median": 0.211
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.3131549990423665,
+            "median": 0.3099303294821264
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.00020741666666666668,
+            "median": 0.00021099999999999998
+          }
+        },
+        "powermetrics:ane:ane": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          }
+        },
+        "powermetrics:cpu:cpu": {
+          "energyJ": {
+            "count": 12,
+            "mean": 3.081243241115902,
+            "median": 3.16114013779925
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 4.685994821052235,
+            "median": 4.654807545928518
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.003081243241115902,
+            "median": 0.0031611401377992497
+          }
+        },
+        "powermetrics:gpu:gpu": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.0802493588284645,
+            "median": 0.07604558680079251
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.1222636298091515,
+            "median": 0.12325554341711117
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 8.02493588284645e-05,
+            "median": 7.604558680079251e-05
+          }
+        }
+      }
+    },
+    {
+      "orm": "prisma",
+      "scenario": "create-owner",
+      "profile": "populated",
+      "validTaskCount": 12,
+      "expectedTaskCount": 12,
+      "metrics": {
+        "workloadElapsedMs": {
+          "count": 12,
+          "mean": 1793.3737743333334,
+          "median": 1787.9591875
+        },
+        "throughputOpsPerSecond": {
+          "count": 12,
+          "mean": 557.9248261844227,
+          "median": 559.2987810921364
+        }
+      },
+      "energyDomains": {
+        "ioreport:dram:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.4910833333333333,
+            "median": 0.49
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.273368374778003,
+            "median": 0.2746903047442916
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.0004910833333333334,
+            "median": 0.00049
+          }
+        },
+        "powermetrics:ane:ane": {
+          "energyJ": {
+            "count": 12,
+            "mean": 8.333333333333333e-05,
+            "median": 0.0
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 4.652236376250684e-05,
+            "median": 0.0
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 8.333333333333333e-08,
+            "median": 0.0
+          }
+        },
+        "powermetrics:cpu:cpu": {
+          "energyJ": {
+            "count": 12,
+            "mean": 10.06071920718012,
+            "median": 10.037984635733858
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 5.609225453469755,
+            "median": 5.624274517324606
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.01006071920718012,
+            "median": 0.010037984635733858
+          }
+        },
+        "powermetrics:gpu:gpu": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.16936975888939262,
+            "median": 0.16756179300163376
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.09554088429588639,
+            "median": 0.0958036883771171
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.00016936975888939262,
+            "median": 0.00016756179300163378
+          }
+        }
+      }
+    },
+    {
+      "orm": "prisma",
+      "scenario": "update-pet",
+      "profile": "populated",
+      "validTaskCount": 12,
+      "expectedTaskCount": 12,
+      "metrics": {
+        "workloadElapsedMs": {
+          "count": 12,
+          "mean": 976.6178751666666,
+          "median": 965.622875
+        },
+        "throughputOpsPerSecond": {
+          "count": 12,
+          "mean": 1027.5073188903489,
+          "median": 1035.8006212883076
+        }
+      },
+      "energyDomains": {
+        "ioreport:dram:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.28441666666666665,
+            "median": 0.28500000000000003
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.29037945806627274,
+            "median": 0.29109356087955385
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.00028441666666666665,
+            "median": 0.000285
+          }
+        },
+        "powermetrics:ane:ane": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          }
+        },
+        "powermetrics:cpu:cpu": {
+          "energyJ": {
+            "count": 12,
+            "mean": 5.317230070050123,
+            "median": 5.303948100144428
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 5.4507443054267215,
+            "median": 5.3702828384801915
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.005317230070050123,
+            "median": 0.0053039481001444285
+          }
+        },
+        "powermetrics:gpu:gpu": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.10634947628965952,
+            "median": 0.10245249131942266
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.10939199776022628,
+            "median": 0.10935548048409639
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.00010634947628965952,
+            "median": 0.00010245249131942267
+          }
+        }
+      }
+    },
+    {
+      "orm": "prisma",
+      "scenario": "update-owner",
+      "profile": "populated",
+      "validTaskCount": 12,
+      "expectedTaskCount": 12,
+      "metrics": {
+        "workloadElapsedMs": {
+          "count": 12,
+          "mean": 1415.5466941666666,
+          "median": 1391.483458
+        },
+        "throughputOpsPerSecond": {
+          "count": 12,
+          "mean": 707.7655420864339,
+          "median": 718.6851323278636
+        }
+      },
+      "energyDomains": {
+        "ioreport:dram:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.40599999999999997,
+            "median": 0.408
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.28659040350497184,
+            "median": 0.28444159294833843
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.000406,
+            "median": 0.000408
+          }
+        },
+        "powermetrics:ane:ane": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          }
+        },
+        "powermetrics:cpu:cpu": {
+          "energyJ": {
+            "count": 12,
+            "mean": 8.015426891010865,
+            "median": 7.919159114012726
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 5.664365469210391,
+            "median": 5.653840379813844
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.008015426891010865,
+            "median": 0.007919159114012727
+          }
+        },
+        "powermetrics:gpu:gpu": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.14082248526883187,
+            "median": 0.14128958956199164
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.10168440175325234,
+            "median": 0.10190576471778315
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.00014082248526883187,
+            "median": 0.00014128958956199166
+          }
+        }
+      }
+    },
+    {
+      "orm": "prisma",
+      "scenario": "update-owner",
+      "profile": "no-visits",
+      "validTaskCount": 12,
+      "expectedTaskCount": 12,
+      "metrics": {
+        "workloadElapsedMs": {
+          "count": 12,
+          "mean": 1404.4226076666666,
+          "median": 1392.76025
+        },
+        "throughputOpsPerSecond": {
+          "count": 12,
+          "mean": 713.2865169674674,
+          "median": 717.9986649699285
+        }
+      },
+      "energyDomains": {
+        "ioreport:dram:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.40449999999999997,
+            "median": 0.40249999999999997
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.2872821718070092,
+            "median": 0.2893196413258366
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.0004045,
+            "median": 0.00040249999999999997
+          }
+        },
+        "powermetrics:ane:ane": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.00036519508366053723,
+            "median": 0.0
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.00023586416659194176,
+            "median": 0.0
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 3.651950836605372e-07,
+            "median": 0.0
+          }
+        },
+        "powermetrics:cpu:cpu": {
+          "energyJ": {
+            "count": 12,
+            "mean": 7.930342988339402,
+            "median": 7.822785928482114
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 5.64613101591155,
+            "median": 5.633614273588169
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.007930342988339402,
+            "median": 0.007822785928482115
+          }
+        },
+        "powermetrics:gpu:gpu": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.1424012197343308,
+            "median": 0.13785569067892217
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.10242282775659853,
+            "median": 0.10161031572316091
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.00014240121973433078,
+            "median": 0.00013785569067892216
+          }
+        }
+      }
+    },
+    {
+      "orm": "prisma",
+      "scenario": "update-owner",
+      "profile": "no-pets",
+      "validTaskCount": 12,
+      "expectedTaskCount": 12,
+      "metrics": {
+        "workloadElapsedMs": {
+          "count": 12,
+          "mean": 1416.94290275,
+          "median": 1382.46575
+        },
+        "throughputOpsPerSecond": {
+          "count": 12,
+          "mean": 707.4236286761546,
+          "median": 723.3461111738053
+        }
+      },
+      "energyDomains": {
+        "ioreport:dram:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.4073333333333333,
+            "median": 0.413
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.28726554552044475,
+            "median": 0.2864375350619715
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.00040733333333333333,
+            "median": 0.00041299999999999996
+          }
+        },
+        "powermetrics:ane:ane": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          }
+        },
+        "powermetrics:cpu:cpu": {
+          "energyJ": {
+            "count": 12,
+            "mean": 8.032982105706639,
+            "median": 7.955183281683719
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 5.669853134203681,
+            "median": 5.638135926205529
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.008032982105706639,
+            "median": 0.007955183281683719
+          }
+        },
+        "powermetrics:gpu:gpu": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.13915945948032185,
+            "median": 0.13793566554765888
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.09959748863553589,
+            "median": 0.09948847825837417
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.00013915945948032185,
+            "median": 0.00013793566554765887
+          }
+        }
+      }
+    },
+    {
+      "orm": "prisma",
+      "scenario": "delete-visit",
+      "profile": "populated",
+      "validTaskCount": 12,
+      "expectedTaskCount": 12,
+      "metrics": {
+        "workloadElapsedMs": {
+          "count": 12,
+          "mean": 555.9559201666666,
+          "median": 573.2269795
+        },
+        "throughputOpsPerSecond": {
+          "count": 12,
+          "mean": 1808.5371701283314,
+          "median": 1744.6669319062316
+        }
+      },
+      "energyDomains": {
+        "ioreport:dram:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.1735,
+            "median": 0.1745
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.3104663628183944,
+            "median": 0.3054571304922242
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.0001735,
+            "median": 0.00017449999999999999
+          }
+        },
+        "powermetrics:ane:ane": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          }
+        },
+        "powermetrics:cpu:cpu": {
+          "energyJ": {
+            "count": 12,
+            "mean": 2.6632904697756534,
+            "median": 2.645355867530421
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 4.80984504997591,
+            "median": 4.798354074036974
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.0026632904697756537,
+            "median": 0.002645355867530421
+          }
+        },
+        "powermetrics:gpu:gpu": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.07093789936485068,
+            "median": 0.06653496593509677
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.1292136734928585,
+            "median": 0.12939341446768352
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 7.093789936485067e-05,
+            "median": 6.653496593509676e-05
+          }
+        }
+      }
+    },
+    {
+      "orm": "prisma",
+      "scenario": "delete-owner-visits",
+      "profile": "populated",
+      "validTaskCount": 12,
+      "expectedTaskCount": 12,
+      "metrics": {
+        "workloadElapsedMs": {
+          "count": 12,
+          "mean": 802.8491074166667,
+          "median": 817.1142915
+        },
+        "throughputOpsPerSecond": {
+          "count": 12,
+          "mean": 1248.245189473182,
+          "median": 1223.8235863746922
+        }
+      },
+      "energyDomains": {
+        "ioreport:dram:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.23425,
+            "median": 0.2355
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.29060696355238536,
+            "median": 0.2920653872516559
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.00023425,
+            "median": 0.0002355
+          }
+        },
+        "powermetrics:ane:ane": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          }
+        },
+        "powermetrics:cpu:cpu": {
+          "energyJ": {
+            "count": 12,
+            "mean": 3.999292429163678,
+            "median": 4.038940249525561
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 4.991385794921887,
+            "median": 5.044468989175231
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.003999292429163678,
+            "median": 0.004038940249525561
+          }
+        },
+        "powermetrics:gpu:gpu": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.09191722975735407,
+            "median": 0.09023190483204156
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.11468268501472806,
+            "median": 0.11331016224056112
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 9.191722975735407e-05,
+            "median": 9.023190483204157e-05
+          }
+        }
+      }
+    },
+    {
+      "orm": "prisma",
+      "scenario": "delete-owner-visits",
+      "profile": "no-visits",
+      "validTaskCount": 12,
+      "expectedTaskCount": 12,
+      "metrics": {
+        "workloadElapsedMs": {
+          "count": 12,
+          "mean": 817.4823368333333,
+          "median": 814.840271
+        },
+        "throughputOpsPerSecond": {
+          "count": 12,
+          "mean": 1224.1606387115826,
+          "median": 1227.2401652506046
+        }
+      },
+      "energyDomains": {
+        "ioreport:dram:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.238,
+            "median": 0.23099999999999998
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.289220533867231,
+            "median": 0.27946642271864214
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.000238,
+            "median": 0.000231
+          }
+        },
+        "powermetrics:ane:ane": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          }
+        },
+        "powermetrics:cpu:cpu": {
+          "energyJ": {
+            "count": 12,
+            "mean": 4.159815439318393,
+            "median": 4.178020927147634
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 5.094809377237817,
+            "median": 5.147436461476131
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.004159815439318393,
+            "median": 0.004178020927147634
+          }
+        },
+        "powermetrics:gpu:gpu": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.09516269303690685,
+            "median": 0.09477199569380083
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.11560600059071245,
+            "median": 0.11499847856797266
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 9.516269303690686e-05,
+            "median": 9.477199569380082e-05
+          }
+        }
+      }
+    },
+    {
+      "orm": "prisma",
+      "scenario": "delete-owner-visits",
+      "profile": "no-pets",
+      "validTaskCount": 12,
+      "expectedTaskCount": 12,
+      "metrics": {
+        "workloadElapsedMs": {
+          "count": 12,
+          "mean": 670.5107430833333,
+          "median": 669.7903335
+        },
+        "throughputOpsPerSecond": {
+          "count": 12,
+          "mean": 1492.0423863480391,
+          "median": 1493.0095717634865
+        }
+      },
+      "energyDomains": {
+        "ioreport:dram:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.20066666666666666,
+            "median": 0.2
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.29725604413591306,
+            "median": 0.29702236460643694
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.00020066666666666667,
+            "median": 0.0002
+          }
+        },
+        "powermetrics:ane:ane": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          }
+        },
+        "powermetrics:cpu:cpu": {
+          "energyJ": {
+            "count": 12,
+            "mean": 3.0605888705499757,
+            "median": 3.0266018809127595
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 4.565876127580295,
+            "median": 4.506293736259051
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.003060588870549976,
+            "median": 0.0030266018809127597
+          }
+        },
+        "powermetrics:gpu:gpu": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.08257108393309195,
+            "median": 0.08315392646317747
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.12273972810892772,
+            "median": 0.12352310194635527
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 8.257108393309196e-05,
+            "median": 8.315392646317748e-05
+          }
+        }
+      }
+    },
+    {
+      "orm": "sequelize",
+      "scenario": "read-pet",
+      "profile": "populated",
+      "validTaskCount": 12,
+      "expectedTaskCount": 12,
+      "metrics": {
+        "workloadElapsedMs": {
+          "count": 12,
+          "mean": 493.94744433333335,
+          "median": 493.913187
+        },
+        "throughputOpsPerSecond": {
+          "count": 12,
+          "mean": 2025.3314265183785,
+          "median": 2024.7366879538895
+        }
+      },
+      "energyDomains": {
+        "ioreport:dram:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.15858333333333333,
+            "median": 0.1545
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.31827868303527224,
+            "median": 0.3145394064372992
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.00015858333333333333,
+            "median": 0.00015450000000000001
+          }
+        },
+        "powermetrics:ane:ane": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          }
+        },
+        "powermetrics:cpu:cpu": {
+          "energyJ": {
+            "count": 12,
+            "mean": 2.2250340918881286,
+            "median": 2.2057164823824977
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 4.51112010055651,
+            "median": 4.476031056999601
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.0022250340918881285,
+            "median": 0.0022057164823824976
+          }
+        },
+        "powermetrics:gpu:gpu": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.07001116900103117,
+            "median": 0.09090785418869046
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.1412723652932344,
+            "median": 0.18411765750497305
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 7.001116900103118e-05,
+            "median": 9.090785418869044e-05
+          }
+        }
+      }
+    },
+    {
+      "orm": "sequelize",
+      "scenario": "read-owner",
+      "profile": "populated",
+      "validTaskCount": 12,
+      "expectedTaskCount": 12,
+      "metrics": {
+        "workloadElapsedMs": {
+          "count": 12,
+          "mean": 1591.3384375833334,
+          "median": 1580.5121665000001
+        },
+        "throughputOpsPerSecond": {
+          "count": 12,
+          "mean": 628.7737164224716,
+          "median": 632.7334026147709
+        }
+      },
+      "energyDomains": {
+        "ioreport:dram:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.44825,
+            "median": 0.4465
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.28128877166544874,
+            "median": 0.28576127998858636
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.00044824999999999997,
+            "median": 0.0004465
+          }
+        },
+        "powermetrics:ane:ane": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          }
+        },
+        "powermetrics:cpu:cpu": {
+          "energyJ": {
+            "count": 12,
+            "mean": 8.887195564417546,
+            "median": 8.982206691657908
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 5.585312641612153,
+            "median": 5.567296159315223
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.008887195564417546,
+            "median": 0.008982206691657908
+          }
+        },
+        "powermetrics:gpu:gpu": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.17119075996776015,
+            "median": 0.25685411860282836
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.10858183717363774,
+            "median": 0.16457444639810456
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.00017119075996776016,
+            "median": 0.00025685411860282834
+          }
+        }
+      }
+    },
+    {
+      "orm": "sequelize",
+      "scenario": "read-owner",
+      "profile": "no-visits",
+      "validTaskCount": 12,
+      "expectedTaskCount": 12,
+      "metrics": {
+        "workloadElapsedMs": {
+          "count": 12,
+          "mean": 1577.4277743333332,
+          "median": 1579.1585209999998
+        },
+        "throughputOpsPerSecond": {
+          "count": 12,
+          "mean": 634.0888452455365,
+          "median": 633.2486492427381
+        }
+      },
+      "energyDomains": {
+        "ioreport:dram:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.4513333333333333,
+            "median": 0.459
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.28545035923043566,
+            "median": 0.2859540647248426
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.0004513333333333333,
+            "median": 0.00045900000000000004
+          }
+        },
+        "powermetrics:ane:ane": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          }
+        },
+        "powermetrics:cpu:cpu": {
+          "energyJ": {
+            "count": 12,
+            "mean": 8.89373519101819,
+            "median": 8.966970661839145
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 5.638475919115992,
+            "median": 5.626085085393447
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.008893735191018189,
+            "median": 0.008966970661839147
+          }
+        },
+        "powermetrics:gpu:gpu": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.17595313334454338,
+            "median": 0.25547117396180496
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.11168849270763175,
+            "median": 0.16516636397039228
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.00017595313334454338,
+            "median": 0.000255471173961805
+          }
+        }
+      }
+    },
+    {
+      "orm": "sequelize",
+      "scenario": "read-owner",
+      "profile": "no-pets",
+      "validTaskCount": 12,
+      "expectedTaskCount": 12,
+      "metrics": {
+        "workloadElapsedMs": {
+          "count": 12,
+          "mean": 895.4114133333334,
+          "median": 887.952125
+        },
+        "throughputOpsPerSecond": {
+          "count": 12,
+          "mean": 1117.4518325870692,
+          "median": 1126.2433975471945
+        }
+      },
+      "energyDomains": {
+        "ioreport:dram:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.2605,
+            "median": 0.264
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.28954213145416735,
+            "median": 0.2892101991629171
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.0002605,
+            "median": 0.000264
+          }
+        },
+        "powermetrics:ane:ane": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          }
+        },
+        "powermetrics:cpu:cpu": {
+          "energyJ": {
+            "count": 12,
+            "mean": 4.660711016185555,
+            "median": 4.605639247057562
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 5.2053410803190525,
+            "median": 5.124560280153792
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.004660711016185555,
+            "median": 0.004605639247057562
+          }
+        },
+        "powermetrics:gpu:gpu": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.10141686282889553,
+            "median": 0.10192518078527432
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.11331745397786636,
+            "median": 0.11460872384224766
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.00010141686282889554,
+            "median": 0.00010192518078527432
+          }
+        }
+      }
+    },
+    {
+      "orm": "sequelize",
+      "scenario": "create-pet",
+      "profile": "populated",
+      "validTaskCount": 12,
+      "expectedTaskCount": 12,
+      "metrics": {
+        "workloadElapsedMs": {
+          "count": 12,
+          "mean": 664.0264375,
+          "median": 666.096229
+        },
+        "throughputOpsPerSecond": {
+          "count": 12,
+          "mean": 1508.56115873517,
+          "median": 1501.377564604207
+        }
+      },
+      "energyDomains": {
+        "ioreport:dram:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.21675,
+            "median": 0.218
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.3240541507402707,
+            "median": 0.32336141198445634
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.00021675,
+            "median": 0.00021799999999999999
+          }
+        },
+        "powermetrics:ane:ane": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          }
+        },
+        "powermetrics:cpu:cpu": {
+          "energyJ": {
+            "count": 12,
+            "mean": 3.0154404123427367,
+            "median": 3.01885627778816
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 4.547339190939423,
+            "median": 4.3654144216637825
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.0030154404123427367,
+            "median": 0.00301885627778816
+          }
+        },
+        "powermetrics:gpu:gpu": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.08995373666967511,
+            "median": 0.11744037511462922
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.13461801144350258,
+            "median": 0.18214171966279155
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 8.995373666967511e-05,
+            "median": 0.00011744037511462923
+          }
+        }
+      }
+    },
+    {
+      "orm": "sequelize",
+      "scenario": "create-owner",
+      "profile": "populated",
+      "validTaskCount": 12,
+      "expectedTaskCount": 12,
+      "metrics": {
+        "workloadElapsedMs": {
+          "count": 12,
+          "mean": 1389.0616910833335,
+          "median": 1383.650896
+        },
+        "throughputOpsPerSecond": {
+          "count": 12,
+          "mean": 720.8909873646262,
+          "median": 722.7273026838568
+        }
+      },
+      "energyDomains": {
+        "ioreport:dram:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.41091666666666665,
+            "median": 0.4175
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.29518317678239225,
+            "median": 0.2991638004454961
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.00041091666666666663,
+            "median": 0.0004175
+          }
+        },
+        "powermetrics:ane:ane": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          }
+        },
+        "powermetrics:cpu:cpu": {
+          "energyJ": {
+            "count": 12,
+            "mean": 7.631060315076506,
+            "median": 7.569618761245891
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 5.491730760585919,
+            "median": 5.420941002897914
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.007631060315076505,
+            "median": 0.007569618761245891
+          }
+        },
+        "powermetrics:gpu:gpu": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.13712182628004982,
+            "median": 0.13603795891829895
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.09956081198959178,
+            "median": 0.10188486779879474
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.00013712182628004984,
+            "median": 0.00013603795891829894
+          }
+        }
+      }
+    },
+    {
+      "orm": "sequelize",
+      "scenario": "update-pet",
+      "profile": "populated",
+      "validTaskCount": 12,
+      "expectedTaskCount": 12,
+      "metrics": {
+        "workloadElapsedMs": {
+          "count": 12,
+          "mean": 622.21052075,
+          "median": 634.0229374999999
+        },
+        "throughputOpsPerSecond": {
+          "count": 12,
+          "mean": 1611.343604642713,
+          "median": 1577.2389876754169
+        }
+      },
+      "energyDomains": {
+        "ioreport:dram:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.20400000000000001,
+            "median": 0.203
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.32535603974471056,
+            "median": 0.3221147501838429
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.000204,
+            "median": 0.000203
+          }
+        },
+        "powermetrics:ane:ane": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          }
+        },
+        "powermetrics:cpu:cpu": {
+          "energyJ": {
+            "count": 12,
+            "mean": 2.917799529528982,
+            "median": 2.9717849099511895
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 4.698780185945837,
+            "median": 4.794746556628345
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.002917799529528982,
+            "median": 0.00297178490995119
+          }
+        },
+        "powermetrics:gpu:gpu": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.08349362947344036,
+            "median": 0.10933693007263537
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.1340349618705335,
+            "median": 0.17830659762812584
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 8.349362947344035e-05,
+            "median": 0.00010933693007263539
+          }
+        }
+      }
+    },
+    {
+      "orm": "sequelize",
+      "scenario": "update-owner",
+      "profile": "populated",
+      "validTaskCount": 12,
+      "expectedTaskCount": 12,
+      "metrics": {
+        "workloadElapsedMs": {
+          "count": 12,
+          "mean": 1362.28666325,
+          "median": 1344.8743749999999
+        },
+        "throughputOpsPerSecond": {
+          "count": 12,
+          "mean": 735.2030909484237,
+          "median": 743.6467153681863
+        }
+      },
+      "energyDomains": {
+        "ioreport:dram:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.39416666666666667,
+            "median": 0.398
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.2886159273718777,
+            "median": 0.2910927305781855
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.0003941666666666667,
+            "median": 0.000398
+          }
+        },
+        "powermetrics:ane:ane": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          }
+        },
+        "powermetrics:cpu:cpu": {
+          "energyJ": {
+            "count": 12,
+            "mean": 7.579989383206562,
+            "median": 7.467554158536501
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 5.561621588225784,
+            "median": 5.513150215622215
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.007579989383206562,
+            "median": 0.007467554158536501
+          }
+        },
+        "powermetrics:gpu:gpu": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.13726800619306467,
+            "median": 0.1370305780218949
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.101705844977457,
+            "median": 0.10193336150415755
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.00013726800619306466,
+            "median": 0.0001370305780218949
+          }
+        }
+      }
+    },
+    {
+      "orm": "sequelize",
+      "scenario": "update-owner",
+      "profile": "no-visits",
+      "validTaskCount": 12,
+      "expectedTaskCount": 12,
+      "metrics": {
+        "workloadElapsedMs": {
+          "count": 12,
+          "mean": 1357.3210624166668,
+          "median": 1347.3880625
+        },
+        "throughputOpsPerSecond": {
+          "count": 12,
+          "mean": 737.6461495313042,
+          "median": 742.1766863843169
+        }
+      },
+      "energyDomains": {
+        "ioreport:dram:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.396,
+            "median": 0.3915
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.29120018909694567,
+            "median": 0.29084244680501337
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.00039600000000000003,
+            "median": 0.00039150000000000003
+          }
+        },
+        "powermetrics:ane:ane": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          }
+        },
+        "powermetrics:cpu:cpu": {
+          "energyJ": {
+            "count": 12,
+            "mean": 7.524933534857151,
+            "median": 7.453875605525438
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 5.541518243334074,
+            "median": 5.562074141533666
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.007524933534857151,
+            "median": 0.0074538756055254375
+          }
+        },
+        "powermetrics:gpu:gpu": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.1390695794890629,
+            "median": 0.1372366685127115
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.10422745019497932,
+            "median": 0.10520037634955863
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.0001390695794890629,
+            "median": 0.0001372366685127115
+          }
+        }
+      }
+    },
+    {
+      "orm": "sequelize",
+      "scenario": "update-owner",
+      "profile": "no-pets",
+      "validTaskCount": 12,
+      "expectedTaskCount": 12,
+      "metrics": {
+        "workloadElapsedMs": {
+          "count": 12,
+          "mean": 1316.2049235833333,
+          "median": 1312.985104
+        },
+        "throughputOpsPerSecond": {
+          "count": 12,
+          "mean": 760.3376281499095,
+          "median": 761.6632915793242
+        }
+      },
+      "energyDomains": {
+        "ioreport:dram:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.38116666666666665,
+            "median": 0.3855
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.28846746628485176,
+            "median": 0.28590299307714595
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.0003811666666666667,
+            "median": 0.0003855
+          }
+        },
+        "powermetrics:ane:ane": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          }
+        },
+        "powermetrics:cpu:cpu": {
+          "energyJ": {
+            "count": 12,
+            "mean": 7.259424549297495,
+            "median": 7.162232409681758
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 5.516489168373161,
+            "median": 5.56829285645184
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.007259424549297495,
+            "median": 0.007162232409681758
+          }
+        },
+        "powermetrics:gpu:gpu": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.15108350616143373,
+            "median": 0.21721975540846228
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.11377012732926473,
+            "median": 0.16687905176043766
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.00015108350616143372,
+            "median": 0.00021721975540846226
+          }
+        }
+      }
+    },
+    {
+      "orm": "sequelize",
+      "scenario": "delete-visit",
+      "profile": "populated",
+      "validTaskCount": 12,
+      "expectedTaskCount": 12,
+      "metrics": {
+        "workloadElapsedMs": {
+          "count": 12,
+          "mean": 520.2016040833333,
+          "median": 529.2401245000001
+        },
+        "throughputOpsPerSecond": {
+          "count": 12,
+          "mean": 1927.7693092729855,
+          "median": 1889.5086575411308
+        }
+      },
+      "energyDomains": {
+        "ioreport:dram:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.16775,
+            "median": 0.167
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.32068379926508017,
+            "median": 0.3159970343341718
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.00016774999999999998,
+            "median": 0.000167
+          }
+        },
+        "powermetrics:ane:ane": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          }
+        },
+        "powermetrics:cpu:cpu": {
+          "energyJ": {
+            "count": 12,
+            "mean": 2.481370261111955,
+            "median": 2.4655029799721415
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 4.786310815373877,
+            "median": 4.709091551933804
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.0024813702611119546,
+            "median": 0.0024655029799721417
+          }
+        },
+        "powermetrics:gpu:gpu": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.07335482311171601,
+            "median": 0.09128657753528227
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.14227464687615665,
+            "median": 0.1825730473548259
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 7.335482311171601e-05,
+            "median": 9.128657753528229e-05
+          }
+        }
+      }
+    },
+    {
+      "orm": "sequelize",
+      "scenario": "delete-owner-visits",
+      "profile": "populated",
+      "validTaskCount": 12,
+      "expectedTaskCount": 12,
+      "metrics": {
+        "workloadElapsedMs": {
+          "count": 12,
+          "mean": 917.5835000833333,
+          "median": 927.5215000000001
+        },
+        "throughputOpsPerSecond": {
+          "count": 12,
+          "mean": 1091.485198327345,
+          "median": 1078.1455007746042
+        }
+      },
+      "energyDomains": {
+        "ioreport:dram:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.27066666666666667,
+            "median": 0.2705
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.2938249031211608,
+            "median": 0.2966643419651118
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.00027066666666666667,
+            "median": 0.0002705
+          }
+        },
+        "powermetrics:ane:ane": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          }
+        },
+        "powermetrics:cpu:cpu": {
+          "energyJ": {
+            "count": 12,
+            "mean": 4.992881937744256,
+            "median": 4.996405446916221
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 5.441840884496596,
+            "median": 5.319387949369344
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.004992881937744256,
+            "median": 0.004996405446916222
+          }
+        },
+        "powermetrics:gpu:gpu": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.11078565170778261,
+            "median": 0.1537257627847638
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.12114939512901629,
+            "median": 0.17046491973794106
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.0001107856517077826,
+            "median": 0.00015372576278476377
+          }
+        }
+      }
+    },
+    {
+      "orm": "sequelize",
+      "scenario": "delete-owner-visits",
+      "profile": "no-visits",
+      "validTaskCount": 12,
+      "expectedTaskCount": 12,
+      "metrics": {
+        "workloadElapsedMs": {
+          "count": 12,
+          "mean": 968.2030833333333,
+          "median": 970.638125
+        },
+        "throughputOpsPerSecond": {
+          "count": 12,
+          "mean": 1033.301974593355,
+          "median": 1030.2516229700284
+        }
+      },
+      "energyDomains": {
+        "ioreport:dram:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.27991666666666665,
+            "median": 0.27949999999999997
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.287982769597257,
+            "median": 0.29521366376259733
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.0002799166666666667,
+            "median": 0.0002795
+          }
+        },
+        "powermetrics:ane:ane": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          }
+        },
+        "powermetrics:cpu:cpu": {
+          "energyJ": {
+            "count": 12,
+            "mean": 5.348896305522796,
+            "median": 5.2965947904477755
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 5.527923310338311,
+            "median": 5.469587018263271
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.005348896305522797,
+            "median": 0.005296594790447775
+          }
+        },
+        "powermetrics:gpu:gpu": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.11690225281732536,
+            "median": 0.16137548720605138
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.12145777975507598,
+            "median": 0.17030038013896426
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.00011690225281732536,
+            "median": 0.0001613754872060514
+          }
+        }
+      }
+    },
+    {
+      "orm": "sequelize",
+      "scenario": "delete-owner-visits",
+      "profile": "no-pets",
+      "validTaskCount": 12,
+      "expectedTaskCount": 12,
+      "metrics": {
+        "workloadElapsedMs": {
+          "count": 12,
+          "mean": 594.6123263333334,
+          "median": 577.4325835
+        },
+        "throughputOpsPerSecond": {
+          "count": 12,
+          "mean": 1690.9194331918031,
+          "median": 1731.8301760159804
+        }
+      },
+      "energyDomains": {
+        "ioreport:dram:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.18,
+            "median": 0.176
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.3007928190075038,
+            "median": 0.29877795886287284
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.00017999999999999998,
+            "median": 0.000176
+          }
+        },
+        "powermetrics:ane:ane": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          }
+        },
+        "powermetrics:cpu:cpu": {
+          "energyJ": {
+            "count": 12,
+            "mean": 3.0689522603317085,
+            "median": 3.053922676662898
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 5.170584538654143,
+            "median": 5.154778480380923
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.0030689522603317082,
+            "median": 0.003053922676662898
+          }
+        },
+        "powermetrics:gpu:gpu": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.08196875784250082,
+            "median": 0.10686738818888333
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.13870317853149697,
+            "median": 0.18143605849115949
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 8.196875784250082e-05,
+            "median": 0.00010686738818888333
+          }
+        }
+      }
+    },
+    {
+      "orm": "drizzle",
+      "scenario": "read-pet",
+      "profile": "populated",
+      "validTaskCount": 12,
+      "expectedTaskCount": 12,
+      "metrics": {
+        "workloadElapsedMs": {
+          "count": 12,
+          "mean": 486.68157641666664,
+          "median": 485.0284795
+        },
+        "throughputOpsPerSecond": {
+          "count": 12,
+          "mean": 2055.7077838171977,
+          "median": 2061.7438544921006
+        }
+      },
+      "energyDomains": {
+        "ioreport:dram:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.15291666666666667,
+            "median": 0.149
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.3116692079143868,
+            "median": 0.3075448662226644
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.00015291666666666665,
+            "median": 0.000149
+          }
+        },
+        "powermetrics:ane:ane": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          }
+        },
+        "powermetrics:cpu:cpu": {
+          "energyJ": {
+            "count": 12,
+            "mean": 2.278046443877604,
+            "median": 2.326093502148434
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 4.686212674689614,
+            "median": 4.808358663496047
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.0022780464438776037,
+            "median": 0.002326093502148434
+          }
+        },
+        "powermetrics:gpu:gpu": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.0648423702839638,
+            "median": 0.06426078056705833
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.13309635485428642,
+            "median": 0.13184573164264293
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 6.48423702839638e-05,
+            "median": 6.426078056705833e-05
+          }
+        }
+      }
+    },
+    {
+      "orm": "drizzle",
+      "scenario": "read-owner",
+      "profile": "populated",
+      "validTaskCount": 12,
+      "expectedTaskCount": 12,
+      "metrics": {
+        "workloadElapsedMs": {
+          "count": 12,
+          "mean": 1369.5010520833334,
+          "median": 1360.451188
+        },
+        "throughputOpsPerSecond": {
+          "count": 12,
+          "mean": 730.4499603992656,
+          "median": 735.0504570103512
+        }
+      },
+      "energyDomains": {
+        "ioreport:dram:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.38916666666666666,
+            "median": 0.3825
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.28341799907783594,
+            "median": 0.27927635824901675
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.0003891666666666667,
+            "median": 0.00038250000000000003
+          }
+        },
+        "powermetrics:ane:ane": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          }
+        },
+        "powermetrics:cpu:cpu": {
+          "energyJ": {
+            "count": 12,
+            "mean": 7.694115275622332,
+            "median": 7.656722200812581
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 5.617360829692903,
+            "median": 5.601570082599225
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.007694115275622333,
+            "median": 0.007656722200812581
+          }
+        },
+        "powermetrics:gpu:gpu": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.1367180483967443,
+            "median": 0.13724606982765652
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.10023278686340899,
+            "median": 0.10015968670595565
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.00013671804839674432,
+            "median": 0.0001372460698276565
+          }
+        }
+      }
+    },
+    {
+      "orm": "drizzle",
+      "scenario": "read-owner",
+      "profile": "no-visits",
+      "validTaskCount": 12,
+      "expectedTaskCount": 12,
+      "metrics": {
+        "workloadElapsedMs": {
+          "count": 12,
+          "mean": 1371.0351529166667,
+          "median": 1362.0272705
+        },
+        "throughputOpsPerSecond": {
+          "count": 12,
+          "mean": 729.6213285729444,
+          "median": 734.2004695982105
+        }
+      },
+      "energyDomains": {
+        "ioreport:dram:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.38325,
+            "median": 0.3765
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.27865654996542366,
+            "median": 0.27368264139857523
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.00038325,
+            "median": 0.0003765
+          }
+        },
+        "powermetrics:ane:ane": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          }
+        },
+        "powermetrics:cpu:cpu": {
+          "energyJ": {
+            "count": 12,
+            "mean": 7.751879903076457,
+            "median": 7.641800086576557
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 5.652233704160373,
+            "median": 5.6195126926674295
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.007751879903076457,
+            "median": 0.007641800086576557
+          }
+        },
+        "powermetrics:gpu:gpu": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.13725647993136664,
+            "median": 0.13629421788206286
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.10032789968602458,
+            "median": 0.10004217824034377
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.00013725647993136664,
+            "median": 0.00013629421788206286
+          }
+        }
+      }
+    },
+    {
+      "orm": "drizzle",
+      "scenario": "read-owner",
+      "profile": "no-pets",
+      "validTaskCount": 12,
+      "expectedTaskCount": 12,
+      "metrics": {
+        "workloadElapsedMs": {
+          "count": 12,
+          "mean": 948.9011805833334,
+          "median": 949.635125
+        },
+        "throughputOpsPerSecond": {
+          "count": 12,
+          "mean": 1054.1453114120661,
+          "median": 1053.0398502487146
+        }
+      },
+      "energyDomains": {
+        "ioreport:dram:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.2786666666666667,
+            "median": 0.278
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.2923615240902778,
+            "median": 0.28981946630846706
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.00027866666666666665,
+            "median": 0.00027800000000000004
+          }
+        },
+        "powermetrics:ane:ane": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          }
+        },
+        "powermetrics:cpu:cpu": {
+          "energyJ": {
+            "count": 12,
+            "mean": 5.153655030123113,
+            "median": 5.102625933641019
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 5.4291501164914795,
+            "median": 5.423133513706251
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.005153655030123113,
+            "median": 0.005102625933641019
+          }
+        },
+        "powermetrics:gpu:gpu": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.10504894717281855,
+            "median": 0.10356691193128925
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.11080200351318788,
+            "median": 0.10772112446388585
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.00010504894717281856,
+            "median": 0.00010356691193128926
+          }
+        }
+      }
+    },
+    {
+      "orm": "drizzle",
+      "scenario": "create-pet",
+      "profile": "populated",
+      "validTaskCount": 12,
+      "expectedTaskCount": 12,
+      "metrics": {
+        "workloadElapsedMs": {
+          "count": 12,
+          "mean": 600.7095243333333,
+          "median": 598.5841875
+        },
+        "throughputOpsPerSecond": {
+          "count": 12,
+          "mean": 1669.4999896121833,
+          "median": 1670.8941891969503
+        }
+      },
+      "energyDomains": {
+        "ioreport:dram:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.18866666666666668,
+            "median": 0.1875
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.31189868399374904,
+            "median": 0.30834787834173133
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.00018866666666666665,
+            "median": 0.0001875
+          }
+        },
+        "powermetrics:ane:ane": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          }
+        },
+        "powermetrics:cpu:cpu": {
+          "energyJ": {
+            "count": 12,
+            "mean": 2.7569438880480606,
+            "median": 2.734967703211093
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 4.60780097492333,
+            "median": 4.649660511877546
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.0027569438880480604,
+            "median": 0.002734967703211093
+          }
+        },
+        "powermetrics:gpu:gpu": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.07673222290949021,
+            "median": 0.07544723437263165
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.12772247195838488,
+            "median": 0.12968247771986144
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 7.67322229094902e-05,
+            "median": 7.544723437263165e-05
+          }
+        }
+      }
+    },
+    {
+      "orm": "drizzle",
+      "scenario": "create-owner",
+      "profile": "populated",
+      "validTaskCount": 12,
+      "expectedTaskCount": 12,
+      "metrics": {
+        "workloadElapsedMs": {
+          "count": 12,
+          "mean": 1288.7066354166666,
+          "median": 1248.7604995
+        },
+        "throughputOpsPerSecond": {
+          "count": 12,
+          "mean": 778.4850706349662,
+          "median": 800.7998646897984
+        }
+      },
+      "energyDomains": {
+        "ioreport:dram:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.38258333333333333,
+            "median": 0.3875
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.29678492325828865,
+            "median": 0.28820829993945213
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.00038258333333333335,
+            "median": 0.00038750000000000004
+          }
+        },
+        "powermetrics:ane:ane": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          }
+        },
+        "powermetrics:cpu:cpu": {
+          "energyJ": {
+            "count": 12,
+            "mean": 7.193133992742466,
+            "median": 7.130000254082105
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 5.582102425816119,
+            "median": 5.580682170748189
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.0071931339927424655,
+            "median": 0.007130000254082105
+          }
+        },
+        "powermetrics:gpu:gpu": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.1282241869786446,
+            "median": 0.1269900843615186
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.10194999566063129,
+            "median": 0.10254348351598161
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.00012822418697864461,
+            "median": 0.00012699008436151861
+          }
+        }
+      }
+    },
+    {
+      "orm": "drizzle",
+      "scenario": "update-pet",
+      "profile": "populated",
+      "validTaskCount": 12,
+      "expectedTaskCount": 12,
+      "metrics": {
+        "workloadElapsedMs": {
+          "count": 12,
+          "mean": 611.4929340833334,
+          "median": 604.3777715
+        },
+        "throughputOpsPerSecond": {
+          "count": 12,
+          "mean": 1636.4280007748207,
+          "median": 1654.6108391038783
+        }
+      },
+      "energyDomains": {
+        "ioreport:dram:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.1935,
+            "median": 0.1965
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.31440745659624286,
+            "median": 0.31520246136850993
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.0001935,
+            "median": 0.0001965
+          }
+        },
+        "powermetrics:ane:ane": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          }
+        },
+        "powermetrics:cpu:cpu": {
+          "energyJ": {
+            "count": 12,
+            "mean": 2.7512790068651296,
+            "median": 2.6967943956799183
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 4.504279877997984,
+            "median": 4.444678947949054
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.0027512790068651297,
+            "median": 0.0026967943956799183
+          }
+        },
+        "powermetrics:gpu:gpu": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.0763764631141068,
+            "median": 0.077496079426007
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.12554671784356045,
+            "median": 0.12569250879467575
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 7.63764631141068e-05,
+            "median": 7.7496079426007e-05
+          }
+        }
+      }
+    },
+    {
+      "orm": "drizzle",
+      "scenario": "update-owner",
+      "profile": "populated",
+      "validTaskCount": 12,
+      "expectedTaskCount": 12,
+      "metrics": {
+        "workloadElapsedMs": {
+          "count": 12,
+          "mean": 1304.7676979166667,
+          "median": 1300.1749165
+        },
+        "throughputOpsPerSecond": {
+          "count": 12,
+          "mean": 767.1068258866633,
+          "median": 769.1432611062788
+        }
+      },
+      "energyDomains": {
+        "ioreport:dram:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.37383333333333335,
+            "median": 0.3695
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.2857938334094892,
+            "median": 0.28418140708572115
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.00037383333333333333,
+            "median": 0.0003695
+          }
+        },
+        "powermetrics:ane:ane": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          }
+        },
+        "powermetrics:cpu:cpu": {
+          "energyJ": {
+            "count": 12,
+            "mean": 7.2252541849329734,
+            "median": 7.272399777204077
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 5.535743456158296,
+            "median": 5.517159277613965
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.007225254184932973,
+            "median": 0.007272399777204078
+          }
+        },
+        "powermetrics:gpu:gpu": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.13071233912062574,
+            "median": 0.1280358544374374
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.10181919418707114,
+            "median": 0.09918264753711786
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.00013071233912062574,
+            "median": 0.00012803585443743742
+          }
+        }
+      }
+    },
+    {
+      "orm": "drizzle",
+      "scenario": "update-owner",
+      "profile": "no-visits",
+      "validTaskCount": 12,
+      "expectedTaskCount": 12,
+      "metrics": {
+        "workloadElapsedMs": {
+          "count": 12,
+          "mean": 1322.51470475,
+          "median": 1325.434604
+        },
+        "throughputOpsPerSecond": {
+          "count": 12,
+          "mean": 757.1680944403693,
+          "median": 754.4785564006296
+        }
+      },
+      "energyDomains": {
+        "ioreport:dram:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.38058333333333333,
+            "median": 0.377
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.2869113377778693,
+            "median": 0.28778091260524785
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.00038058333333333336,
+            "median": 0.000377
+          }
+        },
+        "powermetrics:ane:ane": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          }
+        },
+        "powermetrics:cpu:cpu": {
+          "energyJ": {
+            "count": 12,
+            "mean": 7.317876303749793,
+            "median": 7.281221060745523
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 5.533735264578343,
+            "median": 5.5471534028929295
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.007317876303749794,
+            "median": 0.007281221060745522
+          }
+        },
+        "powermetrics:gpu:gpu": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.13278843461024623,
+            "median": 0.1320183222891553
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.09987022085602414,
+            "median": 0.10093072110650739
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.0001327884346102462,
+            "median": 0.00013201832228915532
+          }
+        }
+      }
+    },
+    {
+      "orm": "drizzle",
+      "scenario": "update-owner",
+      "profile": "no-pets",
+      "validTaskCount": 12,
+      "expectedTaskCount": 12,
+      "metrics": {
+        "workloadElapsedMs": {
+          "count": 12,
+          "mean": 1277.0835243333333,
+          "median": 1274.038458
+        },
+        "throughputOpsPerSecond": {
+          "count": 12,
+          "mean": 783.6032459629122,
+          "median": 784.9060563853346
+        }
+      },
+      "energyDomains": {
+        "ioreport:dram:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.3625,
+            "median": 0.3595
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.2829574731915544,
+            "median": 0.2823384000544681
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.00036250000000000003,
+            "median": 0.0003595
+          }
+        },
+        "powermetrics:ane:ane": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          }
+        },
+        "powermetrics:cpu:cpu": {
+          "energyJ": {
+            "count": 12,
+            "mean": 6.980543953930128,
+            "median": 6.982957649050394
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 5.465963389310791,
+            "median": 5.45778842321829
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.006980543953930128,
+            "median": 0.006982957649050393
+          }
+        },
+        "powermetrics:gpu:gpu": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.13084045018634508,
+            "median": 0.12940326408759228
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.10286962333636523,
+            "median": 0.10176444133244528
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.00013084045018634506,
+            "median": 0.0001294032640875923
+          }
+        }
+      }
+    },
+    {
+      "orm": "drizzle",
+      "scenario": "delete-visit",
+      "profile": "populated",
+      "validTaskCount": 12,
+      "expectedTaskCount": 12,
+      "metrics": {
+        "workloadElapsedMs": {
+          "count": 12,
+          "mean": 516.4568574166667,
+          "median": 525.2930205
+        },
+        "throughputOpsPerSecond": {
+          "count": 12,
+          "mean": 1945.1016132742693,
+          "median": 1903.992889745603
+        }
+      },
+      "energyDomains": {
+        "ioreport:dram:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.16075,
+            "median": 0.157
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.30913651792401214,
+            "median": 0.3079125800536425
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.00016075,
+            "median": 0.000157
+          }
+        },
+        "powermetrics:ane:ane": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          }
+        },
+        "powermetrics:cpu:cpu": {
+          "energyJ": {
+            "count": 12,
+            "mean": 2.5093973250133845,
+            "median": 2.499815341314314
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 4.878529054924592,
+            "median": 4.907542510762053
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.0025093973250133843,
+            "median": 0.0024998153413143143
+          }
+        },
+        "powermetrics:gpu:gpu": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.06948076587217679,
+            "median": 0.06593265191316067
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.13470653103729813,
+            "median": 0.13719727595265493
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 6.948076587217679e-05,
+            "median": 6.593265191316068e-05
+          }
+        }
+      }
+    },
+    {
+      "orm": "drizzle",
+      "scenario": "delete-owner-visits",
+      "profile": "populated",
+      "validTaskCount": 12,
+      "expectedTaskCount": 12,
+      "metrics": {
+        "workloadElapsedMs": {
+          "count": 12,
+          "mean": 791.11996525,
+          "median": 781.2491249999999
+        },
+        "throughputOpsPerSecond": {
+          "count": 12,
+          "mean": 1264.8058849813326,
+          "median": 1280.0042167558163
+        }
+      },
+      "energyDomains": {
+        "ioreport:dram:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.23358333333333334,
+            "median": 0.229
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.2938828719809463,
+            "median": 0.29321428652846593
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.00023358333333333334,
+            "median": 0.000229
+          }
+        },
+        "powermetrics:ane:ane": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          }
+        },
+        "powermetrics:cpu:cpu": {
+          "energyJ": {
+            "count": 12,
+            "mean": 4.110748214484811,
+            "median": 4.137496826581705
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 5.1966687953337,
+            "median": 5.253643127892721
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.004110748214484811,
+            "median": 0.004137496826581705
+          }
+        },
+        "powermetrics:gpu:gpu": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.0909773170912664,
+            "median": 0.08912005151383612
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.11569405601192424,
+            "median": 0.11639997074093549
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 9.09773170912664e-05,
+            "median": 8.912005151383613e-05
+          }
+        }
+      }
+    },
+    {
+      "orm": "drizzle",
+      "scenario": "delete-owner-visits",
+      "profile": "no-visits",
+      "validTaskCount": 12,
+      "expectedTaskCount": 12,
+      "metrics": {
+        "workloadElapsedMs": {
+          "count": 12,
+          "mean": 779.4004585,
+          "median": 780.2665215
+        },
+        "throughputOpsPerSecond": {
+          "count": 12,
+          "mean": 1283.9259323196484,
+          "median": 1281.6137617556165
+        }
+      },
+      "energyDomains": {
+        "ioreport:dram:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.22783333333333333,
+            "median": 0.227
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.2906412194881846,
+            "median": 0.2883898439115178
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.00022783333333333333,
+            "median": 0.00022700000000000002
+          }
+        },
+        "powermetrics:ane:ane": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          }
+        },
+        "powermetrics:cpu:cpu": {
+          "energyJ": {
+            "count": 12,
+            "mean": 4.24868405890345,
+            "median": 4.226850427611025
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 5.454455232509449,
+            "median": 5.39879893680847
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.00424868405890345,
+            "median": 0.004226850427611024
+          }
+        },
+        "powermetrics:gpu:gpu": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.09031049671884817,
+            "median": 0.08959907893714511
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.115374826256354,
+            "median": 0.11508078645818062
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 9.031049671884816e-05,
+            "median": 8.959907893714512e-05
+          }
+        }
+      }
+    },
+    {
+      "orm": "drizzle",
+      "scenario": "delete-owner-visits",
+      "profile": "no-pets",
+      "validTaskCount": 12,
+      "expectedTaskCount": 12,
+      "metrics": {
+        "workloadElapsedMs": {
+          "count": 12,
+          "mean": 636.5647916666667,
+          "median": 623.5554585
+        },
+        "throughputOpsPerSecond": {
+          "count": 12,
+          "mean": 1574.1958878414302,
+          "median": 1603.7071686738977
+        }
+      },
+      "energyDomains": {
+        "ioreport:dram:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.19266666666666665,
+            "median": 0.19
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.30014666154892033,
+            "median": 0.2988549311905824
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.00019266666666666667,
+            "median": 0.00019
+          }
+        },
+        "powermetrics:ane:ane": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0,
+            "median": 0.0
+          }
+        },
+        "powermetrics:cpu:cpu": {
+          "energyJ": {
+            "count": 12,
+            "mean": 3.17983821917925,
+            "median": 3.1163606357629083
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 4.995474799917469,
+            "median": 4.958337451544116
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.0031798382191792498,
+            "median": 0.0031163606357629083
+          }
+        },
+        "powermetrics:gpu:gpu": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.07876846509447896,
+            "median": 0.07818304659501857
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.12404943934383318,
+            "median": 0.12213533418291975
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 7.876846509447896e-05,
+            "median": 7.818304659501857e-05
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "layoutVersion": 2,
+  "size": 1000,
+  "profiles": {
+    "populated": {
+      "owners": {
+        "start": 1,
+        "count": 1000
+      },
+      "pets": {
+        "start": 1,
+        "count": 2000
+      },
+      "visits": {
+        "start": 1,
+        "count": 4000
+      }
+    },
+    "no-visits": {
+      "owners": {
+        "start": 1001,
+        "count": 1000
+      },
+      "pets": {
+        "start": 2001,
+        "count": 2000
+      },
+      "visits": {
+        "start": 4001,
+        "count": 0
+      }
+    },
+    "no-pets": {
+      "owners": {
+        "start": 2001,
+        "count": 1000
+      },
+      "pets": {
+        "start": 4001,
+        "count": 0
+      },
+      "visits": {
+        "start": 4001,
+        "count": 0
+      }
+    }
+  },
+  "dataset": {
+    "generatorVersion": "petclinic-v1",
+    "seed": 52,
+    "contentSha256": "dd1b61691f3365f02a5538ad6ae482962eec31ba8b31191be333a5ce92092b63"
+  },
+  "sha256": "ca86e487bd71321bba9359105f99d56d655cf9baf5acc345d78ec5cebcd818dc",
+  "createdAt": "2026-10-18T15:23:56.387Z"
+}

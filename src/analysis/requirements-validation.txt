@@ -1,0 +1,26 @@
+# Exact environment used to validate this package on Python 3.14.5, macOS arm64.
+# Not a record of the original study's Python environment; see requirements.txt
+# for portable minimum constraints. Platform/Python-specific wheels may differ.
+contourpy==1.4.0
+cycler==0.12.1
+fonttools==4.68.0
+formulaic==1.2.2
+interface_meta==2.0.1
+kiwisolver==1.5.1
+matplotlib==3.11.2
+narwhals==2.28.0
+numpy==2.5.4
+packaging==26.3
+pandas==3.1.0
+patsy==1.0.3
+pillow==13.0.0
+pyparsing==3.3.3
+python-dateutil==3.0.0
+scikit-posthocs==0.17.1
+scipy==1.18.1
+seaborn==0.13.2
+six==1.17.0
+statsmodels==0.15.0
+typing_extensions==4.16.0
+tzdata==2026.6
+wrapt==2.6.0.dev1

@@ -1,0 +1,6 @@
+{"start": 183087.562462458, "end": 183087.679511291, "energyJ": {"cpu": 0.021, "gpu": 0.016, "ane": 0.0}, "receivedMonotonicSeconds": 183087.679511291, "receiptLagMs": 0.0}
+{"start": 183087.679511291, "end": 183087.79792712402, "energyJ": {"cpu": 0.48, "gpu": 0.021, "ane": 0.0}, "receivedMonotonicSeconds": 183087.794944666, "receiptLagMs": -2.982458012411371}
+{"start": 183087.79792712402, "end": 183087.91482058202, "energyJ": {"cpu": 0.598, "gpu": 0.027, "ane": 0.0}, "receivedMonotonicSeconds": 183087.912276166, "receiptLagMs": -2.5444160273764282}
+{"start": 183087.91482058202, "end": 183088.03096354002, "energyJ": {"cpu": 0.749, "gpu": 0.02, "ane": 0.0}, "receivedMonotonicSeconds": 183088.028524791, "receiptLagMs": -2.4387490120716393}
+{"start": 183088.03096354002, "end": 183088.14798570602, "energyJ": {"cpu": 0.654, "gpu": 0.027, "ane": 0.0}, "receivedMonotonicSeconds": 183088.145382833, "receiptLagMs": -2.6028730208054185}
+{"start": 183088.14798570602, "end": 183088.26597162202, "energyJ": {"cpu": 0.333, "gpu": 0.02, "ane": 0.0}, "receivedMonotonicSeconds": 183088.264083416, "receiptLagMs": -1.8882060248870403}

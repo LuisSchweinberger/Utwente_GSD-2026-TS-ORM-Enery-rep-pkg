@@ -1,0 +1,13 @@
+READY
+PROGRESS 100 1000
+PROGRESS 200 1000
+PROGRESS 300 1000
+PROGRESS 400 1000
+PROGRESS 500 1000
+PROGRESS 600 1000
+PROGRESS 700 1000
+PROGRESS 800 1000
+PROGRESS 900 1000
+PROGRESS 1000 1000
+DONE
+Saved 1000/1000 request outcomes to /Users/luis/Nextcloud/Luis/Studium/Q1-GreenSoftwareDevelopment/Project/Benchmark/results/experiment-42/trials/trial-012/sequelize/delete-visit-populated.execution.json

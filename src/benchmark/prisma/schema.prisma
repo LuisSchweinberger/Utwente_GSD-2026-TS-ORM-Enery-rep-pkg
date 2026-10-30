@@ -1,0 +1,71 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Vet {
+  id          Int            @id @default(autoincrement())
+  firstName   String?        @map("first_name")
+  lastName    String?        @map("last_name")
+  specialties VetSpecialty[]
+  @@map("vets")
+}
+
+model Specialty {
+  id   Int            @id @default(autoincrement())
+  name String?
+  vets VetSpecialty[]
+  @@map("specialties")
+}
+
+model VetSpecialty {
+  vetId       Int       @map("vet_id")
+  specialtyId Int       @map("specialty_id")
+  vet         Vet       @relation(fields: [vetId], references: [id])
+  specialty   Specialty @relation(fields: [specialtyId], references: [id])
+  @@unique([vetId, specialtyId])
+  @@map("vet_specialties")
+}
+
+model Type {
+  id   Int     @id @default(autoincrement())
+  name String?
+  pets Pet[]
+  @@map("types")
+}
+
+model Owner {
+  id        Int     @id @default(autoincrement())
+  firstName String? @map("first_name")
+  lastName  String? @map("last_name")
+  address   String?
+  city      String?
+  telephone String?
+  pets      Pet[]
+  @@map("owners")
+}
+
+model Pet {
+  id        Int      @id @default(autoincrement())
+  name      String?
+  birthDate DateTime? @map("birth_date") @db.Date
+  typeId    Int      @map("type_id")
+  ownerId   Int?     @map("owner_id")
+  type      Type     @relation(fields: [typeId], references: [id])
+  owner     Owner?   @relation(fields: [ownerId], references: [id])
+  visits    Visit[]
+  @@map("pets")
+}
+
+model Visit {
+  id          Int       @id @default(autoincrement())
+  petId       Int?      @map("pet_id")
+  visitDate   DateTime? @map("visit_date") @db.Date
+  description String?
+  pet         Pet?      @relation(fields: [petId], references: [id])
+  @@map("visits")
+}

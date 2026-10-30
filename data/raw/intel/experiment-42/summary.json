@@ -1,0 +1,5892 @@
+{
+  "formatVersion": 1,
+  "createdAt": "2026-10-18T15:45:35.472436+00:00",
+  "runStatus": "completed",
+  "complete": true,
+  "trialsPlanned": 12,
+  "trialsCompleted": 12,
+  "invalidTaskResults": 0,
+  "baselineAdjustment": "none; raw workload energy",
+  "groups": [
+    {
+      "orm": "prisma",
+      "scenario": "read-pet",
+      "profile": "populated",
+      "validTaskCount": 12,
+      "expectedTaskCount": 12,
+      "metrics": {
+        "workloadElapsedMs": {
+          "count": 12,
+          "mean": 2094.6524604166666,
+          "median": 2080.1056805
+        },
+        "throughputOpsPerSecond": {
+          "count": 12,
+          "mean": 477.6528849095622,
+          "median": 480.745498052541
+        }
+      },
+      "energyDomains": {
+        "intel-rapl-mmio:0:0:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 3.3489804166666666,
+            "median": 3.268119
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 1.5963615018552284,
+            "median": 1.571443424058303
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.0033489804166666665,
+            "median": 0.003268119
+          }
+        },
+        "intel-rapl-mmio:0:package-0": {
+          "energyJ": {
+            "count": 12,
+            "mean": 15.573029333333333,
+            "median": 14.950584
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 7.4149696501479045,
+            "median": 7.209003101482641
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.015573029333333334,
+            "median": 0.014950584
+          }
+        },
+        "intel-rapl:0:0:core": {
+          "energyJ": {
+            "count": 12,
+            "mean": 12.34554925,
+            "median": 11.768860499999999
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 5.875220715157068,
+            "median": 5.67189513696147
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.01234554925,
+            "median": 0.011768860499999999
+          }
+        },
+        "intel-rapl:0:1:uncore": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.03738908333333334,
+            "median": 0.033965999999999996
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.017836151629378124,
+            "median": 0.016355691130768797
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 3.7389083333333334e-05,
+            "median": 3.3966e-05
+          }
+        },
+        "intel-rapl:0:2:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 3.3481513333333335,
+            "median": 3.267753
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 1.5959626749237306,
+            "median": 1.5710433135195507
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.0033481513333333333,
+            "median": 0.003267753
+          }
+        },
+        "intel-rapl:0:package-0": {
+          "energyJ": {
+            "count": 12,
+            "mean": 15.56952475,
+            "median": 14.942802
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 7.4132838049685565,
+            "median": 7.207186900735254
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.01556952475,
+            "median": 0.014942802000000002
+          }
+        },
+        "intel-rapl:1:psys": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.13577733333333333,
+            "median": 0.13531500000000002
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.06480572382731552,
+            "median": 0.06499752814850603
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.00013577733333333333,
+            "median": 0.000135315
+          }
+        }
+      }
+    },
+    {
+      "orm": "prisma",
+      "scenario": "read-owner",
+      "profile": "populated",
+      "validTaskCount": 12,
+      "expectedTaskCount": 12,
+      "metrics": {
+        "workloadElapsedMs": {
+          "count": 12,
+          "mean": 4430.915711583333,
+          "median": 4415.9208545
+        },
+        "throughputOpsPerSecond": {
+          "count": 12,
+          "mean": 225.8603968431257,
+          "median": 226.45333396718877
+        }
+      },
+      "energyDomains": {
+        "intel-rapl-mmio:0:0:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 5.634430583333334,
+            "median": 5.499893999999999
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 1.2693001646959163,
+            "median": 1.2463807813073675
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.005634430583333333,
+            "median": 0.005499894
+          }
+        },
+        "intel-rapl-mmio:0:package-0": {
+          "energyJ": {
+            "count": 12,
+            "mean": 35.199367583333334,
+            "median": 33.9174545
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 7.9229774552050625,
+            "median": 7.66772224361824
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.035199367583333335,
+            "median": 0.0339174545
+          }
+        },
+        "intel-rapl:0:0:core": {
+          "energyJ": {
+            "count": 12,
+            "mean": 28.909420833333332,
+            "median": 27.663717
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 6.504410883124608,
+            "median": 6.2600874380568
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.028909420833333335,
+            "median": 0.027663716999999997
+          }
+        },
+        "intel-rapl:0:1:uncore": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.069173,
+            "median": 0.06967100000000001
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.015599259950783003,
+            "median": 0.015409947924298534
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 6.9173e-05,
+            "median": 6.9671e-05
+          }
+        },
+        "intel-rapl:0:2:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 5.634008416666667,
+            "median": 5.499893999999999
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 1.2692069868251037,
+            "median": 1.2463807813073675
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.005634008416666667,
+            "median": 0.005499894
+          }
+        },
+        "intel-rapl:0:package-0": {
+          "energyJ": {
+            "count": 12,
+            "mean": 35.19718558333333,
+            "median": 33.91302949999999
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 7.922482284456445,
+            "median": 7.666903615866994
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.03519718558333333,
+            "median": 0.0339130295
+          }
+        },
+        "intel-rapl:1:psys": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.2879325833333333,
+            "median": 0.288055
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.06498741212861102,
+            "median": 0.06514563879516622
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.0002879325833333333,
+            "median": 0.000288055
+          }
+        }
+      }
+    },
+    {
+      "orm": "prisma",
+      "scenario": "read-owner",
+      "profile": "no-visits",
+      "validTaskCount": 12,
+      "expectedTaskCount": 12,
+      "metrics": {
+        "workloadElapsedMs": {
+          "count": 12,
+          "mean": 4320.430841166667,
+          "median": 4317.035796
+        },
+        "throughputOpsPerSecond": {
+          "count": 12,
+          "mean": 231.49024982691532,
+          "median": 231.64042720593557
+        }
+      },
+      "energyDomains": {
+        "intel-rapl-mmio:0:0:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 5.3927880833333335,
+            "median": 5.407426
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 1.2479487647297802,
+            "median": 1.248321442091276
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.005392788083333333,
+            "median": 0.005407426
+          }
+        },
+        "intel-rapl-mmio:0:package-0": {
+          "energyJ": {
+            "count": 12,
+            "mean": 33.1969975,
+            "median": 33.222419
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 7.682038613528326,
+            "median": 7.674208181582296
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.0331969975,
+            "median": 0.033222419
+          }
+        },
+        "intel-rapl:0:0:core": {
+          "energyJ": {
+            "count": 12,
+            "mean": 27.099285666666667,
+            "median": 27.103416
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 6.270943730656853,
+            "median": 6.263364641431819
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.027099285666666667,
+            "median": 0.027103415999999998
+          }
+        },
+        "intel-rapl:0:1:uncore": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.06575,
+            "median": 0.0688475
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.01521758946073267,
+            "median": 0.015882920351511134
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 6.575e-05,
+            "median": 6.884750000000001e-05
+          }
+        },
+        "intel-rapl:0:2:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 5.3921522500000005,
+            "median": 5.4065715
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 1.2478024924021245,
+            "median": 1.2481357425412911
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.00539215225,
+            "median": 0.0054065715
+          }
+        },
+        "intel-rapl:0:package-0": {
+          "energyJ": {
+            "count": 12,
+            "mean": 33.19457125,
+            "median": 33.2216555
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 7.681483751678282,
+            "median": 7.673123269542429
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.03319457125,
+            "median": 0.0332216555
+          }
+        },
+        "intel-rapl:1:psys": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.28061875000000003,
+            "median": 0.27978400000000003
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.06494020008554587,
+            "median": 0.06486245693853294
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.00028061875,
+            "median": 0.000279784
+          }
+        }
+      }
+    },
+    {
+      "orm": "prisma",
+      "scenario": "read-owner",
+      "profile": "no-pets",
+      "validTaskCount": 12,
+      "expectedTaskCount": 12,
+      "metrics": {
+        "workloadElapsedMs": {
+          "count": 12,
+          "mean": 2933.288063416667,
+          "median": 2907.132505
+        },
+        "throughputOpsPerSecond": {
+          "count": 12,
+          "mean": 341.12590573223474,
+          "median": 343.9832228714197
+        }
+      },
+      "energyDomains": {
+        "intel-rapl-mmio:0:0:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 4.242496833333333,
+            "median": 4.1187945
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 1.4439549231087359,
+            "median": 1.4188822560102539
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.004242496833333333,
+            "median": 0.0041187945
+          }
+        },
+        "intel-rapl-mmio:0:package-0": {
+          "energyJ": {
+            "count": 12,
+            "mean": 22.073750166666667,
+            "median": 21.276435
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 7.5053814897392,
+            "median": 7.293268434620275
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.022073750166666666,
+            "median": 0.021276435
+          }
+        },
+        "intel-rapl:0:0:core": {
+          "energyJ": {
+            "count": 12,
+            "mean": 17.723786,
+            "median": 16.9541495
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 6.023367881308411,
+            "median": 5.816186012621193
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.017723786000000002,
+            "median": 0.0169541495
+          }
+        },
+        "intel-rapl:0:1:uncore": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.04727675,
+            "median": 0.0475155
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.016099636495936463,
+            "median": 0.016317533622746117
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 4.727675e-05,
+            "median": 4.75155e-05
+          }
+        },
+        "intel-rapl:0:2:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 4.242736,
+            "median": 4.1192525
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 1.4440363588337832,
+            "median": 1.4188822560102539
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.004242736,
+            "median": 0.0041192525
+          }
+        },
+        "intel-rapl:0:package-0": {
+          "energyJ": {
+            "count": 12,
+            "mean": 22.0762425,
+            "median": 21.284003
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 7.506232720637884,
+            "median": 7.293268434620275
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.0220762425,
+            "median": 0.021284003
+          }
+        },
+        "intel-rapl:1:psys": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.18990541666666666,
+            "median": 0.1897275
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.06473947605369142,
+            "median": 0.06500133578288342
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.00018990541666666667,
+            "median": 0.0001897275
+          }
+        }
+      }
+    },
+    {
+      "orm": "prisma",
+      "scenario": "create-pet",
+      "profile": "populated",
+      "validTaskCount": 12,
+      "expectedTaskCount": 12,
+      "metrics": {
+        "workloadElapsedMs": {
+          "count": 12,
+          "mean": 17245.434473833335,
+          "median": 17207.558765499998
+        },
+        "throughputOpsPerSecond": {
+          "count": 12,
+          "mean": 57.99569411489384,
+          "median": 58.11431354421764
+        }
+      },
+      "energyDomains": {
+        "intel-rapl-mmio:0:0:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 15.478293,
+            "median": 15.425588999999999
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.897372130488857,
+            "median": 0.8990367467954884
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.015478293,
+            "median": 0.015425589
+          }
+        },
+        "intel-rapl-mmio:0:package-0": {
+          "energyJ": {
+            "count": 12,
+            "mean": 37.121583666666666,
+            "median": 36.751675500000005
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 2.1519571271838207,
+            "median": 2.1285689001501806
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.037121583666666666,
+            "median": 0.0367516755
+          }
+        },
+        "intel-rapl:0:0:core": {
+          "energyJ": {
+            "count": 12,
+            "mean": 14.777763583333334,
+            "median": 14.4428955
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.8565509319908572,
+            "median": 0.835886688545704
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.014777763583333334,
+            "median": 0.0144428955
+          }
+        },
+        "intel-rapl:0:1:uncore": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.23219758333333335,
+            "median": 0.2666625
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.013456765069489241,
+            "median": 0.015398305940312525
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.00023219758333333334,
+            "median": 0.00026666250000000004
+          }
+        },
+        "intel-rapl:0:2:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 15.477728416666666,
+            "median": 15.4259855
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.8973394818132002,
+            "median": 0.89903671746196
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.015477728416666666,
+            "median": 0.0154259855
+          }
+        },
+        "intel-rapl:0:package-0": {
+          "energyJ": {
+            "count": 12,
+            "mean": 37.12041383333333,
+            "median": 36.7496615
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 2.1518898480664466,
+            "median": 2.1288084918221863
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.03712041383333333,
+            "median": 0.0367496615
+          }
+        },
+        "intel-rapl:1:psys": {
+          "energyJ": {
+            "count": 12,
+            "mean": 1.0959700833333335,
+            "median": 1.0997595
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.06354235407762644,
+            "median": 0.0633677889206091
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.0010959700833333334,
+            "median": 0.0010997594999999998
+          }
+        }
+      }
+    },
+    {
+      "orm": "prisma",
+      "scenario": "create-owner",
+      "profile": "populated",
+      "validTaskCount": 12,
+      "expectedTaskCount": 12,
+      "metrics": {
+        "workloadElapsedMs": {
+          "count": 12,
+          "mean": 21943.02277058333,
+          "median": 22027.338531499998
+        },
+        "throughputOpsPerSecond": {
+          "count": 12,
+          "mean": 45.625220526290036,
+          "median": 45.398500969387946
+        }
+      },
+      "energyDomains": {
+        "intel-rapl-mmio:0:0:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 19.699346333333335,
+            "median": 19.789896499999998
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.8978621971743649,
+            "median": 0.8985949441826484
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.019699346333333333,
+            "median": 0.0197898965
+          }
+        },
+        "intel-rapl-mmio:0:package-0": {
+          "energyJ": {
+            "count": 12,
+            "mean": 51.7662095,
+            "median": 51.084860500000005
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 2.3624653123555412,
+            "median": 2.3132657822152805
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.0517662095,
+            "median": 0.0510848605
+          }
+        },
+        "intel-rapl:0:0:core": {
+          "energyJ": {
+            "count": 12,
+            "mean": 23.436412583333333,
+            "median": 22.6929045
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 1.0714461522595127,
+            "median": 1.0289375845735549
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.023436412583333333,
+            "median": 0.0226929045
+          }
+        },
+        "intel-rapl:0:1:uncore": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.2906845,
+            "median": 0.3353875
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.013276491010112485,
+            "median": 0.015366850230128428
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.0002906845,
+            "median": 0.0003353875
+          }
+        },
+        "intel-rapl:0:2:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 19.698746,
+            "median": 19.7895
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.8978350398590071,
+            "median": 0.8985949441826484
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.019698746,
+            "median": 0.0197895
+          }
+        },
+        "intel-rapl:0:package-0": {
+          "energyJ": {
+            "count": 12,
+            "mean": 51.767537,
+            "median": 51.081809
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 2.362525355165461,
+            "median": 2.313131752201365
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.051767537,
+            "median": 0.051081809
+          }
+        },
+        "intel-rapl:1:psys": {
+          "energyJ": {
+            "count": 12,
+            "mean": 1.3969335833333334,
+            "median": 1.4081385000000002
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.06366057976992753,
+            "median": 0.0635206510987115
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.0013969335833333334,
+            "median": 0.0014081385
+          }
+        }
+      }
+    },
+    {
+      "orm": "prisma",
+      "scenario": "update-pet",
+      "profile": "populated",
+      "validTaskCount": 12,
+      "expectedTaskCount": 12,
+      "metrics": {
+        "workloadElapsedMs": {
+          "count": 12,
+          "mean": 17985.076859333334,
+          "median": 18277.4455515
+        },
+        "throughputOpsPerSecond": {
+          "count": 12,
+          "mean": 56.10040972081571,
+          "median": 54.71280931633907
+        }
+      },
+      "energyDomains": {
+        "intel-rapl-mmio:0:0:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 16.256133083333335,
+            "median": 16.3300975
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.9088698681774802,
+            "median": 0.8904335319991916
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.016256133083333332,
+            "median": 0.0163300975
+          }
+        },
+        "intel-rapl-mmio:0:package-0": {
+          "energyJ": {
+            "count": 12,
+            "mean": 42.23581816666667,
+            "median": 38.827537
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 2.4325332719657626,
+            "median": 2.1285868041047085
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.04223581816666667,
+            "median": 0.038827536999999995
+          }
+        },
+        "intel-rapl:0:0:core": {
+          "energyJ": {
+            "count": 12,
+            "mean": 18.9165775,
+            "median": 15.1247175
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 1.13459675653877,
+            "median": 0.8397421238957345
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.0189165775,
+            "median": 0.015124717499999999
+          }
+        },
+        "intel-rapl:0:1:uncore": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.23750733333333335,
+            "median": 0.2762445
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.013254263074156168,
+            "median": 0.015108988669087879
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.00023750733333333335,
+            "median": 0.0002762445
+          }
+        },
+        "intel-rapl:0:2:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 16.254927666666667,
+            "median": 16.3297005
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.9088011472716078,
+            "median": 0.8904118851099356
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.016254927666666665,
+            "median": 0.016329700500000002
+          }
+        },
+        "intel-rapl:0:package-0": {
+          "energyJ": {
+            "count": 12,
+            "mean": 42.233758333333334,
+            "median": 38.824363500000004
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 2.4324201555307012,
+            "median": 2.1282897824667932
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.042233758333333336,
+            "median": 0.0388243635
+          }
+        },
+        "intel-rapl:1:psys": {
+          "energyJ": {
+            "count": 12,
+            "mean": 1.1446299166666667,
+            "median": 1.1655245
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.06361600504093291,
+            "median": 0.0635287968254862
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.0011446299166666667,
+            "median": 0.0011655245
+          }
+        }
+      }
+    },
+    {
+      "orm": "prisma",
+      "scenario": "update-owner",
+      "profile": "populated",
+      "validTaskCount": 12,
+      "expectedTaskCount": 12,
+      "metrics": {
+        "workloadElapsedMs": {
+          "count": 12,
+          "mean": 21763.691318833335,
+          "median": 21696.270887
+        },
+        "throughputOpsPerSecond": {
+          "count": 12,
+          "mean": 45.98348285228825,
+          "median": 46.09095148770513
+        }
+      },
+      "energyDomains": {
+        "intel-rapl-mmio:0:0:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 19.888219083333333,
+            "median": 19.74821
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.9138346837923659,
+            "median": 0.9154264605693846
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.019888219083333332,
+            "median": 0.019748210000000002
+          }
+        },
+        "intel-rapl-mmio:0:package-0": {
+          "energyJ": {
+            "count": 12,
+            "mean": 49.77316783333333,
+            "median": 49.7759655
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 2.2878794524583754,
+            "median": 2.3033398063906168
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.04977316783333333,
+            "median": 0.0497759655
+          }
+        },
+        "intel-rapl:0:0:core": {
+          "energyJ": {
+            "count": 12,
+            "mean": 21.429907166666666,
+            "median": 21.64771
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.9856478338160609,
+            "median": 0.9969090355000138
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.021429907166666668,
+            "median": 0.02164771
+          }
+        },
+        "intel-rapl:0:1:uncore": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.2894839166666667,
+            "median": 0.336486
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.01332275868214347,
+            "median": 0.01522910707468837
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.00028948391666666666,
+            "median": 0.000336486
+          }
+        },
+        "intel-rapl:0:2:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 19.887629166666667,
+            "median": 19.748240000000003
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.9138073625803542,
+            "median": 0.9154448053730553
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.019887629166666667,
+            "median": 0.01974824
+          }
+        },
+        "intel-rapl:0:package-0": {
+          "energyJ": {
+            "count": 12,
+            "mean": 49.7724455,
+            "median": 49.772761
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 2.2878459486286133,
+            "median": 2.303461705675423
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.0497724455,
+            "median": 0.049772761
+          }
+        },
+        "intel-rapl:1:psys": {
+          "energyJ": {
+            "count": 12,
+            "mean": 1.3867710833333333,
+            "median": 1.385525
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.06371895328261594,
+            "median": 0.06357244921811966
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.0013867710833333333,
+            "median": 0.0013855249999999999
+          }
+        }
+      }
+    },
+    {
+      "orm": "prisma",
+      "scenario": "update-owner",
+      "profile": "no-visits",
+      "validTaskCount": 12,
+      "expectedTaskCount": 12,
+      "metrics": {
+        "workloadElapsedMs": {
+          "count": 12,
+          "mean": 22079.541886666666,
+          "median": 22138.417731
+        },
+        "throughputOpsPerSecond": {
+          "count": 12,
+          "mean": 45.31555066906197,
+          "median": 45.17040344406186
+        }
+      },
+      "energyDomains": {
+        "intel-rapl-mmio:0:0:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 20.108194416666667,
+            "median": 20.115885
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.9107829614227122,
+            "median": 0.9078620328866975
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.020108194416666666,
+            "median": 0.020115885
+          }
+        },
+        "intel-rapl-mmio:0:package-0": {
+          "energyJ": {
+            "count": 12,
+            "mean": 49.7627205,
+            "median": 49.425655
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 2.2554115950961893,
+            "median": 2.2249245461126437
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.049762720499999996,
+            "median": 0.049425655
+          }
+        },
+        "intel-rapl:0:0:core": {
+          "energyJ": {
+            "count": 12,
+            "mean": 21.039685166666665,
+            "median": 20.503915
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.9545897951969844,
+            "median": 0.9245015437633138
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.021039685166666666,
+            "median": 0.020503914999999998
+          }
+        },
+        "intel-rapl:0:1:uncore": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.30864874999999997,
+            "median": 0.3372485
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.014006929439186497,
+            "median": 0.01525741393902464
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.00030864875,
+            "median": 0.0003372485
+          }
+        },
+        "intel-rapl:0:2:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 20.107451833333332,
+            "median": 20.116251
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.9107494340625935,
+            "median": 0.9078620328866975
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.02010745183333333,
+            "median": 0.020116251
+          }
+        },
+        "intel-rapl:0:package-0": {
+          "energyJ": {
+            "count": 12,
+            "mean": 49.760645333333336,
+            "median": 49.428615
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 2.2553178662263544,
+            "median": 2.224814832493421
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.04976064533333333,
+            "median": 0.049428615
+          }
+        },
+        "intel-rapl:1:psys": {
+          "energyJ": {
+            "count": 12,
+            "mean": 1.40083975,
+            "median": 1.4063075
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.06343944172149484,
+            "median": 0.06343920351446712
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.00140083975,
+            "median": 0.0014063075
+          }
+        }
+      }
+    },
+    {
+      "orm": "prisma",
+      "scenario": "update-owner",
+      "profile": "no-pets",
+      "validTaskCount": 12,
+      "expectedTaskCount": 12,
+      "metrics": {
+        "workloadElapsedMs": {
+          "count": 12,
+          "mean": 21523.55156875,
+          "median": 22113.230396500003
+        },
+        "throughputOpsPerSecond": {
+          "count": 12,
+          "mean": 47.06576409108419,
+          "median": 45.225204080684755
+        }
+      },
+      "energyDomains": {
+        "intel-rapl-mmio:0:0:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 19.921717166666667,
+            "median": 20.1187845
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.9339698130495797,
+            "median": 0.9055217673346245
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.01992171716666667,
+            "median": 0.0201187845
+          }
+        },
+        "intel-rapl-mmio:0:package-0": {
+          "energyJ": {
+            "count": 12,
+            "mean": 55.66221616666667,
+            "median": 49.4950515
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 2.74342879990544,
+            "median": 2.2188483451457723
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.05566221616666667,
+            "median": 0.0494950515
+          }
+        },
+        "intel-rapl:0:0:core": {
+          "energyJ": {
+            "count": 12,
+            "mean": 27.575958833333335,
+            "median": 20.409859500000003
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 1.4361760671444361,
+            "median": 0.9324366926538133
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.027575958833333334,
+            "median": 0.020409859500000002
+          }
+        },
+        "intel-rapl:0:1:uncore": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.28258191666666665,
+            "median": 0.329223
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.01326481728524225,
+            "median": 0.015122690177348887
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.0002825819166666667,
+            "median": 0.000329223
+          }
+        },
+        "intel-rapl:0:2:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 19.92118825,
+            "median": 20.118357000000003
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.9339455147809979,
+            "median": 0.9055026038771699
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.01992118825,
+            "median": 0.020118357000000003
+          }
+        },
+        "intel-rapl:0:package-0": {
+          "energyJ": {
+            "count": 12,
+            "mean": 55.660695249999996,
+            "median": 49.497767499999995
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 2.7433581514162073,
+            "median": 2.218744677310072
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.05566069525,
+            "median": 0.0494977675
+          }
+        },
+        "intel-rapl:1:psys": {
+          "energyJ": {
+            "count": 12,
+            "mean": 1.3661618333333334,
+            "median": 1.4079855000000001
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.06344744041364843,
+            "median": 0.06346706137605543
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.0013661618333333334,
+            "median": 0.0014079855
+          }
+        }
+      }
+    },
+    {
+      "orm": "prisma",
+      "scenario": "delete-visit",
+      "profile": "populated",
+      "validTaskCount": 12,
+      "expectedTaskCount": 12,
+      "metrics": {
+        "workloadElapsedMs": {
+          "count": 12,
+          "mean": 15963.38746525,
+          "median": 15994.349823
+        },
+        "throughputOpsPerSecond": {
+          "count": 12,
+          "mean": 62.74957601938346,
+          "median": 62.52232209861228
+        }
+      },
+      "energyDomains": {
+        "intel-rapl-mmio:0:0:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 14.325707916666667,
+            "median": 14.221338
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.899157440245524,
+            "median": 0.8838061036016058
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.014325707916666666,
+            "median": 0.014221338
+          }
+        },
+        "intel-rapl-mmio:0:package-0": {
+          "energyJ": {
+            "count": 12,
+            "mean": 37.2997805,
+            "median": 33.532477
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 2.3712175635117747,
+            "median": 2.0930680014936254
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.0372997805,
+            "median": 0.033532477000000005
+          }
+        },
+        "intel-rapl:0:0:core": {
+          "energyJ": {
+            "count": 12,
+            "mean": 16.64182325,
+            "median": 12.630095
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 1.0767148114540142,
+            "median": 0.7994110728932056
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.01664182325,
+            "median": 0.012630095000000001
+          }
+        },
+        "intel-rapl:0:1:uncore": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.19917758333333332,
+            "median": 0.239868
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.012527410068012359,
+            "median": 0.015241001485248835
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.00019917758333333333,
+            "median": 0.000239868
+          }
+        },
+        "intel-rapl:0:2:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 14.324767083333333,
+            "median": 14.220483999999999
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.8990979090079454,
+            "median": 0.8837270285834107
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.014324767083333334,
+            "median": 0.014220484
+          }
+        },
+        "intel-rapl:0:package-0": {
+          "energyJ": {
+            "count": 12,
+            "mean": 37.297934166666664,
+            "median": 33.530402
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 2.371102909413813,
+            "median": 2.0932426110023252
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.037297934166666664,
+            "median": 0.033530402
+          }
+        },
+        "intel-rapl:1:psys": {
+          "energyJ": {
+            "count": 12,
+            "mean": 1.01246875,
+            "median": 1.0163545
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.06340491255666021,
+            "median": 0.06334200524700168
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.0010124687500000001,
+            "median": 0.0010163544999999999
+          }
+        }
+      }
+    },
+    {
+      "orm": "prisma",
+      "scenario": "delete-owner-visits",
+      "profile": "populated",
+      "validTaskCount": 12,
+      "expectedTaskCount": 12,
+      "metrics": {
+        "workloadElapsedMs": {
+          "count": 12,
+          "mean": 18745.989123583335,
+          "median": 18783.148916
+        },
+        "throughputOpsPerSecond": {
+          "count": 12,
+          "mean": 53.36582729033109,
+          "median": 53.24011135725469
+        }
+      },
+      "energyDomains": {
+        "intel-rapl-mmio:0:0:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 16.39511475,
+            "median": 16.389881
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.8745344745345367,
+            "median": 0.8737100705053421
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.01639511475,
+            "median": 0.016389881
+          }
+        },
+        "intel-rapl-mmio:0:package-0": {
+          "energyJ": {
+            "count": 12,
+            "mean": 40.19296141666666,
+            "median": 40.2573735
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 2.1443282478873553,
+            "median": 2.129673904320291
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.040192961416666666,
+            "median": 0.0402573735
+          }
+        },
+        "intel-rapl:0:0:core": {
+          "energyJ": {
+            "count": 12,
+            "mean": 16.128915666666668,
+            "median": 16.1157425
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.8607934903538162,
+            "median": 0.845529903512616
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.016128915666666667,
+            "median": 0.0161157425
+          }
+        },
+        "intel-rapl:0:1:uncore": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.24781733333333333,
+            "median": 0.2816155
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.013211551521360854,
+            "median": 0.015002288178957091
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.0002478173333333333,
+            "median": 0.0002816155
+          }
+        },
+        "intel-rapl:0:2:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 16.394356833333333,
+            "median": 16.389331499999997
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.8744941220245316,
+            "median": 0.8736758412608234
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.016394356833333335,
+            "median": 0.0163893315
+          }
+        },
+        "intel-rapl:0:package-0": {
+          "energyJ": {
+            "count": 12,
+            "mean": 40.19223433333333,
+            "median": 40.254230500000006
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 2.1442903495675427,
+            "median": 2.129748590005536
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.04019223433333333,
+            "median": 0.0402542305
+          }
+        },
+        "intel-rapl:1:psys": {
+          "energyJ": {
+            "count": 12,
+            "mean": 1.18910925,
+            "median": 1.190091
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.06342576471409818,
+            "median": 0.06322314700477943
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.0011891092500000001,
+            "median": 0.001190091
+          }
+        }
+      }
+    },
+    {
+      "orm": "prisma",
+      "scenario": "delete-owner-visits",
+      "profile": "no-visits",
+      "validTaskCount": 12,
+      "expectedTaskCount": 12,
+      "metrics": {
+        "workloadElapsedMs": {
+          "count": 12,
+          "mean": 2814.9252020833333,
+          "median": 2781.706438
+        },
+        "throughputOpsPerSecond": {
+          "count": 12,
+          "mean": 355.7499934264447,
+          "median": 359.4915791877655
+        }
+      },
+      "energyDomains": {
+        "intel-rapl-mmio:0:0:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 3.8754429999999997,
+            "median": 3.732382
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 1.3731305183521347,
+            "median": 1.3452005297706395
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.003875443,
+            "median": 0.0037323820000000002
+          }
+        },
+        "intel-rapl-mmio:0:package-0": {
+          "energyJ": {
+            "count": 12,
+            "mean": 21.406785333333335,
+            "median": 20.316171500000003
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 7.57328826276745,
+            "median": 7.33627519527109
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.021406785333333334,
+            "median": 0.0203161715
+          }
+        },
+        "intel-rapl:0:0:core": {
+          "energyJ": {
+            "count": 12,
+            "mean": 17.30138775,
+            "median": 16.284931
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 6.116094934550087,
+            "median": 5.878174890583251
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.01730138775,
+            "median": 0.016284931
+          }
+        },
+        "intel-rapl:0:1:uncore": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.047704083333333334,
+            "median": 0.0472715
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.01691896915916975,
+            "median": 0.017022326795195365
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 4.770408333333333e-05,
+            "median": 4.72715e-05
+          }
+        },
+        "intel-rapl:0:2:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 3.8749800833333334,
+            "median": 3.7325955
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 1.372974806328527,
+            "median": 1.3450162426533558
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.0038749800833333334,
+            "median": 0.0037325954999999997
+          }
+        },
+        "intel-rapl:0:package-0": {
+          "energyJ": {
+            "count": 12,
+            "mean": 21.403392833333335,
+            "median": 20.312234500000002
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 7.572118697857183,
+            "median": 7.334856115491427
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.021403392833333333,
+            "median": 0.0203122345
+          }
+        },
+        "intel-rapl:1:psys": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.18342541666666667,
+            "median": 0.182708
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.06518231358922402,
+            "median": 0.06537868740022837
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.00018342541666666666,
+            "median": 0.000182708
+          }
+        }
+      }
+    },
+    {
+      "orm": "prisma",
+      "scenario": "delete-owner-visits",
+      "profile": "no-pets",
+      "validTaskCount": 12,
+      "expectedTaskCount": 12,
+      "metrics": {
+        "workloadElapsedMs": {
+          "count": 12,
+          "mean": 2349.3130261666665,
+          "median": 2321.1193095
+        },
+        "throughputOpsPerSecond": {
+          "count": 12,
+          "mean": 426.1758664737156,
+          "median": 430.82662598786465
+        }
+      },
+      "energyDomains": {
+        "intel-rapl-mmio:0:0:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 3.467652666666667,
+            "median": 3.355582
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 1.4730407323862411,
+            "median": 1.44568470400065
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.0034676526666666666,
+            "median": 0.003355582
+          }
+        },
+        "intel-rapl-mmio:0:package-0": {
+          "energyJ": {
+            "count": 12,
+            "mean": 17.714366,
+            "median": 17.021074499999997
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 7.516956462325068,
+            "median": 7.317203377814867
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.017714366,
+            "median": 0.017021074499999997
+          }
+        },
+        "intel-rapl:0:0:core": {
+          "energyJ": {
+            "count": 12,
+            "mean": 14.204345,
+            "median": 13.554438999999999
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 6.02410304146413,
+            "median": 5.8284692614684275
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.014204345,
+            "median": 0.013554439
+          }
+        },
+        "intel-rapl:0:1:uncore": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.0407915,
+            "median": 0.038970500000000005
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.017347057210593816,
+            "median": 0.016554832048126675
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 4.0791500000000004e-05,
+            "median": 3.89705e-05
+          }
+        },
+        "intel-rapl:0:2:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 3.467342416666667,
+            "median": 3.355582
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 1.4729087827020255,
+            "median": 1.44568470400065
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.0034673424166666664,
+            "median": 0.003355582
+          }
+        },
+        "intel-rapl:0:package-0": {
+          "energyJ": {
+            "count": 12,
+            "mean": 17.712311083333333,
+            "median": 17.0197315
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 7.516121373760546,
+            "median": 7.3166205706843215
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.017712311083333335,
+            "median": 0.017019731500000003
+          }
+        },
+        "intel-rapl:1:psys": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.15173791666666667,
+            "median": 0.1503595
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.06458711184217367,
+            "median": 0.06482216761472437
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.00015173791666666666,
+            "median": 0.0001503595
+          }
+        }
+      }
+    },
+    {
+      "orm": "sequelize",
+      "scenario": "read-pet",
+      "profile": "populated",
+      "validTaskCount": 12,
+      "expectedTaskCount": 12,
+      "metrics": {
+        "workloadElapsedMs": {
+          "count": 12,
+          "mean": 1751.3730233333333,
+          "median": 1759.8417425
+        },
+        "throughputOpsPerSecond": {
+          "count": 12,
+          "mean": 571.0757863145755,
+          "median": 568.2334811160682
+        }
+      },
+      "energyDomains": {
+        "intel-rapl-mmio:0:0:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 2.7084889166666666,
+            "median": 2.7258225
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 1.5456810800244305,
+            "median": 1.546758216580648
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.002708488916666667,
+            "median": 0.0027258225
+          }
+        },
+        "intel-rapl-mmio:0:package-0": {
+          "energyJ": {
+            "count": 12,
+            "mean": 12.528685,
+            "median": 12.5448285
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 7.150005148706291,
+            "median": 7.125331856144578
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.012528685,
+            "median": 0.0125448285
+          }
+        },
+        "intel-rapl:0:0:core": {
+          "energyJ": {
+            "count": 12,
+            "mean": 9.845739,
+            "median": 9.8356685
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 5.618852698005012,
+            "median": 5.592810877855731
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.009845739000000001,
+            "median": 0.009835668500000002
+          }
+        },
+        "intel-rapl:0:1:uncore": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.029027333333333332,
+            "median": 0.030365000000000003
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.01659496713700803,
+            "median": 0.01725981581681095
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 2.9027333333333332e-05,
+            "median": 3.0365000000000005e-05
+          }
+        },
+        "intel-rapl:0:2:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 2.70849925,
+            "median": 2.7264945000000003
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 1.5456871155876226,
+            "median": 1.5465946617246455
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.00270849925,
+            "median": 0.0027264945
+          }
+        },
+        "intel-rapl:0:package-0": {
+          "energyJ": {
+            "count": 12,
+            "mean": 12.529559916666667,
+            "median": 12.5448285
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 7.15050312063988,
+            "median": 7.125331856144578
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.012529559916666667,
+            "median": 0.0125448285
+          }
+        },
+        "intel-rapl:1:psys": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.11326066666666666,
+            "median": 0.11337249999999999
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.06463417076425566,
+            "median": 0.06473714708372444
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.00011326066666666666,
+            "median": 0.00011337249999999999
+          }
+        }
+      }
+    },
+    {
+      "orm": "sequelize",
+      "scenario": "read-owner",
+      "profile": "populated",
+      "validTaskCount": 12,
+      "expectedTaskCount": 12,
+      "metrics": {
+        "workloadElapsedMs": {
+          "count": 12,
+          "mean": 4159.523672416667,
+          "median": 4122.6028735
+        },
+        "throughputOpsPerSecond": {
+          "count": 12,
+          "mean": 240.81851888217062,
+          "median": 242.5652714843419
+        }
+      },
+      "energyDomains": {
+        "intel-rapl-mmio:0:0:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 5.537888916666667,
+            "median": 5.408616500000001
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 1.3295309564650881,
+            "median": 1.3179570286287112
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.0055378889166666665,
+            "median": 0.0054086165
+          }
+        },
+        "intel-rapl-mmio:0:package-0": {
+          "energyJ": {
+            "count": 12,
+            "mean": 31.4276795,
+            "median": 30.6745125
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 7.550096163004082,
+            "median": 7.479615616698448
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.0314276795,
+            "median": 0.0306745125
+          }
+        },
+        "intel-rapl:0:0:core": {
+          "energyJ": {
+            "count": 12,
+            "mean": 25.31834041666667,
+            "median": 24.737577
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 6.083818072891742,
+            "median": 6.0317270558446445
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.025318340416666668,
+            "median": 0.024737577
+          }
+        },
+        "intel-rapl:0:1:uncore": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.13773558333333333,
+            "median": 0.064941
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.03124489064415176,
+            "median": 0.015754819587397294
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.00013773558333333332,
+            "median": 6.4941e-05
+          }
+        },
+        "intel-rapl:0:2:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 5.537853166666666,
+            "median": 5.409135
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 1.3295258165128017,
+            "median": 1.3177696148603015
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.005537853166666666,
+            "median": 0.005409135
+          }
+        },
+        "intel-rapl:0:package-0": {
+          "energyJ": {
+            "count": 12,
+            "mean": 31.426825,
+            "median": 30.6745125
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 7.549902257869287,
+            "median": 7.478584900018749
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.031426825,
+            "median": 0.0306745125
+          }
+        },
+        "intel-rapl:1:psys": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.26922016666666665,
+            "median": 0.2661425
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.0647156826179485,
+            "median": 0.06462905689915105
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.00026922016666666666,
+            "median": 0.0002661425
+          }
+        }
+      }
+    },
+    {
+      "orm": "sequelize",
+      "scenario": "read-owner",
+      "profile": "no-visits",
+      "validTaskCount": 12,
+      "expectedTaskCount": 12,
+      "metrics": {
+        "workloadElapsedMs": {
+          "count": 12,
+          "mean": 4046.300807,
+          "median": 4058.1249454999997
+        },
+        "throughputOpsPerSecond": {
+          "count": 12,
+          "mean": 247.28583617929633,
+          "median": 246.42494345558234
+        }
+      },
+      "energyDomains": {
+        "intel-rapl-mmio:0:0:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 5.326493916666666,
+            "median": 5.3113575
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 1.3159419605215688,
+            "median": 1.3132214771564064
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.005326493916666667,
+            "median": 0.005311357500000001
+          }
+        },
+        "intel-rapl-mmio:0:package-0": {
+          "energyJ": {
+            "count": 12,
+            "mean": 30.71347825,
+            "median": 30.6945015
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 7.588378677459674,
+            "median": 7.601961469249238
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.03071347825,
+            "median": 0.0306945015
+          }
+        },
+        "intel-rapl:0:0:core": {
+          "energyJ": {
+            "count": 12,
+            "mean": 24.850359583333333,
+            "median": 24.88104
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 6.1397352115959505,
+            "median": 6.159332597395013
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.024850359583333332,
+            "median": 0.02488104
+          }
+        },
+        "intel-rapl:0:1:uncore": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.06451383333333334,
+            "median": 0.062377
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.01592653329973052,
+            "median": 0.0156947765635573
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 6.451383333333334e-05,
+            "median": 6.2377e-05
+          }
+        },
+        "intel-rapl:0:2:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 5.326611,
+            "median": 5.3113575
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 1.315969462277474,
+            "median": 1.3131276434686532
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.005326611,
+            "median": 0.005311357500000001
+          }
+        },
+        "intel-rapl:0:package-0": {
+          "energyJ": {
+            "count": 12,
+            "mean": 30.714592083333333,
+            "median": 30.694043999999998
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 7.588639842798934,
+            "median": 7.602898341031546
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.030714592083333332,
+            "median": 0.030694044
+          }
+        },
+        "intel-rapl:1:psys": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.26169258333333334,
+            "median": 0.262695
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.06466381177570307,
+            "median": 0.06470149860739036
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.00026169258333333335,
+            "median": 0.00026269499999999996
+          }
+        }
+      }
+    },
+    {
+      "orm": "sequelize",
+      "scenario": "read-owner",
+      "profile": "no-pets",
+      "validTaskCount": 12,
+      "expectedTaskCount": 12,
+      "metrics": {
+        "workloadElapsedMs": {
+          "count": 12,
+          "mean": 2613.5452164999997,
+          "median": 2609.4551425
+        },
+        "throughputOpsPerSecond": {
+          "count": 12,
+          "mean": 382.8957362961873,
+          "median": 383.2259989710826
+        }
+      },
+      "energyDomains": {
+        "intel-rapl-mmio:0:0:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 3.7003179166666667,
+            "median": 3.687704
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 1.4152629666498322,
+            "median": 1.413219373189221
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.0037003179166666665,
+            "median": 0.003687704
+          }
+        },
+        "intel-rapl-mmio:0:package-0": {
+          "energyJ": {
+            "count": 12,
+            "mean": 19.167594083333334,
+            "median": 19.0604065
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 7.331827287285048,
+            "median": 7.328740428497243
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.019167594083333333,
+            "median": 0.0190604065
+          }
+        },
+        "intel-rapl:0:0:core": {
+          "energyJ": {
+            "count": 12,
+            "mean": 15.290340666666667,
+            "median": 15.206748000000001
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 5.848752969885352,
+            "median": 5.847005521411134
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.015290340666666666,
+            "median": 0.015206748
+          }
+        },
+        "intel-rapl:0:1:uncore": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.040181416666666664,
+            "median": 0.038849
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.015387376224017459,
+            "median": 0.014888017755566587
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 4.0181416666666665e-05,
+            "median": 3.884900000000001e-05
+          }
+        },
+        "intel-rapl:0:2:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 3.700119583333333,
+            "median": 3.687704
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 1.415184284329789,
+            "median": 1.4130903351731616
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.0037001195833333334,
+            "median": 0.003687704
+          }
+        },
+        "intel-rapl:0:package-0": {
+          "energyJ": {
+            "count": 12,
+            "mean": 19.16609375,
+            "median": 19.0597355
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 7.331231633064257,
+            "median": 7.328482352465123
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.019166093749999998,
+            "median": 0.0190597355
+          }
+        },
+        "intel-rapl:1:psys": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.16870066666666667,
+            "median": 0.1684565
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.06453601057355322,
+            "median": 0.06453027965223843
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.00016870066666666668,
+            "median": 0.0001684565
+          }
+        }
+      }
+    },
+    {
+      "orm": "sequelize",
+      "scenario": "create-pet",
+      "profile": "populated",
+      "validTaskCount": 12,
+      "expectedTaskCount": 12,
+      "metrics": {
+        "workloadElapsedMs": {
+          "count": 12,
+          "mean": 17879.208238666666,
+          "median": 17889.113927500002
+        },
+        "throughputOpsPerSecond": {
+          "count": 12,
+          "mean": 55.95089037183081,
+          "median": 55.900031306091435
+        }
+      },
+      "energyDomains": {
+        "intel-rapl-mmio:0:0:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 15.903269666666667,
+            "median": 15.9568985
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.8893556451020055,
+            "median": 0.8900226720464004
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.015903269666666667,
+            "median": 0.015956898499999997
+          }
+        },
+        "intel-rapl-mmio:0:package-0": {
+          "energyJ": {
+            "count": 12,
+            "mean": 38.10345875,
+            "median": 38.007898499999996
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 2.1307174215607168,
+            "median": 2.1273139043543052
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.03810345875,
+            "median": 0.0380078985
+          }
+        },
+        "intel-rapl:0:0:core": {
+          "energyJ": {
+            "count": 12,
+            "mean": 14.9779125,
+            "median": 14.8308945
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.8375100674809343,
+            "median": 0.8337088166718758
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.0149779125,
+            "median": 0.014830894499999999
+          }
+        },
+        "intel-rapl:0:1:uncore": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.25700825,
+            "median": 0.27282649999999997
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.014355543557771116,
+            "median": 0.015164481823619543
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.00025700825,
+            "median": 0.0002728265
+          }
+        },
+        "intel-rapl:0:2:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 15.90260325,
+            "median": 15.9561055
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.8893181068399724,
+            "median": 0.8899788950844927
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.01590260325,
+            "median": 0.015956105499999998
+          }
+        },
+        "intel-rapl:0:package-0": {
+          "energyJ": {
+            "count": 12,
+            "mean": 38.10256366666667,
+            "median": 38.005701
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 2.130666499345624,
+            "median": 2.1273686949754578
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.038102563666666665,
+            "median": 0.038005700999999996
+          }
+        },
+        "intel-rapl:1:psys": {
+          "energyJ": {
+            "count": 12,
+            "mean": 1.1297121666666667,
+            "median": 1.131986
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.06317675134969601,
+            "median": 0.0630820624230086
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.0011297121666666667,
+            "median": 0.001131986
+          }
+        }
+      }
+    },
+    {
+      "orm": "sequelize",
+      "scenario": "create-owner",
+      "profile": "populated",
+      "validTaskCount": 12,
+      "expectedTaskCount": 12,
+      "metrics": {
+        "workloadElapsedMs": {
+          "count": 12,
+          "mean": 20091.66017258333,
+          "median": 20135.442085000002
+        },
+        "throughputOpsPerSecond": {
+          "count": 12,
+          "mean": 49.85995071691669,
+          "median": 49.66437823977817
+        }
+      },
+      "energyDomains": {
+        "intel-rapl-mmio:0:0:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 18.36667275,
+            "median": 18.359755
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.9141768498293513,
+            "median": 0.9138800537619287
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.01836667275,
+            "median": 0.018359755
+          }
+        },
+        "intel-rapl-mmio:0:package-0": {
+          "energyJ": {
+            "count": 12,
+            "mean": 46.22094083333333,
+            "median": 46.5305815
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 2.301056307205545,
+            "median": 2.298591688451554
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.046220940833333335,
+            "median": 0.0465305815
+          }
+        },
+        "intel-rapl:0:0:core": {
+          "energyJ": {
+            "count": 12,
+            "mean": 20.070998583333335,
+            "median": 20.131174
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.9997089036881872,
+            "median": 0.9976915170205816
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.020070998583333333,
+            "median": 0.020131174
+          }
+        },
+        "intel-rapl:0:1:uncore": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.2691286666666667,
+            "median": 0.306518
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.01330076287149419,
+            "median": 0.01534086868473964
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.0002691286666666667,
+            "median": 0.000306518
+          }
+        },
+        "intel-rapl:0:2:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 18.366286,
+            "median": 18.3593585
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.9141570401000825,
+            "median": 0.9138471839998874
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.018366286,
+            "median": 0.0183593585
+          }
+        },
+        "intel-rapl:0:package-0": {
+          "energyJ": {
+            "count": 12,
+            "mean": 46.2190385,
+            "median": 46.528628499999996
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 2.3009616068667467,
+            "median": 2.2984314059817716
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.046219038500000004,
+            "median": 0.0465286285
+          }
+        },
+        "intel-rapl:1:psys": {
+          "energyJ": {
+            "count": 12,
+            "mean": 1.2737596666666666,
+            "median": 1.278744
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.06339753863195637,
+            "median": 0.06326994895406507
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.0012737596666666667,
+            "median": 0.001278744
+          }
+        }
+      }
+    },
+    {
+      "orm": "sequelize",
+      "scenario": "update-pet",
+      "profile": "populated",
+      "validTaskCount": 12,
+      "expectedTaskCount": 12,
+      "metrics": {
+        "workloadElapsedMs": {
+          "count": 12,
+          "mean": 17570.4432775,
+          "median": 17527.0886325
+        },
+        "throughputOpsPerSecond": {
+          "count": 12,
+          "mean": 56.93669673249774,
+          "median": 57.05454158142657
+        }
+      },
+      "energyDomains": {
+        "intel-rapl-mmio:0:0:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 15.582738916666667,
+            "median": 15.5753385
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.8867942996754001,
+            "median": 0.8853774714080771
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.015582738916666667,
+            "median": 0.0155753385
+          }
+        },
+        "intel-rapl-mmio:0:package-0": {
+          "energyJ": {
+            "count": 12,
+            "mean": 36.70564533333334,
+            "median": 36.760404
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 2.089436837735145,
+            "median": 2.0777819566989204
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.036705645333333335,
+            "median": 0.036760403999999997
+          }
+        },
+        "intel-rapl:0:0:core": {
+          "energyJ": {
+            "count": 12,
+            "mean": 14.005940583333333,
+            "median": 13.9055125
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.797690655450058,
+            "median": 0.7862752567105507
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.014005940583333333,
+            "median": 0.013905512500000002
+          }
+        },
+        "intel-rapl:0:1:uncore": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.24975025,
+            "median": 0.26535
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.014199703935992096,
+            "median": 0.01506388492697773
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.00024975025,
+            "median": 0.00026535
+          }
+        },
+        "intel-rapl:0:2:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 15.5821135,
+            "median": 15.5743925
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.8867588238151163,
+            "median": 0.88534757055673
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.0155821135,
+            "median": 0.0155743925
+          }
+        },
+        "intel-rapl:0:package-0": {
+          "energyJ": {
+            "count": 12,
+            "mean": 36.70494333333333,
+            "median": 36.7589995
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 2.0893981208914885,
+            "median": 2.077595524829288
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.03670494333333333,
+            "median": 0.0367589995
+          }
+        },
+        "intel-rapl:1:psys": {
+          "energyJ": {
+            "count": 12,
+            "mean": 1.1150229999999999,
+            "median": 1.1137055
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.0634509672170998,
+            "median": 0.06335397211262177
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.001115023,
+            "median": 0.0011137055
+          }
+        }
+      }
+    },
+    {
+      "orm": "sequelize",
+      "scenario": "update-owner",
+      "profile": "populated",
+      "validTaskCount": 12,
+      "expectedTaskCount": 12,
+      "metrics": {
+        "workloadElapsedMs": {
+          "count": 12,
+          "mean": 20123.232138166666,
+          "median": 20129.211773
+        },
+        "throughputOpsPerSecond": {
+          "count": 12,
+          "mean": 49.727606314330345,
+          "median": 49.67908164331536
+        }
+      },
+      "energyDomains": {
+        "intel-rapl-mmio:0:0:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 18.2575165,
+            "median": 18.214492
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.9072508138005468,
+            "median": 0.9089690945904922
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.0182575165,
+            "median": 0.018214492
+          }
+        },
+        "intel-rapl-mmio:0:package-0": {
+          "energyJ": {
+            "count": 12,
+            "mean": 46.51412741666667,
+            "median": 46.531465999999995
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 2.311842003926536,
+            "median": 2.3214249346506355
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.04651412741666667,
+            "median": 0.046531466
+          }
+        },
+        "intel-rapl:0:0:core": {
+          "energyJ": {
+            "count": 12,
+            "mean": 20.353321166666667,
+            "median": 20.756722
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 1.0119300818450028,
+            "median": 1.0274529118452924
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.020353321166666667,
+            "median": 0.020756722
+          }
+        },
+        "intel-rapl:0:1:uncore": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.3062938333333333,
+            "median": 0.3098745
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.015241861905413958,
+            "median": 0.01563385131761173
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.00030629383333333335,
+            "median": 0.0003098745
+          }
+        },
+        "intel-rapl:0:2:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 18.257257166666665,
+            "median": 18.2139425
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.9072378416633097,
+            "median": 0.9089495492105288
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.018257257166666666,
+            "median": 0.0182139425
+          }
+        },
+        "intel-rapl:0:package-0": {
+          "energyJ": {
+            "count": 12,
+            "mean": 46.51311533333333,
+            "median": 46.528811000000005
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 2.3117920451133314,
+            "median": 2.3212695519314632
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.046513115333333334,
+            "median": 0.046528811
+          }
+        },
+        "intel-rapl:1:psys": {
+          "energyJ": {
+            "count": 12,
+            "mean": 1.2810788333333334,
+            "median": 1.2773405
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.06366375011757403,
+            "median": 0.06341591624564075
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.0012810788333333333,
+            "median": 0.0012773405
+          }
+        }
+      }
+    },
+    {
+      "orm": "sequelize",
+      "scenario": "update-owner",
+      "profile": "no-visits",
+      "validTaskCount": 12,
+      "expectedTaskCount": 12,
+      "metrics": {
+        "workloadElapsedMs": {
+          "count": 12,
+          "mean": 19945.408666833333,
+          "median": 19984.467908
+        },
+        "throughputOpsPerSecond": {
+          "count": 12,
+          "mean": 50.15187579961375,
+          "median": 50.03897883108745
+        }
+      },
+      "energyDomains": {
+        "intel-rapl-mmio:0:0:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 18.083017416666667,
+            "median": 18.064956000000002
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.9065556423222986,
+            "median": 0.9074205392171555
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.018083017416666666,
+            "median": 0.018064956
+          }
+        },
+        "intel-rapl-mmio:0:package-0": {
+          "energyJ": {
+            "count": 12,
+            "mean": 45.603653083333334,
+            "median": 45.718114
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 2.2864450352007655,
+            "median": 2.306430171076583
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.045603653083333334,
+            "median": 0.045718114000000004
+          }
+        },
+        "intel-rapl:0:0:core": {
+          "energyJ": {
+            "count": 12,
+            "mean": 19.705185416666666,
+            "median": 19.89503
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.9881122594397852,
+            "median": 1.0084146200861182
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.019705185416666667,
+            "median": 0.01989503
+          }
+        },
+        "intel-rapl:0:1:uncore": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.2887159166666667,
+            "median": 0.307647
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.014478230361890774,
+            "median": 0.015447732414896814
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.00028871591666666666,
+            "median": 0.000307647
+          }
+        },
+        "intel-rapl:0:2:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 18.082376583333332,
+            "median": 18.0645285
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.9065238092023964,
+            "median": 0.9073641659122783
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.018082376583333334,
+            "median": 0.0180645285
+          }
+        },
+        "intel-rapl:0:package-0": {
+          "energyJ": {
+            "count": 12,
+            "mean": 45.60231025,
+            "median": 45.713414
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 2.286378179969159,
+            "median": 2.3061854316079353
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.04560231025,
+            "median": 0.045713413999999994
+          }
+        },
+        "intel-rapl:1:psys": {
+          "energyJ": {
+            "count": 12,
+            "mean": 1.266797,
+            "median": 1.2668425
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.06351025407093572,
+            "median": 0.06333301240701555
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.001266797,
+            "median": 0.0012668425
+          }
+        }
+      }
+    },
+    {
+      "orm": "sequelize",
+      "scenario": "update-owner",
+      "profile": "no-pets",
+      "validTaskCount": 12,
+      "expectedTaskCount": 12,
+      "metrics": {
+        "workloadElapsedMs": {
+          "count": 12,
+          "mean": 19867.812611,
+          "median": 19884.662718
+        },
+        "throughputOpsPerSecond": {
+          "count": 12,
+          "mean": 50.38149845508282,
+          "median": 50.29019446730628
+        }
+      },
+      "energyDomains": {
+        "intel-rapl-mmio:0:0:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 18.03610175,
+            "median": 18.04396
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.9078068653063164,
+            "median": 0.9072365808806735
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.018036101750000002,
+            "median": 0.01804396
+          }
+        },
+        "intel-rapl-mmio:0:package-0": {
+          "energyJ": {
+            "count": 12,
+            "mean": 46.0715985,
+            "median": 45.681493
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 2.319842962208446,
+            "median": 2.3053546895956485
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.0460715985,
+            "median": 0.045681493000000004
+          }
+        },
+        "intel-rapl:0:0:core": {
+          "energyJ": {
+            "count": 12,
+            "mean": 20.254241,
+            "median": 20.250100500000002
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 1.0205051177819962,
+            "median": 1.004949445257368
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.020254241,
+            "median": 0.0202501005
+          }
+        },
+        "intel-rapl:0:1:uncore": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.28802941666666665,
+            "median": 0.306854
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.014507146448747793,
+            "median": 0.015654204094303785
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.00028802941666666664,
+            "median": 0.000306854
+          }
+        },
+        "intel-rapl:0:2:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 18.035699916666665,
+            "median": 18.043441
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.9077870814474724,
+            "median": 0.9072083532378291
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.01803569991666667,
+            "median": 0.018043441
+          }
+        },
+        "intel-rapl:0:package-0": {
+          "energyJ": {
+            "count": 12,
+            "mean": 46.07002166666667,
+            "median": 45.677373
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 2.319763881827126,
+            "median": 2.305175467301515
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.04607002166666667,
+            "median": 0.045677373
+          }
+        },
+        "intel-rapl:1:psys": {
+          "energyJ": {
+            "count": 12,
+            "mean": 1.2627428333333333,
+            "median": 1.2679715
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.06355385092500682,
+            "median": 0.06348743462877056
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.0012627428333333334,
+            "median": 0.0012679714999999999
+          }
+        }
+      }
+    },
+    {
+      "orm": "sequelize",
+      "scenario": "delete-visit",
+      "profile": "populated",
+      "validTaskCount": 12,
+      "expectedTaskCount": 12,
+      "metrics": {
+        "workloadElapsedMs": {
+          "count": 12,
+          "mean": 15507.135779166667,
+          "median": 15570.176642999999
+        },
+        "throughputOpsPerSecond": {
+          "count": 12,
+          "mean": 64.53103669407392,
+          "median": 64.22998452940742
+        }
+      },
+      "energyDomains": {
+        "intel-rapl-mmio:0:0:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 13.599279749999999,
+            "median": 13.6383625
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.8768665046060761,
+            "median": 0.876830268858086
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.01359927975,
+            "median": 0.0136383625
+          }
+        },
+        "intel-rapl-mmio:0:package-0": {
+          "energyJ": {
+            "count": 12,
+            "mean": 32.22740566666667,
+            "median": 32.354684000000006
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 2.0786432110258457,
+            "median": 2.087263851458876
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.03222740566666667,
+            "median": 0.032354684
+          }
+        },
+        "intel-rapl:0:0:core": {
+          "energyJ": {
+            "count": 12,
+            "mean": 12.257216416666667,
+            "median": 12.394286000000001
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.7910956036144521,
+            "median": 0.798366922117909
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.012257216416666666,
+            "median": 0.012394286000000001
+          }
+        },
+        "intel-rapl:0:1:uncore": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.22444091666666666,
+            "median": 0.23959249999999999
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.014466227635724558,
+            "median": 0.015174001937303203
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.00022444091666666668,
+            "median": 0.00023959250000000001
+          }
+        },
+        "intel-rapl:0:2:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 13.598826833333334,
+            "median": 13.6383315
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.8768369540095986,
+            "median": 0.876781318843473
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.013598826833333333,
+            "median": 0.0136383315
+          }
+        },
+        "intel-rapl:0:package-0": {
+          "energyJ": {
+            "count": 12,
+            "mean": 32.22693783333333,
+            "median": 32.3548675
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 2.0786137649736762,
+            "median": 2.0873489889448837
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.03222693783333333,
+            "median": 0.032354867499999995
+          }
+        },
+        "intel-rapl:1:psys": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.98070525,
+            "median": 0.984189
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.06322583672815091,
+            "median": 0.06315844992554134
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.00098070525,
+            "median": 0.000984189
+          }
+        }
+      }
+    },
+    {
+      "orm": "sequelize",
+      "scenario": "delete-owner-visits",
+      "profile": "populated",
+      "validTaskCount": 12,
+      "expectedTaskCount": 12,
+      "metrics": {
+        "workloadElapsedMs": {
+          "count": 12,
+          "mean": 19030.539998833334,
+          "median": 19155.230344000003
+        },
+        "throughputOpsPerSecond": {
+          "count": 12,
+          "mean": 52.593354064104595,
+          "median": 52.20560475480684
+        }
+      },
+      "energyDomains": {
+        "intel-rapl-mmio:0:0:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 16.672742583333335,
+            "median": 16.8241145
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.8760415163469585,
+            "median": 0.8753106496790914
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.016672742583333334,
+            "median": 0.0168241145
+          }
+        },
+        "intel-rapl-mmio:0:package-0": {
+          "energyJ": {
+            "count": 12,
+            "mean": 40.62577591666667,
+            "median": 40.652392500000005
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 2.136005805284256,
+            "median": 2.1089208748707495
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.04062577591666666,
+            "median": 0.0406523925
+          }
+        },
+        "intel-rapl:0:0:core": {
+          "energyJ": {
+            "count": 12,
+            "mean": 16.1470635,
+            "median": 16.13448
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.8499368685439337,
+            "median": 0.8237942364813081
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.0161470635,
+            "median": 0.01613448
+          }
+        },
+        "intel-rapl:0:1:uncore": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.27387416666666664,
+            "median": 0.2904655
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.014327898266070054,
+            "median": 0.015223697810388629
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.00027387416666666665,
+            "median": 0.0002904655
+          }
+        },
+        "intel-rapl:0:2:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 16.671974666666667,
+            "median": 16.821978
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.876001078848105,
+            "median": 0.8752820086685416
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.016671974666666665,
+            "median": 0.016821978
+          }
+        },
+        "intel-rapl:0:package-0": {
+          "energyJ": {
+            "count": 12,
+            "mean": 40.6263405,
+            "median": 40.655017
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 2.1360348465400643,
+            "median": 2.1090565512154305
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.0406263405,
+            "median": 0.040655017
+          }
+        },
+        "intel-rapl:1:psys": {
+          "energyJ": {
+            "count": 12,
+            "mean": 1.20293875,
+            "median": 1.2093165
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.06320790935827772,
+            "median": 0.06302776353395861
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.00120293875,
+            "median": 0.0012093165
+          }
+        }
+      }
+    },
+    {
+      "orm": "sequelize",
+      "scenario": "delete-owner-visits",
+      "profile": "no-visits",
+      "validTaskCount": 12,
+      "expectedTaskCount": 12,
+      "metrics": {
+        "workloadElapsedMs": {
+          "count": 12,
+          "mean": 2812.8415517500002,
+          "median": 2810.777529
+        },
+        "throughputOpsPerSecond": {
+          "count": 12,
+          "mean": 355.6294736906072,
+          "median": 355.7761536701582
+        }
+      },
+      "energyDomains": {
+        "intel-rapl-mmio:0:0:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 3.7621870833333335,
+            "median": 3.7749535
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 1.3369537596678571,
+            "median": 1.3364380807347387
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.0037621870833333335,
+            "median": 0.0037749535
+          }
+        },
+        "intel-rapl-mmio:0:package-0": {
+          "energyJ": {
+            "count": 12,
+            "mean": 20.827389916666668,
+            "median": 20.7715225
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 7.401513190770863,
+            "median": 7.399802868647489
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.020827389916666668,
+            "median": 0.0207715225
+          }
+        },
+        "intel-rapl:0:0:core": {
+          "energyJ": {
+            "count": 12,
+            "mean": 16.740460833333334,
+            "median": 16.679522
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 5.949075346123164,
+            "median": 5.945436135873823
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.016740460833333335,
+            "median": 0.016679522000000002
+          }
+        },
+        "intel-rapl:0:1:uncore": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.044270666666666666,
+            "median": 0.0453185
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.015742033560192277,
+            "median": 0.016128410979299915
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 4.427066666666667e-05,
+            "median": 4.5318499999999996e-05
+          }
+        },
+        "intel-rapl:0:2:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 3.762166833333333,
+            "median": 3.7757164999999997
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 1.3369503612570224,
+            "median": 1.336174824051012
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.0037621668333333333,
+            "median": 0.0037757165
+          }
+        },
+        "intel-rapl:0:package-0": {
+          "energyJ": {
+            "count": 12,
+            "mean": 20.828651416666666,
+            "median": 20.7715225
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 7.4019714976735145,
+            "median": 7.400777059262861
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.020828651416666667,
+            "median": 0.0207715225
+          }
+        },
+        "intel-rapl:1:psys": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.18208783333333334,
+            "median": 0.1822205
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.06471439959154375,
+            "median": 0.06474996100261801
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.00018208783333333332,
+            "median": 0.0001822205
+          }
+        }
+      }
+    },
+    {
+      "orm": "sequelize",
+      "scenario": "delete-owner-visits",
+      "profile": "no-pets",
+      "validTaskCount": 12,
+      "expectedTaskCount": 12,
+      "metrics": {
+        "workloadElapsedMs": {
+          "count": 12,
+          "mean": 1932.1412465833334,
+          "median": 1921.942268
+        },
+        "throughputOpsPerSecond": {
+          "count": 12,
+          "mean": 518.5033079838598,
+          "median": 520.3071524554589
+        }
+      },
+      "energyDomains": {
+        "intel-rapl-mmio:0:0:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 2.77702625,
+            "median": 2.7658625
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 1.4364890303206659,
+            "median": 1.4363787115586795
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.00277702625,
+            "median": 0.0027658624999999997
+          }
+        },
+        "intel-rapl-mmio:0:package-0": {
+          "energyJ": {
+            "count": 12,
+            "mean": 14.519519333333333,
+            "median": 14.5128105
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 7.510181517698871,
+            "median": 7.51362478531904
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.014519519333333333,
+            "median": 0.0145128105
+          }
+        },
+        "intel-rapl:0:0:core": {
+          "energyJ": {
+            "count": 12,
+            "mean": 11.637752083333334,
+            "median": 11.610474499999999
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 6.019422527704649,
+            "median": 6.020782021866294
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.011637752083333333,
+            "median": 0.011610474499999999
+          }
+        },
+        "intel-rapl:0:1:uncore": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.03498325,
+            "median": 0.031006
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.018106007106287722,
+            "median": 0.016246878353079697
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 3.4983250000000004e-05,
+            "median": 3.1006e-05
+          }
+        },
+        "intel-rapl:0:2:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 2.776502333333333,
+            "median": 2.766259
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 1.4362153981809564,
+            "median": 1.435846032254796
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.0027765023333333333,
+            "median": 0.002766259
+          }
+        },
+        "intel-rapl:0:package-0": {
+          "energyJ": {
+            "count": 12,
+            "mean": 14.519076916666666,
+            "median": 14.5128105
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 7.509944999481791,
+            "median": 7.5132464084478485
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.014519076916666667,
+            "median": 0.0145128105
+          }
+        },
+        "intel-rapl:1:psys": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.125915,
+            "median": 0.126068
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.065146984853641,
+            "median": 0.06515049353807793
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.000125915,
+            "median": 0.000126068
+          }
+        }
+      }
+    },
+    {
+      "orm": "drizzle",
+      "scenario": "read-pet",
+      "profile": "populated",
+      "validTaskCount": 12,
+      "expectedTaskCount": 12,
+      "metrics": {
+        "workloadElapsedMs": {
+          "count": 12,
+          "mean": 1647.5547238333334,
+          "median": 1641.73549
+        },
+        "throughputOpsPerSecond": {
+          "count": 12,
+          "mean": 608.1115526546732,
+          "median": 609.4159246364115
+        }
+      },
+      "energyDomains": {
+        "intel-rapl-mmio:0:0:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 2.5249314166666665,
+            "median": 2.5082025000000003
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 1.5316940530721856,
+            "median": 1.534192552424645
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.0025249314166666667,
+            "median": 0.0025082025
+          }
+        },
+        "intel-rapl-mmio:0:package-0": {
+          "energyJ": {
+            "count": 12,
+            "mean": 12.139729416666666,
+            "median": 11.994629499999999
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 7.365966674143576,
+            "median": 7.354512902658566
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.012139729416666667,
+            "median": 0.0119946295
+          }
+        },
+        "intel-rapl:0:0:core": {
+          "energyJ": {
+            "count": 12,
+            "mean": 9.620479083333333,
+            "median": 9.507605
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 5.837724241323185,
+            "median": 5.824573651225041
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.009620479083333335,
+            "median": 0.009507605
+          }
+        },
+        "intel-rapl:0:1:uncore": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.0291595,
+            "median": 0.0275875
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.01764726873373267,
+            "median": 0.016536239584339873
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 2.91595e-05,
+            "median": 2.75875e-05
+          }
+        },
+        "intel-rapl:0:2:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 2.524605916666667,
+            "median": 2.507867
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 1.531494961720665,
+            "median": 1.534192552424645
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.0025246059166666667,
+            "median": 0.002507867
+          }
+        },
+        "intel-rapl:0:package-0": {
+          "energyJ": {
+            "count": 12,
+            "mean": 12.139022333333333,
+            "median": 11.9941715
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 7.365591406788081,
+            "median": 7.352320439191898
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.012139022333333332,
+            "median": 0.011994171500000001
+          }
+        },
+        "intel-rapl:1:psys": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.10713175,
+            "median": 0.106293
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.06498898100592385,
+            "median": 0.06515857790160709
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.00010713175,
+            "median": 0.00010629300000000001
+          }
+        }
+      }
+    },
+    {
+      "orm": "drizzle",
+      "scenario": "read-owner",
+      "profile": "populated",
+      "validTaskCount": 12,
+      "expectedTaskCount": 12,
+      "metrics": {
+        "workloadElapsedMs": {
+          "count": 12,
+          "mean": 3512.198730583333,
+          "median": 3439.402295
+        },
+        "throughputOpsPerSecond": {
+          "count": 12,
+          "mean": 285.05665362399964,
+          "median": 290.7505907853214
+        }
+      },
+      "energyDomains": {
+        "intel-rapl-mmio:0:0:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 4.612918666666666,
+            "median": 4.5406379999999995
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 1.3128061876586652,
+            "median": 1.3093410484358947
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.004612918666666667,
+            "median": 0.004540638
+          }
+        },
+        "intel-rapl-mmio:0:package-0": {
+          "energyJ": {
+            "count": 12,
+            "mean": 26.932461833333335,
+            "median": 26.412163999999997
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 7.667082066155805,
+            "median": 7.682425353002701
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.026932461833333334,
+            "median": 0.026412164000000002
+          }
+        },
+        "intel-rapl:0:0:core": {
+          "energyJ": {
+            "count": 12,
+            "mean": 21.86927783333333,
+            "median": 21.5010435
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 6.22591606783684,
+            "median": 6.244827029362609
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.021869277833333332,
+            "median": 0.021501043499999997
+          }
+        },
+        "intel-rapl:0:1:uncore": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.05353775,
+            "median": 0.054321
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.015258023364078804,
+            "median": 0.01580773070774233
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 5.353775e-05,
+            "median": 5.4321e-05
+          }
+        },
+        "intel-rapl:0:2:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 4.6125930833333335,
+            "median": 4.540241
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 1.3127137204258459,
+            "median": 1.3093410484358947
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.004612593083333333,
+            "median": 0.004540241
+          }
+        },
+        "intel-rapl:0:package-0": {
+          "energyJ": {
+            "count": 12,
+            "mean": 26.932838083333333,
+            "median": 26.412499
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 7.667197533942671,
+            "median": 7.682425353002701
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.026932838083333334,
+            "median": 0.026412499
+          }
+        },
+        "intel-rapl:1:psys": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.22722833333333334,
+            "median": 0.223785
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.06467889294680462,
+            "median": 0.06472957900123108
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.00022722833333333332,
+            "median": 0.000223785
+          }
+        }
+      }
+    },
+    {
+      "orm": "drizzle",
+      "scenario": "read-owner",
+      "profile": "no-visits",
+      "validTaskCount": 12,
+      "expectedTaskCount": 12,
+      "metrics": {
+        "workloadElapsedMs": {
+          "count": 12,
+          "mean": 3444.773511916667,
+          "median": 3403.3688105
+        },
+        "throughputOpsPerSecond": {
+          "count": 12,
+          "mean": 290.49309593333,
+          "median": 293.82787962859425
+        }
+      },
+      "energyDomains": {
+        "intel-rapl-mmio:0:0:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 4.5111985,
+            "median": 4.455402
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 1.3090801373466785,
+            "median": 1.3067050815141843
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.0045111985,
+            "median": 0.004455402000000001
+          }
+        },
+        "intel-rapl-mmio:0:package-0": {
+          "energyJ": {
+            "count": 12,
+            "mean": 26.6320475,
+            "median": 26.3521055
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 7.728801683976274,
+            "median": 7.741262757561651
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.0266320475,
+            "median": 0.0263521055
+          }
+        },
+        "intel-rapl:0:0:core": {
+          "energyJ": {
+            "count": 12,
+            "mean": 21.673548833333335,
+            "median": 21.461157
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 6.289796551942224,
+            "median": 6.304119354348985
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.021673548833333334,
+            "median": 0.021461157
+          }
+        },
+        "intel-rapl:0:1:uncore": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.052846083333333335,
+            "median": 0.054138
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.015326273819842586,
+            "median": 0.015694147577008044
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 5.284608333333333e-05,
+            "median": 5.4138e-05
+          }
+        },
+        "intel-rapl:0:2:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 4.5106288333333335,
+            "median": 4.4541509999999995
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 1.3089135176553546,
+            "median": 1.3064770237616221
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.004510628833333334,
+            "median": 0.004454151
+          }
+        },
+        "intel-rapl:0:package-0": {
+          "energyJ": {
+            "count": 12,
+            "mean": 26.629865416666668,
+            "median": 26.356835500000003
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 7.728166761425139,
+            "median": 7.740893816823566
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.02662986541666667,
+            "median": 0.026356835500000002
+          }
+        },
+        "intel-rapl:1:psys": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.22231483333333332,
+            "median": 0.2200315
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.06451998740571623,
+            "median": 0.06460106398786808
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.00022231483333333331,
+            "median": 0.0002200315
+          }
+        }
+      }
+    },
+    {
+      "orm": "drizzle",
+      "scenario": "read-owner",
+      "profile": "no-pets",
+      "validTaskCount": 12,
+      "expectedTaskCount": 12,
+      "metrics": {
+        "workloadElapsedMs": {
+          "count": 12,
+          "mean": 2611.521847416667,
+          "median": 2600.5261675
+        },
+        "throughputOpsPerSecond": {
+          "count": 12,
+          "mean": 383.11532879844174,
+          "median": 384.53919123265507
+        }
+      },
+      "energyDomains": {
+        "intel-rapl-mmio:0:0:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 3.6092638333333333,
+            "median": 3.601736
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 1.3814980988518681,
+            "median": 1.3827560813044257
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.0036092638333333335,
+            "median": 0.003601736
+          }
+        },
+        "intel-rapl-mmio:0:package-0": {
+          "energyJ": {
+            "count": 12,
+            "mean": 19.295671,
+            "median": 19.379406
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 7.3858521573196745,
+            "median": 7.3700437690290475
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.019295671,
+            "median": 0.019379406000000002
+          }
+        },
+        "intel-rapl:0:0:core": {
+          "energyJ": {
+            "count": 12,
+            "mean": 15.465297583333333,
+            "median": 15.5589815
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 5.919586820165927,
+            "median": 5.9062516587042015
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.015465297583333332,
+            "median": 0.0155589815
+          }
+        },
+        "intel-rapl:0:1:uncore": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.03928616666666667,
+            "median": 0.039123500000000005
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.01504923251038075,
+            "median": 0.014891767930923866
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 3.928616666666666e-05,
+            "median": 3.9123500000000006e-05
+          }
+        },
+        "intel-rapl:0:2:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 3.60928925,
+            "median": 3.601736
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 1.3815079346071726,
+            "median": 1.3828592773375266
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.0036092892499999998,
+            "median": 0.003601736
+          }
+        },
+        "intel-rapl:0:package-0": {
+          "energyJ": {
+            "count": 12,
+            "mean": 19.294297583333332,
+            "median": 19.375529999999998
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 7.385334439380829,
+            "median": 7.3700437690290475
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.019294297583333335,
+            "median": 0.019375530000000002
+          }
+        },
+        "intel-rapl:1:psys": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.16961625,
+            "median": 0.16842600000000002
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.06492370356561912,
+            "median": 0.06485531439714357
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.00016961625000000001,
+            "median": 0.000168426
+          }
+        }
+      }
+    },
+    {
+      "orm": "drizzle",
+      "scenario": "create-pet",
+      "profile": "populated",
+      "validTaskCount": 12,
+      "expectedTaskCount": 12,
+      "metrics": {
+        "workloadElapsedMs": {
+          "count": 12,
+          "mean": 16697.30589775,
+          "median": 16622.0041195
+        },
+        "throughputOpsPerSecond": {
+          "count": 12,
+          "mean": 59.90550426851809,
+          "median": 60.16128755388725
+        }
+      },
+      "energyDomains": {
+        "intel-rapl-mmio:0:0:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 14.691506,
+            "median": 14.621758
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.8797174389789059,
+            "median": 0.8794963231930126
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.014691506,
+            "median": 0.014621758
+          }
+        },
+        "intel-rapl-mmio:0:package-0": {
+          "energyJ": {
+            "count": 12,
+            "mean": 35.06063025,
+            "median": 34.894869
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 2.098951429746092,
+            "median": 2.0948896483554638
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.03506063025,
+            "median": 0.034894869
+          }
+        },
+        "intel-rapl:0:0:core": {
+          "energyJ": {
+            "count": 12,
+            "mean": 13.540950416666666,
+            "median": 13.4849815
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.8103580983002787,
+            "median": 0.8069832820091901
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.013540950416666666,
+            "median": 0.0134849815
+          }
+        },
+        "intel-rapl:0:1:uncore": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.238072,
+            "median": 0.249694
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.014259530415285087,
+            "median": 0.01502088420858792
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.000238072,
+            "median": 0.000249694
+          }
+        },
+        "intel-rapl:0:2:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 14.69081925,
+            "median": 14.621392
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.8796761952844846,
+            "median": 0.8794743402680802
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.01469081925,
+            "median": 0.014621392
+          }
+        },
+        "intel-rapl:0:package-0": {
+          "energyJ": {
+            "count": 12,
+            "mean": 35.059384083333335,
+            "median": 34.893739999999994
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 2.0988761130832456,
+            "median": 2.0947544841551737
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.03505938408333333,
+            "median": 0.03489374
+          }
+        },
+        "intel-rapl:1:psys": {
+          "energyJ": {
+            "count": 12,
+            "mean": 1.0591253333333333,
+            "median": 1.0557835
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.063421007062428,
+            "median": 0.06322060232260929
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.0010591253333333333,
+            "median": 0.0010557835
+          }
+        }
+      }
+    },
+    {
+      "orm": "drizzle",
+      "scenario": "create-owner",
+      "profile": "populated",
+      "validTaskCount": 12,
+      "expectedTaskCount": 12,
+      "metrics": {
+        "workloadElapsedMs": {
+          "count": 12,
+          "mean": 20326.716297416668,
+          "median": 20277.630048
+        },
+        "throughputOpsPerSecond": {
+          "count": 12,
+          "mean": 49.24211578741723,
+          "median": 49.31550054133154
+        }
+      },
+      "energyDomains": {
+        "intel-rapl-mmio:0:0:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 18.03390975,
+            "median": 18.063583
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.8872289389440827,
+            "median": 0.8862919759717842
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.01803390975,
+            "median": 0.018063583
+          }
+        },
+        "intel-rapl-mmio:0:package-0": {
+          "energyJ": {
+            "count": 12,
+            "mean": 44.450874999999996,
+            "median": 44.9113845
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 2.187813407282941,
+            "median": 2.174129510119278
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.044450875,
+            "median": 0.0449113845
+          }
+        },
+        "intel-rapl:0:0:core": {
+          "energyJ": {
+            "count": 12,
+            "mean": 18.202824083333333,
+            "median": 18.108383
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.8965931461475195,
+            "median": 0.8828033680117636
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.018202824083333333,
+            "median": 0.018108383
+          }
+        },
+        "intel-rapl:0:1:uncore": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.310134,
+            "median": 0.308562
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.015253292496116795,
+            "median": 0.015127626222671029
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.000310134,
+            "median": 0.000308562
+          }
+        },
+        "intel-rapl:0:2:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 18.033197666666666,
+            "median": 18.063063999999997
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.8871938186569788,
+            "median": 0.8862466395511821
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.018033197666666667,
+            "median": 0.018063064
+          }
+        },
+        "intel-rapl:0:package-0": {
+          "energyJ": {
+            "count": 12,
+            "mean": 44.45002558333333,
+            "median": 44.910194
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 2.1877706099170995,
+            "median": 2.174019495975413
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.04445002558333333,
+            "median": 0.044910194
+          }
+        },
+        "intel-rapl:1:psys": {
+          "energyJ": {
+            "count": 12,
+            "mean": 1.28603275,
+            "median": 1.2819185
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.06325939004961273,
+            "median": 0.0631579804841925
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.00128603275,
+            "median": 0.0012819185
+          }
+        }
+      }
+    },
+    {
+      "orm": "drizzle",
+      "scenario": "update-pet",
+      "profile": "populated",
+      "validTaskCount": 12,
+      "expectedTaskCount": 12,
+      "metrics": {
+        "workloadElapsedMs": {
+          "count": 12,
+          "mean": 16743.324414666666,
+          "median": 16817.9161545
+        },
+        "throughputOpsPerSecond": {
+          "count": 12,
+          "mean": 59.755435177202465,
+          "median": 59.46108935866253
+        }
+      },
+      "energyDomains": {
+        "intel-rapl-mmio:0:0:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 14.744016416666666,
+            "median": 14.842949
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.8804690085269361,
+            "median": 0.8787523146254607
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.014744016416666667,
+            "median": 0.014842949
+          }
+        },
+        "intel-rapl-mmio:0:package-0": {
+          "energyJ": {
+            "count": 12,
+            "mean": 34.75490075,
+            "median": 34.762057
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 2.0753205270396102,
+            "median": 2.0727885896422227
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.03475490075,
+            "median": 0.034762057
+          }
+        },
+        "intel-rapl:0:0:core": {
+          "energyJ": {
+            "count": 12,
+            "mean": 13.162864166666667,
+            "median": 13.186612
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.785929103967939,
+            "median": 0.7867067400703878
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.013162864166666666,
+            "median": 0.013186611999999999
+          }
+        },
+        "intel-rapl:0:1:uncore": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.26219116666666664,
+            "median": 0.263702
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.015655047372945062,
+            "median": 0.01568979217089378
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.0002621911666666667,
+            "median": 0.000263702
+          }
+        },
+        "intel-rapl:0:2:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 14.743202583333334,
+            "median": 14.8419725
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.880420103074155,
+            "median": 0.8787261628252411
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.014743202583333333,
+            "median": 0.0148419725
+          }
+        },
+        "intel-rapl:0:package-0": {
+          "energyJ": {
+            "count": 12,
+            "mean": 34.752449166666665,
+            "median": 34.7610195
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 2.0751732341679108,
+            "median": 2.072729605725515
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.034752449166666664,
+            "median": 0.034761019500000004
+          }
+        },
+        "intel-rapl:1:psys": {
+          "energyJ": {
+            "count": 12,
+            "mean": 1.0644961666666668,
+            "median": 1.064084
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.06356459135418425,
+            "median": 0.06350043382307413
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.0010644961666666666,
+            "median": 0.0010640839999999999
+          }
+        }
+      }
+    },
+    {
+      "orm": "drizzle",
+      "scenario": "update-owner",
+      "profile": "populated",
+      "validTaskCount": 12,
+      "expectedTaskCount": 12,
+      "metrics": {
+        "workloadElapsedMs": {
+          "count": 12,
+          "mean": 20286.23767875,
+          "median": 20361.498562
+        },
+        "throughputOpsPerSecond": {
+          "count": 12,
+          "mean": 49.31319483042196,
+          "median": 49.11231627940081
+        }
+      },
+      "energyDomains": {
+        "intel-rapl-mmio:0:0:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 18.065963333333332,
+            "median": 18.0620875
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.8905222210055157,
+            "median": 0.8868717383874372
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.018065963333333334,
+            "median": 0.0180620875
+          }
+        },
+        "intel-rapl-mmio:0:package-0": {
+          "energyJ": {
+            "count": 12,
+            "mean": 46.40227575,
+            "median": 45.452642
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 2.2886191144338413,
+            "median": 2.2653864493938176
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.04640227575,
+            "median": 0.045452642
+          }
+        },
+        "intel-rapl:0:0:core": {
+          "energyJ": {
+            "count": 12,
+            "mean": 20.126560916666666,
+            "median": 19.483593
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.9935118164578113,
+            "median": 0.9733091602676003
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.020126560916666668,
+            "median": 0.019483593
+          }
+        },
+        "intel-rapl:0:1:uncore": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.3779695,
+            "median": 0.3107595
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.018620063498103284,
+            "median": 0.015539368173625992
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.0003779695,
+            "median": 0.00031075950000000003
+          }
+        },
+        "intel-rapl:0:2:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 18.065388583333334,
+            "median": 18.0615995
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.8904939832506629,
+            "median": 0.8868643564631504
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.01806538858333333,
+            "median": 0.018061599499999997
+          }
+        },
+        "intel-rapl:0:package-0": {
+          "energyJ": {
+            "count": 12,
+            "mean": 46.40078041666667,
+            "median": 45.453222
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 2.2885440809640762,
+            "median": 2.2650278785166256
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.04640078041666666,
+            "median": 0.045453222
+          }
+        },
+        "intel-rapl:1:psys": {
+          "energyJ": {
+            "count": 12,
+            "mean": 1.2878028333333333,
+            "median": 1.293759
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.06347547903335396,
+            "median": 0.06344793984463104
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.0012878028333333333,
+            "median": 0.001293759
+          }
+        }
+      }
+    },
+    {
+      "orm": "drizzle",
+      "scenario": "update-owner",
+      "profile": "no-visits",
+      "validTaskCount": 12,
+      "expectedTaskCount": 12,
+      "metrics": {
+        "workloadElapsedMs": {
+          "count": 12,
+          "mean": 20337.70215325,
+          "median": 20435.6341325
+        },
+        "throughputOpsPerSecond": {
+          "count": 12,
+          "mean": 49.25079671951388,
+          "median": 48.934361568513474
+        }
+      },
+      "energyDomains": {
+        "intel-rapl-mmio:0:0:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 17.989735583333335,
+            "median": 17.935531
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.8846842900436641,
+            "median": 0.8866813301905532
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.017989735583333333,
+            "median": 0.017935530999999998
+          }
+        },
+        "intel-rapl-mmio:0:package-0": {
+          "energyJ": {
+            "count": 12,
+            "mean": 45.00747858333333,
+            "median": 44.677956
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 2.2151262299574483,
+            "median": 2.1970469630523883
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.04500747858333334,
+            "median": 0.044677956000000005
+          }
+        },
+        "intel-rapl:0:0:core": {
+          "energyJ": {
+            "count": 12,
+            "mean": 18.771741333333335,
+            "median": 19.0558285
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.9252009825488071,
+            "median": 0.9052761095589692
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.018771741333333335,
+            "median": 0.0190558285
+          }
+        },
+        "intel-rapl:0:1:uncore": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.3148643333333333,
+            "median": 0.30966099999999996
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.015482626558482305,
+            "median": 0.01546472663278085
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.0003148643333333333,
+            "median": 0.00030966100000000003
+          }
+        },
+        "intel-rapl:0:2:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 17.989481333333334,
+            "median": 17.935531
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.8846718452787345,
+            "median": 0.8866491043523884
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.01798948133333333,
+            "median": 0.017935530999999998
+          }
+        },
+        "intel-rapl:0:package-0": {
+          "energyJ": {
+            "count": 12,
+            "mean": 45.00725466666667,
+            "median": 44.681679
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 2.215114277216493,
+            "median": 2.1968883159006376
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.04500725466666667,
+            "median": 0.044681679
+          }
+        },
+        "intel-rapl:1:psys": {
+          "energyJ": {
+            "count": 12,
+            "mean": 1.2901628333333333,
+            "median": 1.290524
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.06343668136889874,
+            "median": 0.06334178038636412
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.0012901628333333334,
+            "median": 0.001290524
+          }
+        }
+      }
+    },
+    {
+      "orm": "drizzle",
+      "scenario": "update-owner",
+      "profile": "no-pets",
+      "validTaskCount": 12,
+      "expectedTaskCount": 12,
+      "metrics": {
+        "workloadElapsedMs": {
+          "count": 12,
+          "mean": 20397.3460915,
+          "median": 20512.414218500002
+        },
+        "throughputOpsPerSecond": {
+          "count": 12,
+          "mean": 49.06704208465999,
+          "median": 48.75098686364268
+        }
+      },
+      "energyDomains": {
+        "intel-rapl-mmio:0:0:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 17.940002416666665,
+            "median": 18.0358425
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.8795288270053326,
+            "median": 0.8832171822381233
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.017940002416666666,
+            "median": 0.0180358425
+          }
+        },
+        "intel-rapl-mmio:0:package-0": {
+          "energyJ": {
+            "count": 12,
+            "mean": 44.911119416666665,
+            "median": 44.7397535
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 2.202807018086968,
+            "median": 2.191826241326372
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.044911119416666666,
+            "median": 0.0447397535
+          }
+        },
+        "intel-rapl:0:0:core": {
+          "energyJ": {
+            "count": 12,
+            "mean": 18.658903083333332,
+            "median": 18.583723
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.9158983847060329,
+            "median": 0.9109093465084712
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.018658903083333334,
+            "median": 0.018583722999999996
+          }
+        },
+        "intel-rapl:0:1:uncore": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.2927235833333333,
+            "median": 0.314696
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.014377039386264437,
+            "median": 0.015358502057562973
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.00029272358333333335,
+            "median": 0.00031469599999999994
+          }
+        },
+        "intel-rapl:0:2:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 17.9391325,
+            "median": 18.034896
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.8794863960700899,
+            "median": 0.8831659918027321
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.0179391325,
+            "median": 0.018034896
+          }
+        },
+        "intel-rapl:0:package-0": {
+          "energyJ": {
+            "count": 12,
+            "mean": 44.90948683333333,
+            "median": 44.738258
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 2.202728780815896,
+            "median": 2.191661303690047
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.04490948683333333,
+            "median": 0.044738258
+          }
+        },
+        "intel-rapl:1:psys": {
+          "energyJ": {
+            "count": 12,
+            "mean": 1.29511175,
+            "median": 1.301907
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.06349016228645277,
+            "median": 0.06326225022313474
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.0012951117499999999,
+            "median": 0.001301907
+          }
+        }
+      }
+    },
+    {
+      "orm": "drizzle",
+      "scenario": "delete-visit",
+      "profile": "populated",
+      "validTaskCount": 12,
+      "expectedTaskCount": 12,
+      "metrics": {
+        "workloadElapsedMs": {
+          "count": 12,
+          "mean": 15745.861860916666,
+          "median": 15591.833785499999
+        },
+        "throughputOpsPerSecond": {
+          "count": 12,
+          "mean": 63.54660628854376,
+          "median": 64.13954102332153
+        }
+      },
+      "energyDomains": {
+        "intel-rapl-mmio:0:0:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 13.714681416666666,
+            "median": 13.592189000000001
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.8708995806418262,
+            "median": 0.8717003016824691
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.013714681416666668,
+            "median": 0.013592189000000001
+          }
+        },
+        "intel-rapl-mmio:0:package-0": {
+          "energyJ": {
+            "count": 12,
+            "mean": 32.3442215,
+            "median": 32.252145
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 2.054313994564691,
+            "median": 2.0739636372517856
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.0323442215,
+            "median": 0.032252144999999996
+          }
+        },
+        "intel-rapl:0:0:core": {
+          "energyJ": {
+            "count": 12,
+            "mean": 12.10160775,
+            "median": 12.4294425
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.7689494150281777,
+            "median": 0.7847651267645013
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.01210160775,
+            "median": 0.012429442499999999
+          }
+        },
+        "intel-rapl:0:1:uncore": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.22593116666666666,
+            "median": 0.239074
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.014383078989900848,
+            "median": 0.015232704450964495
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.00022593116666666665,
+            "median": 0.00023907399999999998
+          }
+        },
+        "intel-rapl:0:2:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 13.713954083333332,
+            "median": 13.5917615
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.8708537623702499,
+            "median": 0.871643003755624
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.013713954083333334,
+            "median": 0.0135917615
+          }
+        },
+        "intel-rapl:0:package-0": {
+          "energyJ": {
+            "count": 12,
+            "mean": 32.342421,
+            "median": 32.249276
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 2.054200277120669,
+            "median": 2.074052229885811
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.032342421,
+            "median": 0.03224927600000001
+          }
+        },
+        "intel-rapl:1:psys": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.997622,
+            "median": 0.9925815
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.06334827101567622,
+            "median": 0.06320787437250407
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.0009976219999999999,
+            "median": 0.0009925815
+          }
+        }
+      }
+    },
+    {
+      "orm": "drizzle",
+      "scenario": "delete-owner-visits",
+      "profile": "populated",
+      "validTaskCount": 12,
+      "expectedTaskCount": 12,
+      "metrics": {
+        "workloadElapsedMs": {
+          "count": 12,
+          "mean": 18586.36803675,
+          "median": 18549.218451
+        },
+        "throughputOpsPerSecond": {
+          "count": 12,
+          "mean": 53.84859126086683,
+          "median": 53.91062902326781
+        }
+      },
+      "energyDomains": {
+        "intel-rapl-mmio:0:0:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 16.057631916666665,
+            "median": 16.0491225
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.8639544786085296,
+            "median": 0.8636055559807989
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.016057631916666665,
+            "median": 0.0160491225
+          }
+        },
+        "intel-rapl-mmio:0:package-0": {
+          "energyJ": {
+            "count": 12,
+            "mean": 39.481435833333336,
+            "median": 39.491384499999995
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 2.125547876051236,
+            "median": 2.1123596006544325
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.039481435833333335,
+            "median": 0.0394913845
+          }
+        },
+        "intel-rapl:0:0:core": {
+          "energyJ": {
+            "count": 12,
+            "mean": 15.69081675,
+            "median": 15.531027
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.8456702811480896,
+            "median": 0.8334668085430219
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.01569081675,
+            "median": 0.015531027
+          }
+        },
+        "intel-rapl:0:1:uncore": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.2861930833333333,
+            "median": 0.28896999999999995
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.015393187743288624,
+            "median": 0.015356232724697574
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.0002861930833333333,
+            "median": 0.00028897
+          }
+        },
+        "intel-rapl:0:2:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 16.056864,
+            "median": 16.048116
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.8639133058019339,
+            "median": 0.863552509920527
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.016056864,
+            "median": 0.016048116
+          }
+        },
+        "intel-rapl:0:package-0": {
+          "energyJ": {
+            "count": 12,
+            "mean": 39.48183758333333,
+            "median": 39.4972135
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 2.1255716692711077,
+            "median": 2.1122144857153278
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.03948183758333333,
+            "median": 0.0394972135
+          }
+        },
+        "intel-rapl:1:psys": {
+          "energyJ": {
+            "count": 12,
+            "mean": 1.1795725833333333,
+            "median": 1.1781584999999999
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.06345830185615464,
+            "median": 0.06332532707423529
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.0011795725833333333,
+            "median": 0.0011781585
+          }
+        }
+      }
+    },
+    {
+      "orm": "drizzle",
+      "scenario": "delete-owner-visits",
+      "profile": "no-visits",
+      "validTaskCount": 12,
+      "expectedTaskCount": 12,
+      "metrics": {
+        "workloadElapsedMs": {
+          "count": 12,
+          "mean": 2562.136794833333,
+          "median": 2549.2880975
+        },
+        "throughputOpsPerSecond": {
+          "count": 12,
+          "mean": 390.43942112721027,
+          "median": 392.2665809883825
+        }
+      },
+      "energyDomains": {
+        "intel-rapl-mmio:0:0:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 3.3639948333333334,
+            "median": 3.3333045
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 1.3124633093767537,
+            "median": 1.31264638762987
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.0033639948333333333,
+            "median": 0.0033333045
+          }
+        },
+        "intel-rapl-mmio:0:package-0": {
+          "energyJ": {
+            "count": 12,
+            "mean": 19.07675366666667,
+            "median": 19.0264405
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 7.4430465888896755,
+            "median": 7.42101945733082
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.019076753666666668,
+            "median": 0.0190264405
+          }
+        },
+        "intel-rapl:0:0:core": {
+          "energyJ": {
+            "count": 12,
+            "mean": 15.38906475,
+            "median": 15.351157
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 6.004267263445745,
+            "median": 5.984024207600145
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.01538906475,
+            "median": 0.015351157
+          }
+        },
+        "intel-rapl:0:1:uncore": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.03866583333333334,
+            "median": 0.038635
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.015090772948817506,
+            "median": 0.015008147419165497
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 3.866583333333334e-05,
+            "median": 3.8635000000000005e-05
+          }
+        },
+        "intel-rapl:0:2:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 3.3633030833333333,
+            "median": 3.3317175
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 1.312195165967035,
+            "median": 1.3120638804078637
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.0033633030833333335,
+            "median": 0.0033317175000000003
+          }
+        },
+        "intel-rapl:0:package-0": {
+          "energyJ": {
+            "count": 12,
+            "mean": 19.075899083333333,
+            "median": 19.022168
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 7.442734759222012,
+            "median": 7.422207356157315
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.019075899083333334,
+            "median": 0.019022168
+          }
+        },
+        "intel-rapl:1:psys": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.16656458333333335,
+            "median": 0.165344
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.06498668042796292,
+            "median": 0.06485891239016087
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.00016656458333333334,
+            "median": 0.000165344
+          }
+        }
+      }
+    },
+    {
+      "orm": "drizzle",
+      "scenario": "delete-owner-visits",
+      "profile": "no-pets",
+      "validTaskCount": 12,
+      "expectedTaskCount": 12,
+      "metrics": {
+        "workloadElapsedMs": {
+          "count": 12,
+          "mean": 2145.410091166667,
+          "median": 2113.7569705000005
+        },
+        "throughputOpsPerSecond": {
+          "count": 12,
+          "mean": 466.90279367569383,
+          "median": 473.0912998805677
+        }
+      },
+      "energyDomains": {
+        "intel-rapl-mmio:0:0:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 3.043795,
+            "median": 2.994072
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 1.4179304763690235,
+            "median": 1.4172716501040008
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.003043795,
+            "median": 0.002994072
+          }
+        },
+        "intel-rapl-mmio:0:package-0": {
+          "energyJ": {
+            "count": 12,
+            "mean": 15.898000166666666,
+            "median": 15.6267295
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 7.405222484274757,
+            "median": 7.404159805403262
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.015898000166666666,
+            "median": 0.0156267295
+          }
+        },
+        "intel-rapl:0:0:core": {
+          "energyJ": {
+            "count": 12,
+            "mean": 12.7242615,
+            "median": 12.5059495
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 5.926648825273146,
+            "median": 5.925831888894597
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.0127242615,
+            "median": 0.0125059495
+          }
+        },
+        "intel-rapl:0:1:uncore": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.033050333333333334,
+            "median": 0.031066999999999997
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.015354506817962691,
+            "median": 0.01446856793129354
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 3.305033333333333e-05,
+            "median": 3.1067e-05
+          }
+        },
+        "intel-rapl:0:2:dram": {
+          "energyJ": {
+            "count": 12,
+            "mean": 3.043800083333333,
+            "median": 2.9945294999999996
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 1.417939003735141,
+            "median": 1.4172716501040008
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.0030438000833333334,
+            "median": 0.0029945295
+          }
+        },
+        "intel-rapl:0:package-0": {
+          "energyJ": {
+            "count": 12,
+            "mean": 15.899648083333334,
+            "median": 15.6305445
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 7.406020928429855,
+            "median": 7.405972377504078
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.015899648083333332,
+            "median": 0.0156305445
+          }
+        },
+        "intel-rapl:1:psys": {
+          "energyJ": {
+            "count": 12,
+            "mean": 0.14155525,
+            "median": 0.13943450000000002
+          },
+          "averagePowerW": {
+            "count": 12,
+            "mean": 0.0659431456901257,
+            "median": 0.06594516957405733
+          },
+          "energyPerOperationJ": {
+            "count": 12,
+            "mean": 0.00014155525,
+            "median": 0.0001394345
+          }
+        }
+      }
+    }
+  ]
+}

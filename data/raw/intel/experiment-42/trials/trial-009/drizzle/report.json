@@ -1,0 +1,25 @@
+{
+  "orm": "drizzle",
+  "position": 1,
+  "status": "completed",
+  "startedAt": "2026-10-18T15:02:31.302832+00:00",
+  "results": [
+    "results/experiment-42/trials/trial-009/drizzle/delete-owner-visits-no-pets.json",
+    "results/experiment-42/trials/trial-009/drizzle/read-owner-populated.json",
+    "results/experiment-42/trials/trial-009/drizzle/create-pet-populated.json",
+    "results/experiment-42/trials/trial-009/drizzle/delete-owner-visits-populated.json",
+    "results/experiment-42/trials/trial-009/drizzle/update-owner-populated.json",
+    "results/experiment-42/trials/trial-009/drizzle/update-owner-no-pets.json",
+    "results/experiment-42/trials/trial-009/drizzle/update-owner-no-visits.json",
+    "results/experiment-42/trials/trial-009/drizzle/update-pet-populated.json",
+    "results/experiment-42/trials/trial-009/drizzle/read-owner-no-pets.json",
+    "results/experiment-42/trials/trial-009/drizzle/delete-owner-visits-no-visits.json",
+    "results/experiment-42/trials/trial-009/drizzle/read-owner-no-visits.json",
+    "results/experiment-42/trials/trial-009/drizzle/create-owner-populated.json",
+    "results/experiment-42/trials/trial-009/drizzle/delete-visit-populated.json",
+    "results/experiment-42/trials/trial-009/drizzle/read-pet-populated.json"
+  ],
+  "apiPid": 100400,
+  "finishedAt": "2026-10-18T15:05:35.215696+00:00",
+  "apiStoppedAt": "2026-10-18T15:05:35.247713+00:00"
+}

@@ -1,0 +1,142 @@
+{
+  "formatVersion": 2,
+  "kind": "experiment",
+  "seed": 42,
+  "status": "completed",
+  "createdAt": "2026-10-18T13:33:35.546948+00:00",
+  "trialsPlanned": 12,
+  "trialsCompleted": 12,
+  "taskMeasurementsPlanned": 504,
+  "taskMeasurementsCompleted": 504,
+  "activeTrial": null,
+  "configuration": {
+    "size": 1000,
+    "queryCount": 1000,
+    "backend": "rapl",
+    "sampleIntervalMs": 100,
+    "trialCooldownSeconds": 30.0,
+    "ormCooldownSeconds": 10.0,
+    "idleSeconds": 30.0,
+    "workloadTimeoutSeconds": 3600.0,
+    "baselineFrequency": "once per complete trial",
+    "datasetSeed": "experiment seed + zero-based trial index",
+    "taskOrder": "shuffled once per trial, identical for all ORMs",
+    "ormOrder": "rotate by one position per trial",
+    "apiLifecycle": "one process per ORM block",
+    "postgresLifecycle": "start/stop per complete trial",
+    "warmupRequests": 0,
+    "ormPoolMaximum": 5
+  },
+  "tasks": [
+    {
+      "scenario": "read-pet",
+      "profile": "populated"
+    },
+    {
+      "scenario": "read-owner",
+      "profile": "populated"
+    },
+    {
+      "scenario": "read-owner",
+      "profile": "no-visits"
+    },
+    {
+      "scenario": "read-owner",
+      "profile": "no-pets"
+    },
+    {
+      "scenario": "create-pet",
+      "profile": "populated"
+    },
+    {
+      "scenario": "create-owner",
+      "profile": "populated"
+    },
+    {
+      "scenario": "update-pet",
+      "profile": "populated"
+    },
+    {
+      "scenario": "update-owner",
+      "profile": "populated"
+    },
+    {
+      "scenario": "update-owner",
+      "profile": "no-visits"
+    },
+    {
+      "scenario": "update-owner",
+      "profile": "no-pets"
+    },
+    {
+      "scenario": "delete-visit",
+      "profile": "populated"
+    },
+    {
+      "scenario": "delete-owner-visits",
+      "profile": "populated"
+    },
+    {
+      "scenario": "delete-owner-visits",
+      "profile": "no-visits"
+    },
+    {
+      "scenario": "delete-owner-visits",
+      "profile": "no-pets"
+    }
+  ],
+  "orms": [
+    "prisma",
+    "sequelize",
+    "drizzle"
+  ],
+  "host": {
+    "cpuModel": "Intel(R) Core(TM) i7-6500U CPU @ 2.50GHz",
+    "logicalCpuCount": 4,
+    "cpuSpeedMHzAtSetup": [
+      2799,
+      2800,
+      2799,
+      2800
+    ],
+    "totalMemoryBytes": 8168050688,
+    "machineId": "cachyos-marius",
+    "system": "Linux",
+    "release": "7.2.9-1-cachyos",
+    "architecture": "x86_64",
+    "macOSVersion": null,
+    "linuxDistribution": "NAME=\"CachyOS Linux\"\nPRETTY_NAME=\"CachyOS\"\nID=cachyos\nID_LIKE=arch\nBUILD_ID=rolling\nANSI_COLOR=\"38;2;23;147;209\"\nHOME_URL=\"https://cachyos.org/\"\nDOCUMENTATION_URL=\"https://wiki.cachyos.org/\"\nSUPPORT_URL=\"https://discuss.cachyos.org/\"\nBUG_REPORT_URL=\"https://github.com/cachyos\"\nPRIVACY_POLICY_URL=\"https://terms.archlinux.org/docs/privacy-policy/\"\nLOGO=cachyos",
+    "cpuGovernor": "powersave",
+    "powerState": null
+  },
+  "software": {
+    "node": "v26.10.0",
+    "nodeOptions": "",
+    "postgres": {
+      "version": "PostgreSQL 17.11 on x86_64-pc-linux-musl, compiled by gcc (Alpine 15.2.0) 15.2.0, 64-bit",
+      "version_number": "170011",
+      "max_connections": "100"
+    },
+    "dependencies": {
+      "@prisma/client": "6.19.3",
+      "sequelize": "6.37.8",
+      "drizzle-orm": "0.45.3",
+      "pg": "8.23.0",
+      "express": "5.2.1",
+      "tsx": "4.23.15"
+    },
+    "python": "3.14.7",
+    "gitCommit": "ead4cee034de45919f7851cedcca242854ea5e9a",
+    "gitDirty": true,
+    "packageLockSha256": "9248e49eb755e05faf74324b8dce6e9c4d83dc487eb8eea329f21d881242b4d9"
+  },
+  "databaseEndpoint": {
+    "host": "localhost",
+    "port": 55432,
+    "database": "orm_benchmark"
+  },
+  "startedAt": "2026-10-18T13:33:35.561936+00:00",
+  "activeOrm": null,
+  "activeTask": null,
+  "finishedAt": "2026-10-18T15:45:34.742853+00:00"
+}

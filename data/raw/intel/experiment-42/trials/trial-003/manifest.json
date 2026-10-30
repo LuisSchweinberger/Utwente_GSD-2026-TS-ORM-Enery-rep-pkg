@@ -1,0 +1,212 @@
+{
+  "formatVersion": 2,
+  "index": 3,
+  "datasetSeed": 44,
+  "status": "completed",
+  "startedAt": "2026-10-18T13:55:29.301345+00:00",
+  "ormOrder": [
+    "drizzle",
+    "prisma",
+    "sequelize"
+  ],
+  "taskOrder": [
+    {
+      "scenario": "read-owner",
+      "profile": "populated"
+    },
+    {
+      "scenario": "delete-owner-visits",
+      "profile": "no-visits"
+    },
+    {
+      "scenario": "update-pet",
+      "profile": "populated"
+    },
+    {
+      "scenario": "delete-visit",
+      "profile": "populated"
+    },
+    {
+      "scenario": "read-owner",
+      "profile": "no-visits"
+    },
+    {
+      "scenario": "read-owner",
+      "profile": "no-pets"
+    },
+    {
+      "scenario": "delete-owner-visits",
+      "profile": "populated"
+    },
+    {
+      "scenario": "update-owner",
+      "profile": "no-pets"
+    },
+    {
+      "scenario": "delete-owner-visits",
+      "profile": "no-pets"
+    },
+    {
+      "scenario": "update-owner",
+      "profile": "populated"
+    },
+    {
+      "scenario": "create-owner",
+      "profile": "populated"
+    },
+    {
+      "scenario": "create-pet",
+      "profile": "populated"
+    },
+    {
+      "scenario": "update-owner",
+      "profile": "no-visits"
+    },
+    {
+      "scenario": "read-pet",
+      "profile": "populated"
+    }
+  ],
+  "taskMeasurementsCompleted": 42,
+  "ormsCompleted": 3,
+  "ormBlocks": [
+    {
+      "orm": "drizzle",
+      "position": 1,
+      "status": "completed",
+      "startedAt": "2026-10-18T13:56:43.961281+00:00",
+      "results": [
+        "results/experiment-42/trials/trial-003/drizzle/read-owner-populated.json",
+        "results/experiment-42/trials/trial-003/drizzle/delete-owner-visits-no-visits.json",
+        "results/experiment-42/trials/trial-003/drizzle/update-pet-populated.json",
+        "results/experiment-42/trials/trial-003/drizzle/delete-visit-populated.json",
+        "results/experiment-42/trials/trial-003/drizzle/read-owner-no-visits.json",
+        "results/experiment-42/trials/trial-003/drizzle/read-owner-no-pets.json",
+        "results/experiment-42/trials/trial-003/drizzle/delete-owner-visits-populated.json",
+        "results/experiment-42/trials/trial-003/drizzle/update-owner-no-pets.json",
+        "results/experiment-42/trials/trial-003/drizzle/delete-owner-visits-no-pets.json",
+        "results/experiment-42/trials/trial-003/drizzle/update-owner-populated.json",
+        "results/experiment-42/trials/trial-003/drizzle/create-owner-populated.json",
+        "results/experiment-42/trials/trial-003/drizzle/create-pet-populated.json",
+        "results/experiment-42/trials/trial-003/drizzle/update-owner-no-visits.json",
+        "results/experiment-42/trials/trial-003/drizzle/read-pet-populated.json"
+      ],
+      "apiPid": 27372,
+      "finishedAt": "2026-10-18T13:59:45.640415+00:00",
+      "apiStoppedAt": "2026-10-18T13:59:45.672279+00:00"
+    },
+    {
+      "orm": "prisma",
+      "position": 2,
+      "status": "completed",
+      "startedAt": "2026-10-18T13:59:55.673282+00:00",
+      "results": [
+        "results/experiment-42/trials/trial-003/prisma/read-owner-populated.json",
+        "results/experiment-42/trials/trial-003/prisma/delete-owner-visits-no-visits.json",
+        "results/experiment-42/trials/trial-003/prisma/update-pet-populated.json",
+        "results/experiment-42/trials/trial-003/prisma/delete-visit-populated.json",
+        "results/experiment-42/trials/trial-003/prisma/read-owner-no-visits.json",
+        "results/experiment-42/trials/trial-003/prisma/read-owner-no-pets.json",
+        "results/experiment-42/trials/trial-003/prisma/delete-owner-visits-populated.json",
+        "results/experiment-42/trials/trial-003/prisma/update-owner-no-pets.json",
+        "results/experiment-42/trials/trial-003/prisma/delete-owner-visits-no-pets.json",
+        "results/experiment-42/trials/trial-003/prisma/update-owner-populated.json",
+        "results/experiment-42/trials/trial-003/prisma/create-owner-populated.json",
+        "results/experiment-42/trials/trial-003/prisma/create-pet-populated.json",
+        "results/experiment-42/trials/trial-003/prisma/update-owner-no-visits.json",
+        "results/experiment-42/trials/trial-003/prisma/read-pet-populated.json"
+      ],
+      "apiPid": 31092,
+      "finishedAt": "2026-10-18T14:03:10.048768+00:00",
+      "apiStoppedAt": "2026-10-18T14:03:10.080824+00:00"
+    },
+    {
+      "orm": "sequelize",
+      "position": 3,
+      "status": "completed",
+      "startedAt": "2026-10-18T14:03:20.081948+00:00",
+      "results": [
+        "results/experiment-42/trials/trial-003/sequelize/read-owner-populated.json",
+        "results/experiment-42/trials/trial-003/sequelize/delete-owner-visits-no-visits.json",
+        "results/experiment-42/trials/trial-003/sequelize/update-pet-populated.json",
+        "results/experiment-42/trials/trial-003/sequelize/delete-visit-populated.json",
+        "results/experiment-42/trials/trial-003/sequelize/read-owner-no-visits.json",
+        "results/experiment-42/trials/trial-003/sequelize/read-owner-no-pets.json",
+        "results/experiment-42/trials/trial-003/sequelize/delete-owner-visits-populated.json",
+        "results/experiment-42/trials/trial-003/sequelize/update-owner-no-pets.json",
+        "results/experiment-42/trials/trial-003/sequelize/delete-owner-visits-no-pets.json",
+        "results/experiment-42/trials/trial-003/sequelize/update-owner-populated.json",
+        "results/experiment-42/trials/trial-003/sequelize/create-owner-populated.json",
+        "results/experiment-42/trials/trial-003/sequelize/create-pet-populated.json",
+        "results/experiment-42/trials/trial-003/sequelize/update-owner-no-visits.json",
+        "results/experiment-42/trials/trial-003/sequelize/read-pet-populated.json"
+      ],
+      "apiPid": 35004,
+      "finishedAt": "2026-10-18T14:06:24.022907+00:00",
+      "apiStoppedAt": "2026-10-18T14:06:24.087384+00:00"
+    }
+  ],
+  "activeTask": null,
+  "snapshot": {
+    "layoutVersion": 2,
+    "size": 1000,
+    "profiles": {
+      "populated": {
+        "owners": {
+          "start": 1,
+          "count": 1000
+        },
+        "pets": {
+          "start": 1,
+          "count": 2000
+        },
+        "visits": {
+          "start": 1,
+          "count": 4000
+        }
+      },
+      "no-visits": {
+        "owners": {
+          "start": 1001,
+          "count": 1000
+        },
+        "pets": {
+          "start": 2001,
+          "count": 2000
+        },
+        "visits": {
+          "start": 4001,
+          "count": 0
+        }
+      },
+      "no-pets": {
+        "owners": {
+          "start": 2001,
+          "count": 1000
+        },
+        "pets": {
+          "start": 4001,
+          "count": 0
+        },
+        "visits": {
+          "start": 4001,
+          "count": 0
+        }
+      }
+    },
+    "dataset": {
+      "generatorVersion": "petclinic-v1",
+      "seed": 44,
+      "contentSha256": "599477c5dbcb72742f4c759a7a1c4e3da7671e255b87364cddb44c217b61e272"
+    },
+    "sha256": "9ffc86975eb2040a73477507134a5b06ee5ffa905a525a17f900b26f0b241178",
+    "createdAt": "2026-10-18T13:56:03.619Z"
+  },
+  "postgres": {
+    "version": "PostgreSQL 17.11 on x86_64-pc-linux-musl, compiled by gcc (Alpine 15.2.0) 15.2.0, 64-bit",
+    "version_number": "170011",
+    "max_connections": "100"
+  },
+  "baseline": "results/experiment-42/trials/trial-003/baseline/measurement.json",
+  "finishedAt": "2026-10-18T14:06:26.716609+00:00"
+}

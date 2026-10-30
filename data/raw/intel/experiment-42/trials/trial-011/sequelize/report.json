@@ -1,0 +1,25 @@
+{
+  "orm": "sequelize",
+  "position": 1,
+  "status": "completed",
+  "startedAt": "2026-10-18T15:24:36.717152+00:00",
+  "results": [
+    "results/experiment-42/trials/trial-011/sequelize/update-pet-populated.json",
+    "results/experiment-42/trials/trial-011/sequelize/delete-owner-visits-populated.json",
+    "results/experiment-42/trials/trial-011/sequelize/update-owner-no-visits.json",
+    "results/experiment-42/trials/trial-011/sequelize/read-owner-no-pets.json",
+    "results/experiment-42/trials/trial-011/sequelize/create-owner-populated.json",
+    "results/experiment-42/trials/trial-011/sequelize/read-owner-no-visits.json",
+    "results/experiment-42/trials/trial-011/sequelize/delete-owner-visits-no-visits.json",
+    "results/experiment-42/trials/trial-011/sequelize/update-owner-populated.json",
+    "results/experiment-42/trials/trial-011/sequelize/read-owner-populated.json",
+    "results/experiment-42/trials/trial-011/sequelize/create-pet-populated.json",
+    "results/experiment-42/trials/trial-011/sequelize/update-owner-no-pets.json",
+    "results/experiment-42/trials/trial-011/sequelize/delete-owner-visits-no-pets.json",
+    "results/experiment-42/trials/trial-011/sequelize/delete-visit-populated.json",
+    "results/experiment-42/trials/trial-011/sequelize/read-pet-populated.json"
+  ],
+  "apiPid": 124899,
+  "finishedAt": "2026-10-18T15:27:43.836102+00:00",
+  "apiStoppedAt": "2026-10-18T15:27:43.868020+00:00"
+}

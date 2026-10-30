@@ -1,0 +1,45 @@
+{
+  "name": "orm-petclinic-benchmark",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "db:up": "docker compose up -d postgres",
+    "db:down": "docker compose down",
+    "db:init": "tsx src/init.ts",
+    "db:reset": "tsx src/reset.ts",
+    "prisma:generate": "prisma generate",
+    "start:prisma": "tsx src/server.ts prisma",
+    "start:sequelize": "tsx src/server.ts sequelize",
+    "start:drizzle": "tsx src/server.ts drizzle",
+    "test": "tsx --test test/api.test.ts",
+    "test:dataset": "tsx --test test/dataset.test.ts",
+    "test:measurement": "python3 -m unittest discover -s test -p 'measurement_test.py' -v",
+    "test:orchestration": "python3 -m unittest discover -s test -p 'orchestration_test.py' -v",
+    "test:runner": "python3 -m unittest discover -s test -p '*_test.py' -v",
+    "verify": "tsx src/verify.ts",
+    "schedule": "python3 scripts/benchmark.py schedule",
+    "trial": "python3 scripts/benchmark.py trial",
+    "task": "python3 scripts/benchmark.py task",
+    "pilot": "python3 scripts/benchmark.py pilot",
+    "experiment": "python3 scripts/benchmark.py experiment",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@prisma/client": "6.19.3",
+    "dotenv": "^16.6.1",
+    "drizzle-orm": "0.45.3",
+    "express": "^5.1.0",
+    "pg": "^8.16.3",
+    "sequelize": "^6.37.7"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/node": "^22.18.6",
+    "@types/pg": "^8.15.5",
+    "prisma": "6.19.3",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2"
+  }
+}

@@ -1,0 +1,11 @@
+{"start": 182596.492825541, "end": 182596.609839541, "energyJ": {"cpu": 0.02, "gpu": 0.015, "ane": 0.0}, "receivedMonotonicSeconds": 182596.609839541, "receiptLagMs": 0.0}
+{"start": 182596.609839541, "end": 182596.728118041, "energyJ": {"cpu": 0.514, "gpu": 0.02, "ane": 0.0}, "receivedMonotonicSeconds": 182596.724247, "receiptLagMs": -3.8710410008206964}
+{"start": 182596.728118041, "end": 182596.844275374, "energyJ": {"cpu": 0.644, "gpu": 0.017, "ane": 0.0}, "receivedMonotonicSeconds": 182596.84016825, "receiptLagMs": -4.107123997528106}
+{"start": 182596.844275374, "end": 182596.960269207, "energyJ": {"cpu": 0.641, "gpu": 0.022, "ane": 0.0}, "receivedMonotonicSeconds": 182596.956521875, "receiptLagMs": -3.74733199714683}
+{"start": 182596.960269207, "end": 182597.077258415, "energyJ": {"cpu": 0.726, "gpu": 0.017, "ane": 0.0}, "receivedMonotonicSeconds": 182597.073360083, "receiptLagMs": -3.8983319827821106}
+{"start": 182597.077258415, "end": 182597.19339229, "energyJ": {"cpu": 0.685, "gpu": 0.022, "ane": 0.0}, "receivedMonotonicSeconds": 182597.189629875, "receiptLagMs": -3.7624149990733713}
+{"start": 182597.19339229, "end": 182597.310288081, "energyJ": {"cpu": 0.767, "gpu": 0.022, "ane": 0.0}, "receivedMonotonicSeconds": 182597.306774, "receiptLagMs": -3.5140810068696737}
+{"start": 182597.310288081, "end": 182597.427260039, "energyJ": {"cpu": 0.667, "gpu": 0.019, "ane": 0.0}, "receivedMonotonicSeconds": 182597.423530791, "receiptLagMs": -3.729247982846573}
+{"start": 182597.427260039, "end": 182597.54329566399, "energyJ": {"cpu": 0.691, "gpu": 0.015, "ane": 0.0}, "receivedMonotonicSeconds": 182597.539526833, "receiptLagMs": -3.768830996705219}
+{"start": 182597.54329566399, "end": 182597.660315455, "energyJ": {"cpu": 0.668, "gpu": 0.024, "ane": 0.0}, "receivedMonotonicSeconds": 182597.656328083, "receiptLagMs": -3.987372008850798}
+{"start": 182597.660315455, "end": 182597.77832266298, "energyJ": {"cpu": 0.457, "gpu": 0.017, "ane": 0.0}, "receivedMonotonicSeconds": 182597.775232666, "receiptLagMs": -3.089996986091137}

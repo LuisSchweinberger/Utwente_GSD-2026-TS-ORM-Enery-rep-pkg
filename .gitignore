@@ -1,0 +1,19 @@
+.DS_Store
+._*
+Thumbs.db
+__pycache__/
+*.py[cod]
+.venv/
+node_modules/
+.env
+.env.*
+!.env.example
+dist/
+.pytest_cache/
+.mplconfig/
+
+# New measurements must never overwrite the archived research data.
+/src/benchmark/results/
+/src/benchmark/logs/
+/src/benchmark/db/snapshot/
+/data/results/reproduced/

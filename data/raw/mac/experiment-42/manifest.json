@@ -1,0 +1,173 @@
+{
+  "formatVersion": 2,
+  "kind": "experiment",
+  "seed": 42,
+  "status": "completed",
+  "createdAt": "2026-10-20T20:06:57.456955+00:00",
+  "trialsPlanned": 12,
+  "trialsCompleted": 12,
+  "taskMeasurementsPlanned": 504,
+  "taskMeasurementsCompleted": 504,
+  "activeTrial": null,
+  "configuration": {
+    "size": 1000,
+    "queryCount": 1000,
+    "backend": "powermetrics_zeus",
+    "collectors": [
+      {
+        "name": "powermetrics",
+        "version": "25.6.0",
+        "versionSource": "macOS kernel release (bundled tool)",
+        "domains": [
+          "cpu",
+          "gpu",
+          "ane"
+        ],
+        "method": "interval integration"
+      },
+      {
+        "name": "zeus-apple-silicon",
+        "version": "1.1.0",
+        "source": "ioreport",
+        "domains": [
+          "dram"
+        ],
+        "field": "dram_mj",
+        "method": "boundary counter delta"
+      }
+    ],
+    "sampleIntervalMs": 100,
+    "trialCooldownSeconds": 30,
+    "ormCooldownSeconds": 10,
+    "idleSeconds": 30,
+    "workloadTimeoutSeconds": 3600.0,
+    "baselineFrequency": "once per complete trial",
+    "datasetSeed": "experiment seed + zero-based trial index",
+    "taskOrder": "shuffled once per trial, identical for all ORMs",
+    "ormOrder": "rotate by one position per trial",
+    "apiLifecycle": "one process per ORM block",
+    "postgresLifecycle": "start/stop per complete trial",
+    "warmupRequests": 0,
+    "ormPoolMaximum": 5
+  },
+  "tasks": [
+    {
+      "scenario": "read-pet",
+      "profile": "populated"
+    },
+    {
+      "scenario": "read-owner",
+      "profile": "populated"
+    },
+    {
+      "scenario": "read-owner",
+      "profile": "no-visits"
+    },
+    {
+      "scenario": "read-owner",
+      "profile": "no-pets"
+    },
+    {
+      "scenario": "create-pet",
+      "profile": "populated"
+    },
+    {
+      "scenario": "create-owner",
+      "profile": "populated"
+    },
+    {
+      "scenario": "update-pet",
+      "profile": "populated"
+    },
+    {
+      "scenario": "update-owner",
+      "profile": "populated"
+    },
+    {
+      "scenario": "update-owner",
+      "profile": "no-visits"
+    },
+    {
+      "scenario": "update-owner",
+      "profile": "no-pets"
+    },
+    {
+      "scenario": "delete-visit",
+      "profile": "populated"
+    },
+    {
+      "scenario": "delete-owner-visits",
+      "profile": "populated"
+    },
+    {
+      "scenario": "delete-owner-visits",
+      "profile": "no-visits"
+    },
+    {
+      "scenario": "delete-owner-visits",
+      "profile": "no-pets"
+    }
+  ],
+  "orms": [
+    "prisma",
+    "sequelize",
+    "drizzle"
+  ],
+  "host": {
+    "cpuModel": "Apple M4 Pro",
+    "logicalCpuCount": 12,
+    "cpuSpeedMHzAtSetup": [
+      2400,
+      2400,
+      2400,
+      2400,
+      2400,
+      2400,
+      2400,
+      2400,
+      2400,
+      2400,
+      2400,
+      2400
+    ],
+    "totalMemoryBytes": 25769803776,
+    "machineId": "Luiss-MacBook-Pro.local",
+    "system": "Darwin",
+    "release": "25.6.0",
+    "architecture": "arm64",
+    "macOSVersion": "26.6.2",
+    "linuxDistribution": null,
+    "cpuGovernor": null,
+    "powerState": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=22020195)\t100%; charged; 0:00 remaining present: true"
+  },
+  "software": {
+    "node": "v24.9.0",
+    "nodeOptions": "",
+    "postgres": {
+      "version": "PostgreSQL 17.11 on aarch64-unknown-linux-musl, compiled by gcc (Alpine 15.2.0) 15.2.0, 64-bit",
+      "version_number": "170011",
+      "max_connections": "100"
+    },
+    "dependencies": {
+      "@prisma/client": "6.19.3",
+      "sequelize": "6.37.8",
+      "drizzle-orm": "0.45.3",
+      "pg": "8.23.0",
+      "express": "5.2.1",
+      "tsx": "4.23.15"
+    },
+    "python": "3.14.5",
+    "gitCommit": "727d7cf5c0abb9ab6c527ac7e6b470727ede614b",
+    "gitDirty": true,
+    "packageLockSha256": "9248e49eb755e05faf74324b8dce6e9c4d83dc487eb8eea329f21d881242b4d9"
+  },
+  "databaseEndpoint": {
+    "host": "localhost",
+    "port": 5432,
+    "database": "orm_benchmark"
+  },
+  "startedAt": "2026-10-20T20:06:57.512239+00:00",
+  "activeOrm": null,
+  "activeTask": null,
+  "finishedAt": "2026-10-20T20:48:07.583366+00:00"
+}

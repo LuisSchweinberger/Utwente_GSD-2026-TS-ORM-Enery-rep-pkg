@@ -1,0 +1,113 @@
+operation,pair,scope,n,rho,p_value,p_holm,significant
+create-owner-populated,execution_time vs cpu_energy,all ORMs,36,0.9567567567567569,8.27626477008078e-20,9.186653894789666e-18,True
+create-owner-populated,execution_time vs cpu_energy,drizzle,12,0.7972027972027973,0.0019003677255282697,0.15392978576778985,False
+create-owner-populated,execution_time vs cpu_energy,prisma,12,0.8251748251748254,0.0009513628555555001,0.07991447986666202,False
+create-owner-populated,execution_time vs cpu_energy,sequelize,12,0.8391608391608393,0.0006428259886278203,0.05464020903336473,False
+create-owner-populated,execution_time vs memory_energy,all ORMs,36,0.7750531135019351,2.8703287922634586e-08,2.985141943953997e-06,True
+create-owner-populated,execution_time vs memory_energy,drizzle,12,-0.1298253605771632,0.6875797523837794,1.0,False
+create-owner-populated,execution_time vs memory_energy,prisma,12,-0.1328671328671329,0.6805975082860817,1.0,False
+create-owner-populated,execution_time vs memory_energy,sequelize,12,0.2027972027972028,0.5273023541661079,1.0,False
+create-pet-populated,execution_time vs cpu_energy,all ORMs,36,0.2836550836550837,0.09364034308608998,1.0,False
+create-pet-populated,execution_time vs cpu_energy,drizzle,12,-0.27272727272727276,0.39109677094189615,1.0,False
+create-pet-populated,execution_time vs cpu_energy,prisma,12,-0.2657342657342658,0.4038330883147116,1.0,False
+create-pet-populated,execution_time vs cpu_energy,sequelize,12,0.10489510489510491,0.7456094809807079,1.0,False
+create-pet-populated,execution_time vs memory_energy,all ORMs,36,0.7256456050645411,5.514299690294977e-07,5.6245856841008763e-05,True
+create-pet-populated,execution_time vs memory_energy,drizzle,12,0.7460606887803388,0.00532943475257012,0.41036647594789927,False
+create-pet-populated,execution_time vs memory_energy,prisma,12,0.10896460767091228,0.7360449789233119,1.0,False
+create-pet-populated,execution_time vs memory_energy,sequelize,12,0.5534159099872936,0.061957825399860535,1.0,False
+delete-owner-visits-no-pets,execution_time vs cpu_energy,all ORMs,36,0.2888030888030888,0.08758430765756534,1.0,False
+delete-owner-visits-no-pets,execution_time vs cpu_energy,drizzle,12,0.2657342657342658,0.4038330883147116,1.0,False
+delete-owner-visits-no-pets,execution_time vs cpu_energy,prisma,12,0.10489510489510491,0.7456094809807079,1.0,False
+delete-owner-visits-no-pets,execution_time vs cpu_energy,sequelize,12,0.37762237762237766,0.22620604493502647,1.0,False
+delete-owner-visits-no-pets,execution_time vs memory_energy,all ORMs,36,0.8160454657132203,1.3202631171440692e-09,1.3994789041727133e-07,True
+delete-owner-visits-no-pets,execution_time vs memory_energy,drizzle,12,0.847637026689399,0.0004977973794360488,0.04330837201093624,True
+delete-owner-visits-no-pets,execution_time vs memory_energy,prisma,12,0.38528955758609046,0.21614675953998505,1.0,False
+delete-owner-visits-no-pets,execution_time vs memory_energy,sequelize,12,0.3817869252443987,0.22070801550440278,1.0,False
+delete-owner-visits-no-visits,execution_time vs cpu_energy,all ORMs,36,0.6604890604890606,1.1673972681492257e-05,0.0011090274047417645,True
+delete-owner-visits-no-visits,execution_time vs cpu_energy,drizzle,12,0.21678321678321683,0.49855598552418845,1.0,False
+delete-owner-visits-no-visits,execution_time vs cpu_energy,prisma,12,-0.027972027972027972,0.9312343512018807,1.0,False
+delete-owner-visits-no-visits,execution_time vs cpu_energy,sequelize,12,-0.09090909090909093,0.7787253962454419,1.0,False
+delete-owner-visits-no-visits,execution_time vs memory_energy,all ORMs,36,0.7515448240856901,1.2751557833303357e-07,1.3134104568302457e-05,True
+delete-owner-visits-no-visits,execution_time vs memory_energy,drizzle,12,0.4685314685314686,0.12445479118883407,1.0,False
+delete-owner-visits-no-visits,execution_time vs memory_energy,prisma,12,0.6993006993006995,0.01137419864269093,0.8644390968445107,False
+delete-owner-visits-no-visits,execution_time vs memory_energy,sequelize,12,-0.273205322651955,0.3902336739236367,1.0,False
+delete-owner-visits-populated,execution_time vs cpu_energy,all ORMs,36,0.7160875160875162,9.089153415212124e-07,9.180044949364244e-05,True
+delete-owner-visits-populated,execution_time vs cpu_energy,drizzle,12,0.2797202797202798,0.37856866966230307,1.0,False
+delete-owner-visits-populated,execution_time vs cpu_energy,prisma,12,0.09090909090909093,0.7787253962454419,1.0,False
+delete-owner-visits-populated,execution_time vs cpu_energy,sequelize,12,0.4825174825174825,0.11210929146889187,1.0,False
+delete-owner-visits-populated,execution_time vs memory_energy,all ORMs,36,0.6972313100314707,2.3022012286806727e-06,0.0002279179216393866,True
+delete-owner-visits-populated,execution_time vs memory_energy,drizzle,12,-0.1263165670480507,0.6956619043380248,1.0,False
+delete-owner-visits-populated,execution_time vs memory_energy,prisma,12,0.3216783216783217,0.30790987618065263,1.0,False
+delete-owner-visits-populated,execution_time vs memory_energy,sequelize,12,0.2027972027972028,0.5273023541661079,1.0,False
+delete-visit-populated,execution_time vs cpu_energy,all ORMs,36,0.19922779922779926,0.2440580716862795,1.0,False
+delete-visit-populated,execution_time vs cpu_energy,drizzle,12,-0.027972027972027972,0.9312343512018807,1.0,False
+delete-visit-populated,execution_time vs cpu_energy,prisma,12,0.16083916083916086,0.6175234895401425,1.0,False
+delete-visit-populated,execution_time vs cpu_energy,sequelize,12,-0.2657342657342658,0.4038330883147116,1.0,False
+delete-visit-populated,execution_time vs memory_energy,all ORMs,36,0.6196240842511244,5.583304657240062e-05,0.005136640284660857,True
+delete-visit-populated,execution_time vs memory_energy,drizzle,12,0.6083916083916086,0.03580599705202923,1.0,False
+delete-visit-populated,execution_time vs memory_energy,prisma,12,0.7622377622377624,0.003950448972542647,0.3120854688308691,False
+delete-visit-populated,execution_time vs memory_energy,sequelize,12,0.11188811188811189,0.729194990751066,1.0,False
+read-owner-no-pets,execution_time vs cpu_energy,all ORMs,36,0.36061776061776063,0.030723499322388773,1.0,False
+read-owner-no-pets,execution_time vs cpu_energy,drizzle,12,0.6713286713286714,0.016831456186893416,1.0,False
+read-owner-no-pets,execution_time vs cpu_energy,prisma,12,-0.06293706293706294,0.8459309212287789,1.0,False
+read-owner-no-pets,execution_time vs cpu_energy,sequelize,12,0.39860139860139865,0.19933549461780897,1.0,False
+read-owner-no-pets,execution_time vs memory_energy,all ORMs,36,0.4591410772609162,0.00485063412208565,0.37834946152268073,False
+read-owner-no-pets,execution_time vs memory_energy,drizzle,12,0.5919448657459025,0.042590182813451956,1.0,False
+read-owner-no-pets,execution_time vs memory_energy,prisma,12,-0.24868689626011292,0.4357357561189062,1.0,False
+read-owner-no-pets,execution_time vs memory_energy,sequelize,12,0.5043790572036093,0.09448453562735723,1.0,False
+read-owner-no-visits,execution_time vs cpu_energy,all ORMs,36,0.9601029601029603,2.159755398953229e-20,2.4189260468276164e-18,True
+read-owner-no-visits,execution_time vs cpu_energy,drizzle,12,0.9160839160839163,2.8428045348547132e-05,0.0026722362627634305,True
+read-owner-no-visits,execution_time vs cpu_energy,prisma,12,0.5664335664335665,0.054842119775407906,1.0,False
+read-owner-no-visits,execution_time vs cpu_energy,sequelize,12,0.5244755244755246,0.08001937592027474,1.0,False
+read-owner-no-visits,execution_time vs memory_energy,all ORMs,36,0.5953147172497711,0.0001281816123587355,0.01166452672464493,True
+read-owner-no-visits,execution_time vs memory_energy,drizzle,12,0.20979020979020982,0.512840943181826,1.0,False
+read-owner-no-visits,execution_time vs memory_energy,prisma,12,-0.20979020979020982,0.512840943181826,1.0,False
+read-owner-no-visits,execution_time vs memory_energy,sequelize,12,-0.16462372005951137,0.6091580087875201,1.0,False
+read-owner-populated,execution_time vs cpu_energy,all ORMs,36,0.9158301158301159,4.973190972841862e-15,5.420778160397629e-13,True
+read-owner-populated,execution_time vs cpu_energy,drizzle,12,0.4755244755244756,0.118175957013032,1.0,False
+read-owner-populated,execution_time vs cpu_energy,prisma,12,0.8251748251748254,0.0009513628555555001,0.07991447986666202,False
+read-owner-populated,execution_time vs cpu_energy,sequelize,12,0.4055944055944056,0.19083587400450036,1.0,False
+read-owner-populated,execution_time vs memory_energy,all ORMs,36,0.5765046967412741,0.0002332363749317556,0.020758037368926247,True
+read-owner-populated,execution_time vs memory_energy,drizzle,12,-0.006993006993006993,0.9827917689028476,1.0,False
+read-owner-populated,execution_time vs memory_energy,prisma,12,-0.4343264103697747,0.15829394366797928,1.0,False
+read-owner-populated,execution_time vs memory_energy,sequelize,12,-0.3636363636363637,0.24526500073077723,1.0,False
+read-pet-populated,execution_time vs cpu_energy,all ORMs,36,0.3951093951093951,0.017081808495917037,1.0,False
+read-pet-populated,execution_time vs cpu_energy,drizzle,12,-0.21678321678321683,0.49855598552418845,1.0,False
+read-pet-populated,execution_time vs cpu_energy,prisma,12,0.4755244755244756,0.118175957013032,1.0,False
+read-pet-populated,execution_time vs cpu_energy,sequelize,12,-0.5594405594405596,0.05858947538856764,1.0,False
+read-pet-populated,execution_time vs memory_energy,all ORMs,36,0.6700596189669182,7.815738331454896e-06,0.0007581266181511249,True
+read-pet-populated,execution_time vs memory_energy,drizzle,12,0.1587363307693595,0.6221898073837314,1.0,False
+read-pet-populated,execution_time vs memory_energy,prisma,12,-0.38528955758609046,0.21614675953998505,1.0,False
+read-pet-populated,execution_time vs memory_energy,sequelize,12,0.5834878991410141,0.04641160898842105,1.0,False
+update-owner-no-pets,execution_time vs cpu_energy,all ORMs,36,0.9153153153153153,5.494116464001476e-15,5.933645781121593e-13,True
+update-owner-no-pets,execution_time vs cpu_energy,drizzle,12,0.7972027972027973,0.0019003677255282697,0.15392978576778985,False
+update-owner-no-pets,execution_time vs cpu_energy,prisma,12,0.9160839160839163,2.8428045348547132e-05,0.0026722362627634305,True
+update-owner-no-pets,execution_time vs cpu_energy,sequelize,12,0.5734265734265735,0.05126558978649151,1.0,False
+update-owner-no-pets,execution_time vs memory_energy,all ORMs,36,0.6684261691560283,8.378231490546706e-06,0.0008043102230924838,True
+update-owner-no-pets,execution_time vs memory_energy,drizzle,12,0.3636363636363637,0.24526500073077723,1.0,False
+update-owner-no-pets,execution_time vs memory_energy,prisma,12,-0.10858160259244368,0.7369437083547932,1.0,False
+update-owner-no-pets,execution_time vs memory_energy,sequelize,12,0.5944055944055945,0.04152149441031857,1.0,False
+update-owner-no-visits,execution_time vs cpu_energy,all ORMs,36,0.9263835263835265,5.539191988268992e-16,6.093111187095892e-14,True
+update-owner-no-visits,execution_time vs cpu_energy,drizzle,12,0.8741258741258742,0.00020071307332423182,0.018064176599180862,True
+update-owner-no-visits,execution_time vs cpu_energy,prisma,12,0.9440559440559443,3.927261080965947e-06,0.00038487158593466283,True
+update-owner-no-visits,execution_time vs cpu_energy,sequelize,12,0.8601398601398602,0.000331668339126921,0.029186813843169047,True
+update-owner-no-visits,execution_time vs memory_energy,all ORMs,36,0.38328298623519963,0.02103001763796934,1.0,False
+update-owner-no-visits,execution_time vs memory_energy,drizzle,12,0.4763579984700754,0.11744175687902236,1.0,False
+update-owner-no-visits,execution_time vs memory_energy,prisma,12,0.3047290137271806,0.3355078216764544,1.0,False
+update-owner-no-visits,execution_time vs memory_energy,sequelize,12,0.11558686727582713,0.7205545635404205,1.0,False
+update-owner-populated,execution_time vs cpu_energy,all ORMs,36,0.8846846846846849,8.204736742157255e-13,8.779068314108262e-11,True
+update-owner-populated,execution_time vs cpu_energy,drizzle,12,0.8461538461538463,0.0005211337004810047,0.0448174982413664,True
+update-owner-populated,execution_time vs cpu_energy,prisma,12,0.6713286713286714,0.016831456186893416,1.0,False
+update-owner-populated,execution_time vs cpu_energy,sequelize,12,0.8251748251748254,0.0009513628555555001,0.07991447986666202,False
+update-owner-populated,execution_time vs memory_energy,all ORMs,36,0.40968201845747804,0.013089022494849945,0.9816766871137459,False
+update-owner-populated,execution_time vs memory_energy,drizzle,12,-0.10489510489510491,0.7456094809807079,1.0,False
+update-owner-populated,execution_time vs memory_energy,prisma,12,-0.48421350701752763,0.11066963298488292,1.0,False
+update-owner-populated,execution_time vs memory_energy,sequelize,12,0.4238185133446995,0.16975340732567454,1.0,False
+update-pet-populated,execution_time vs cpu_energy,all ORMs,36,0.7122265122265122,1.1059621637577116e-06,0.00011059621637577115,True
+update-pet-populated,execution_time vs cpu_energy,drizzle,12,-0.2867132867132868,0.36625146058358227,1.0,False
+update-pet-populated,execution_time vs cpu_energy,prisma,12,0.5734265734265735,0.05126558978649151,1.0,False
+update-pet-populated,execution_time vs cpu_energy,sequelize,12,0.1398601398601399,0.6646331617926677,1.0,False
+update-pet-populated,execution_time vs memory_energy,all ORMs,36,0.7772055700110685,2.481937841432291e-08,2.6060347335039056e-06,True
+update-pet-populated,execution_time vs memory_energy,drizzle,12,0.15384615384615385,0.6330906812462617,1.0,False
+update-pet-populated,execution_time vs memory_energy,prisma,12,0.3543881464403644,0.25837037435796384,1.0,False
+update-pet-populated,execution_time vs memory_energy,sequelize,12,0.4841261425270504,0.11074349087551837,1.0,False
