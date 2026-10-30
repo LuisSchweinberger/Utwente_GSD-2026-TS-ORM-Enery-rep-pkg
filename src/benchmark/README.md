@@ -6,7 +6,8 @@ Compare Prisma, Sequelize, and Drizzle using sequential HTTP requests. Python co
 
 ## 1. Setup
 
-Requires Node.js 20+, Python 3.10+, and Docker Compose with `up --wait` support.
+Requires Node.js 20+, Python 3.10+, and a running Docker engine with Docker Compose
+(`up --wait` support). Run the following commands from `src/benchmark/`.
 
 ```sh
 cp .env.example .env
@@ -38,18 +39,25 @@ There are **42 task measurements per trial**. Multiples of three trials balance 
 - **Apple Silicon macOS:** `MEASUREMENT_BACKEND=powermetrics_zeus`; both powermetrics (CPU/GPU/ANE) and Zeus/IOReport (unified memory) are mandatory. Set up the runner's Python and authenticate sudo:
 
   ```sh
-   python3 -m venv .venv
-   .venv/bin/python -m pip install -r requirements-mac.txt
-   sudo -v
-   # Use a new seed/output ID; existing IDs replace previous run folders.
-   .venv/bin/python scripts/benchmark.py pilot --seed 43
+  python3 -m venv .venv
+  .venv/bin/python -m pip install -r requirements-mac.txt
+  sudo -v
+  MEASUREMENT_BACKEND=powermetrics_zeus .venv/bin/python scripts/benchmark.py pilot --seed 43
   ```
 
-  Alternatively, activate that environment before using the npm commands. The old live value `powermetrics` is rejected; historical results remain readable. Zeus itself needs no sudo; powermetrics still does.
+  Alternatively, activate that environment before using npm commands and set
+  `MEASUREMENT_BACKEND=powermetrics_zeus` in `.env`. Zeus needs no sudo;
+  powermetrics does.
 - **Intel Linux:** `MEASUREMENT_BACKEND=rapl`; RAPL powercap counters must be readable.
 - **Timing only:** `MEASUREMENT_BACKEND=none`, supported for tasks, trials and pilots.
 
 The full experiment requires an energy backend at 10 Hz. Progress shows trial, ORM, task and request counts. Failures preserve partial reports and stop the run. Reusing a complete-trial/pilot/experiment ID or seed warns and **replaces the entire run folder**, so old trial directories cannot remain.
+
+For a small timing-only pilot:
+
+```sh
+SIZE=10 QUERY_COUNT=5 MEASUREMENT_BACKEND=none npm run --silent pilot -- --seed 43 --trials 1
+```
 
 ## 3. Flow and configuration
 
@@ -99,10 +107,9 @@ results/experiment-42/
 
 Timing covers requests through the final complete response body, plus small pipe/progress overhead. Setup, restore, cooldown, baseline and verification are excluded. Baseline energy stays separate; summaries use verified workload measurements and available hardware domains.
 
-Mac measurements use the same `domains[]` layout as Intel: energy in `energyJ`, power in `averagePowerW`, and a `dram` memory domain alongside CPU. The combined backend records each domain's source and timing; `.energy.raw.memory.json` stores Zeus's cumulative mJ snapshots separately from the powermetrics plist. Memory values are host-wide model estimates, not per-process measurements or calibrated electrical readings. Boundary-call overhead is recorded and matters for short tasks.
-
-- [Workloads and measurement methodology](../../documentation/methodology.md)
-- [Controller architecture and troubleshooting](../../documentation/controller.md)
+New measurements stay in `src/benchmark/results/`; the archived data in
+`data/raw/` is not overwritten. The analysis scripts read the archived data,
+not new benchmark runs, by default.
 
 ## 5. Checks
 
@@ -112,6 +119,7 @@ npm run test:dataset
 npm run test:runner
 npm run db:up
 SIZE=10 QUERY_COUNT=5 DATASET_SEED=42 npm test
+npm run db:down
 ```
 
 Database tests modify the database; run them separately from experiments.

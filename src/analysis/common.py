@@ -73,7 +73,7 @@ MACHINES = {
         domain_notes={
             CPU: "powermetrics `cpu` domain (cpu_power sampler).",
             MEMORY: "Not measured: powermetrics only reported cpu/gpu/ane domains on this machine. "
-            "Per documentation/methodology.md, missing DRAM stays unavailable and CPU energy is not substituted.",
+            "Missing DRAM stays unavailable and CPU energy is not substituted.",
         },
     ),
 }

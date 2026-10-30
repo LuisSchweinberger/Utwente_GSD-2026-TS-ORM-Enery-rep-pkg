@@ -1,43 +1,31 @@
-# Recorded environment and reproducibility limits
+# Experiment setup
 
-The authoritative records are each experiment's `manifest.json`, trial manifests,
-and measurement reports. The table below summarizes their recorded values;
-these are not independently verified hardware/software claims.
+The original run settings and software versions are recorded in
+`data/raw/{intel,mac}/experiment-42/manifest.json`.
 
-| Property | Intel experiment | Mac experiment |
+| Property | Intel | Mac |
 |---|---|---|
 | CPU | Intel Core i7-6500U, 4 logical CPUs | Apple M4 Pro, 12 logical CPUs |
-| Memory | 8,168,050,688 bytes | 25,769,803,776 bytes |
-| OS | CachyOS Linux, release 7.2.9-1-cachyos | macOS 26.6.2, Darwin 25.6.0 |
+| Memory | Approximately 8 GB | 24 GiB |
+| OS | CachyOS Linux, 7.2.9-1-cachyos | macOS 26.6.2 |
 | Architecture | x86_64 | arm64 |
 | Node.js | v26.10.0 | v24.9.0 |
 | Python | 3.14.7 | 3.14.5 |
-| PostgreSQL | 17.11, Alpine, x86_64 | 17.11, Alpine, aarch64 |
-| Backend | RAPL | powermetrics + Zeus/IOReport |
-| CPU governor / power | powersave | AC power, battery charged |
+| PostgreSQL | 17.11, Alpine | 17.11, Alpine |
+| Energy backend | RAPL | powermetrics + Zeus/IOReport |
+| Power configuration | powersave governor | AC power |
 
-Both manifests record Prisma client 6.19.3, Sequelize 6.37.8, Drizzle ORM 0.45.3,
-pg 8.23.0, Express 5.2.1 and tsx 4.23.15. The copied `package-lock.json` SHA-256
-matches both experiment manifests:
-`9248e49eb755e05faf74324b8dce6e9c4d83dc487eb8eea329f21d881242b4d9`.
+Both runs used Prisma client 6.19.3, Sequelize 6.37.8 and Drizzle ORM 0.45.3.
+The benchmark's `package-lock.json` records Node dependency versions;
+`docker-compose.yml` uses the `postgres:17-alpine` image tag.
 
-Both runs used seed 42, 12 complete trials, SIZE=QUERY_COUNT=1000, 100 ms energy
-sampling, 30 s trial cooldown, 10 s ORM cooldown and 30 s idle measurement.
+## Run settings
 
-## Limits
+- Seed: 42; each trial increments the dataset seed by one.
+- Trials: 12 per machine, each containing 14 tasks for each of the three ORMs.
+- `SIZE=1000` owners per profile; `QUERY_COUNT=1000` requests per task.
+- Energy sampling interval: 100 ms.
+- Trial cooldown: 30 s; ORM cooldown: 10 s; idle measurement: 30 s.
+- ORM order rotates; task order is shuffled per trial and shared across ORMs.
 
-- Both archived experiments record `gitDirty: true` and different source
-  revisions. The copied working tree is not proven byte-identical to either
-  execution's source; matching dependency locks do not establish that.
-- `documentation/source-provenance.json` records the source revision/dirty state
-  at packaging time and original imported file hashes.
-- `postgres:17-alpine` is a mutable image tag; original image digests were not
-  recorded. A new run can resolve to a newer PostgreSQL build. No historical
-  digest has been invented.
-- Original Python analysis dependency versions were not recorded. Minimum
-  requirements are preserved; a validation lock is not a historical lock.
-- Machine-specific manifests contain hostnames and logs can contain local paths.
-  Review these before public release; originals have not been silently redacted.
-- Whole-host energy includes background activity and collector overhead. Intel
-  package/DRAM and Apple's CPU/unified-memory estimates are not interchangeable.
-- No full measurement rerun is implied by assembling or verifying this package.
+See [benchmark instructions](../src/benchmark/README.md) to configure a new run.
